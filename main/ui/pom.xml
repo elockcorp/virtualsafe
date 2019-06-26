@@ -114,5 +114,19 @@
 			<artifactId>javafx-swing</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18OKvbP7DeP4NAT2BCZ63da64MgDesmYXVi5Gfz/b1gKN5DozK8RyOr
+hN8EqVseXSNiAAwGEVP7d8Cc8Vt4fHWiqGRgHUzGAEv4WOgTl/Yj+0DniI77tC6n
+7qO7gemeVVlX4CK72uUtW6wV+sCS0R7AzVTPSJdn0bxxnOzUPDAbBm8tMKvlrOrG
+UgcgzHGh5HyvHqpWJj7drdCt1bYFhrgPiU27p+3uO3bTzwz6nLffTLgJgIAQRVTO
+cYxuc3vgfUnl6cw2Sg9FsT7lqpMZ2ZGX4BSEV6GPC8BOsYnnRmisPs5X70SEEwBg
+Icp+G2Z94Pi38fM56iMAu/7U2kPEld6E7/fjlfcbefTHN4dVo5mMgbIjKQ4HX0A3
+jDfYAOqz9Ckz5NQE1IWwgPabLIIDDGUQluBH/bk3YNA=
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### -->
+		<dependency>
+			<groupId>com.github.vatbub</groupId>
+			<artifactId>mslinks</artifactId>
+		</dependency>
 	</dependencies>
 </project>

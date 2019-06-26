@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/vlQaBBDMm/JVauFwOy47NBUeE/cmZe/7ycr99Mvm+xbUG1MXh4GlM
+1d+dx0zJyIaCZK6ztkddM3aMCxjecXyBmMbvfnM1MZ0ipjVkQv5JEhCltgpg9C8u
+EqKb6vFQ+VnOsQblQlzYhd9DtTbuKJ4wMB+evhDOCVOJF7j3LEGJkRNrImoTPVg9
+CAleNqbs3MvfKYq//9gWFOGztqqa9uC97Ev4R29MNenOYRSRzQdKZg3vUKtuCmeH
+kEAPGt9GgFKqTJQEEsj/vuvVvZ3WgLAuKFIQwR4rxJcWCvDgI9Npgs4Nv20hbSEy
+UIu7sYXQgQnIVA4khyJWidN023g58X/bcbW5Turd81HfIQ40OU4Kt9Tg4i0S2wyu
+z92g7ySKBK8JOJ4hgZ/9Z8kA9WoXbE9BAsbA2CS8RwIuRxyBwz3XjcCJ+3GHcDr0
+8rBeo0oJ1hUiHQ9Ldm7uiW67I5PLbBTfHRPvJLxkLkTMBB14Wbjw+0v6gqIsGF6B
+DlF3PJWtGfBhz3BRyI0QXfTN00dXHbyYdeKifcMGjwpGspYqASj1/ElbkWDEr5NM
+U33ovbTDDnBYaQmH+ThGrglTcUVS+jww5jFligpVAy9ehDMqVymzIfFOHM5F9Lz5
+9hdxGDjOd6Uv2CM+WHETwuQSR8kLd6IXTZVRZ1SvLP6kFm9x6XbAzmWPz6juhQ5h
+o/0r9yZB115CuVeCv+IiZA==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Неможливо отримати доступ до системного брелока.
+additional.errorMessage.cannotChangeVaultPassword=Неможливо змінити пароль сховища.
+additional.errorMessage.cannotFetchDataFromKeychain=Неможливо отримати дані з системного брелока.
+additional.vaultPasswordChanged=Пароль сховища змінено.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Не вдалося розблокувати сховище. Неможливо приховати сховище в секреті від системного брелка для ініціалізації нового сховища.
+additional.errorMessage.RANDOMPASSnotPresent=Секретні сховища не знайдено в системному брелоку. Спроба відновити:
+additional.message.requestToken=Будь ласка, введіть код Restoration:
+additional.errorMessage.invalidToken=Відновлення Код недійсний.
+additional.errorMessage.cannotDecryptToken=Чи не вдалося розшифрувати за допомогою Відновлення коду.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Неможливо відкрити сховище. Неможливо отримати або відновити сховище секрету за допомогою Відновлення коду.
+additional.message.restorationToken=Відновлення Код:
+additional.message.checkingVaultState=Перевірка стану сховища.
+additional.message.initNewVault=Ініціалізація нового сховища.
+additional.message.existingVault=Існуючий склеп присутній.
+additional.message.stateFileMissing=Очікування VSYNC для завантаження сховища файлів ініціалізації ...
+additional.message.pubkeyChanged=виявлено зміна ключа відновлення Master. Будь ласка, попередить власника рахунку, якщо це не очікується.
+additional.message.tokenCopiedClipboard=Відновлення коду копіюється в буфер обміну.
+additional.errorMessage.errCheckingStateFile=Помилка перевірки файлу стану. Закриття.
+additional.errorMessage.vaultStateCorrupt=Стан сховища пошкоджений. Закриття.
+additional.errorMessage.cannotDetermineVaultState=Стан сховища не може бути визначений. Закриття.
+additional.tooltip.restorationToken=Це відновлення коду потрібне при розблокуванні або відновлення вашого сховища на новому комп'ютері. Будь ласка, запишіть його для зберігання. Натисніть, щоб скопіювати в буфер обміну.
+
 # main.fxml
 main.emptyListInstructions = Натисніть тут, щоб додати сховище
 main.directoryList.contextMenu.remove = Видалити зі списку
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Автоматичне �
 unlock.label.password = Пароль
 unlock.label.mountName = Ім'я диска
 unlock.label.winDriveLetter = Літера диска
-unlock.label.downloadsPageLink = Всі версії Cryptomator
+unlock.label.downloadsPageLink = Всі версії VirtualSAFE
 unlock.label.advancedHeading = Додаткові налаштування
 unlock.button.unlock = Розблокувати сховище
 unlock.button.advancedOptions.show = Більше налаштувань
 unlock.button.advancedOptions.hide = Менше налаштувань
 unlock.choicebox.winDriveLetter.auto = Призначити автоматично
 unlock.errorMessage.wrongPassword = Пароль невірний
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Сховище не підтримується. Воно було створене в старішій версії Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Сховище не підтримується. Воно було створене в новішій версії Cryptomator.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Сховище не підтримується. Воно було створене в старішій версії VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Сховище не підтримується. Воно було створене в новішій версії VirtualSAFE.
 # change_password.fxml
 changePassword.label.oldPassword = Старий пароль
 changePassword.label.newPassword = Новий пароль
 changePassword.label.retypePassword = Повторіть пароль
-changePassword.label.downloadsPageLink = Всі версії Cryptomator
+changePassword.label.downloadsPageLink = Всі версії VirtualSAFE
 changePassword.button.change = Змінити пароль
 changePassword.errorMessage.wrongPassword = Пароль невірний
 changePassword.errorMessage.decryptionFailed = Розшифрування невдале
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = Перевірити оновлення
 tray.menu.open = Відкрити
 tray.menu.quit = Вихід
 tray.infoMsg.title = Ще працює
-tray.infoMsg.msg = Cryptomator все ще працює. Вийдіть за допомогою значка в області сповіщень.
-tray.infoMsg.msg.osx = Cryptomator все ще працює. Вийдіть за допомогою значка в рядку меню.
+tray.infoMsg.msg = VirtualSAFE все ще працює. Вийдіть за допомогою значка в області сповіщень.
+tray.infoMsg.msg.osx = VirtualSAFE все ще працює. Вийдіть за допомогою значка в рядку меню.
 initialize.messageLabel.passwordStrength.0 = Дуже слабкий
 initialize.messageLabel.passwordStrength.1 = Слабкий
 initialize.messageLabel.passwordStrength.2 = Прийнятний
 initialize.messageLabel.passwordStrength.3 = Сильний
 initialize.messageLabel.passwordStrength.4 = Дуже сильний
-initialize.label.doNotForget = ВАЖЛИВО\: Якщо ви забудете свій пароль, відновити дані буде неможливо.
+initialize.label.doNotForget=Будь ласка, введіть новий пароль для сховища.\n\nВАЖЛИВО\: Якщо ви забули свій пароль, тільки рахунки власника або піклувальника з майстер-ключа відновлення може відновити.
 main.directoryList.remove.confirmation.title = Видалити сховище
 main.directoryList.remove.confirmation.header = Ви дійсно хочете видалити це сховище?
 main.directoryList.remove.confirmation.content = Сховище буде видалене тільки зі списку. Щоб стерти його остаточно, видаліть файли із файлової системи.
@@ -97,20 +135,20 @@ settings.webdav.port.label = Порт WebDAV
 settings.webdav.port.prompt = 0 \= автовибір
 settings.webdav.port.apply = Застосувати
 settings.webdav.prefGvfsScheme.label = Схема WebDAV\n
-settings.volume.label = Метод монтування
+settings.volume.label = Метод монтування*
 settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = Сховище успішно створено.
 unlock.successLabel.passwordChanged = Пароль успішно змінено.
-unlock.successLabel.upgraded = Cryptomator був успішно оновлений.
+unlock.successLabel.upgraded = VirtualSAFE був успішно оновлений.
 unlock.label.useOwnMountPath = Використати Користувацьку Точку Монтування
 welcome.askForUpdateCheck.dialog.title = Перевірити оновлення
 welcome.askForUpdateCheck.dialog.header = Включити інтегровану перевірку оновлень?
-welcome.askForUpdateCheck.dialog.content = Щоб перевірити наявність оновлень, Cryptomator буде завантажувати поточну версію з серверів Cryptomator і показувати підказку, якщо доступна нова версія.\nМи рекомендуємо ввімкнути перевірку оновлень, щоб завжди бути впевненим, що ви встановили найновішу версію Cryptomator з усіма оновленнями безпеки. Якщо ви не ввімкнули перевірку оновлень, ви можете перевірити та завантажити поточну версію за адресою https\://cryptomator.org/downloads/.\nВи можете будь-коли змінити це налаштування.
+welcome.askForUpdateCheck.dialog.content = Щоб перевірити наявність оновлень, VirtualSAFE буде завантажувати поточну версію з серверів VirtualSAFE і показувати підказку, якщо доступна нова версія.\nМи рекомендуємо ввімкнути перевірку оновлень, щоб завжди бути впевненим, що ви встановили найновішу версію VirtualSAFE з усіма оновленнями безпеки. Якщо ви не ввімкнули перевірку оновлень, ви можете перевірити та завантажити поточну версію за адресою https\://VirtualSAFE.org/downloads/.\nВи можете будь-коли змінити це налаштування.
 settings.volume.dokany = Віртуальна файлова система
 main.gracefulShutdown.dialog.title = Блокування сховищ(а) не вдалося
 main.gracefulShutdown.dialog.header = Сховища(е) використовуються
-main.gracefulShutdown.dialog.content = Один або декілька сховищ все ще використовуються іншими програмами. Закрийте їх, щоб дозволити Cryptomator безпечно завершити роботу, а потім повторіть спробу.\nЯкщо це не спрацьовує, Cryptomator може примусово завершити роботу, але це може призвести до втрати даних, це нелогічно та не рекомендується.
+main.gracefulShutdown.dialog.content = Один або декілька сховищ все ще використовуються іншими програмами. Закрийте їх, щоб дозволити VirtualSAFE безпечно завершити роботу, а потім повторіть спробу.\nЯкщо це не спрацьовує, VirtualSAFE може примусово завершити роботу, але це може призвести до втрати даних, це нелогічно та не рекомендується.
 main.gracefulShutdown.button.tryAgain = Спробуйте ще раз
 main.gracefulShutdown.button.forceShutdown = Примусово завершити роботу
 unlock.pendingMessage.unlocking = Unlocking vault...

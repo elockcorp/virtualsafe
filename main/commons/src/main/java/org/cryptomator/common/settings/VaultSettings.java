@@ -57,7 +57,13 @@ public class VaultSettings {
 
 	private void deriveMountNameFromPath(Path path) {
 		if (path != null && StringUtils.isBlank(mountName.get())) {
-			mountName.set(normalizeMountName(path.getFileName().toString()));
+			/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/VSXBmlaPCvxMBs1WE12N2L5h9WbY1w8jnrlA7Qt4xBv9uphrCkezY
+a4vlKXQJrSrRUqZ9f2c3C/yCjQWvuBOosUA8HmlK7P9rp/6789ks2UStWIW2L+Cp
+xbOZHshehKReef0Q31IpHzVdcYgCOiH/g1GiRzRlmMgnB9O6H02OSeJRb5Ajl2p5
+LZfu6StU7l55V0oWRKcov+Eb5Lu7OJUwDK7PL/lNztU=
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+			mountName.set("VirtualSAFE");
 		}
 	}
 

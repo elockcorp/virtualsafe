@@ -31,9 +31,15 @@
 	<fx:define>
 		<ContextMenu fx:id="vaultListCellContextMenu">
 			<items>
+				<!-- ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18qVZpY9svtZvv2tWF6BuTQ6asm0CYW3w3qYKEBLwDSogReoFPkZGOI
+4Y9TL7Tg6Ld/XsPWWMVWZEG+701hcr7khN+2y72N76Q=
+				###_VIRTUALSAFE_CHANGE_TRACKING_END_### -->
+				<!-- 
 				<MenuItem text="%main.directoryList.contextMenu.remove" onAction="#didClickRemoveSelectedEntry">
 					<graphic><Label text="&#xf12a;" styleClass="ionicons"/></graphic>
 				</MenuItem>
+				-->
 				<MenuItem text="%main.directoryList.contextMenu.changePassword" fx:id="changePasswordMenuItem" onAction="#didClickChangePassword">
 					<graphic><Label text="&#xf2bf;" styleClass="ionicons"/></graphic>
 				</MenuItem>

@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+4Ksc4krxxzVomVVdyPSQYH8xA9TQ+0sF4QtA2g937BxXkVsiTTaK4
+/Ud4kIs6e2WpvK+Ms3RGVusdxHM/x1+3okg7OU0aW7tyzj7/ziI1ugvFAbeCeBMb
+gJHwrT42IkZZAzmfmbtwBmenMkSqOCG9sLj2otK+eMvEpBIn5kss+UdVBBDzm2+e
+NyIw2tZuJKLn8XGtEmo4+KiXdHjpbKO5CJMKtzcRLyzU/Ts/HskBPfb3K9lLkbf7
++SzFbneLKidp8+9e4v5vrDlqObpUSOJ3oNFlh7UTGoyBHhnEAKUyW7sAfWh4eTE/
+YjH8lBq5Fjuu4TvC8hJw5JWBO6q3iQhSiHn+A3ufv938SDfDU/gDrDswAkU/Kq2Y
+AHwrE06K+8LWuG+lLcGPCVXV5NnHeiDJXI+GqrrKxzkiDn+C4G0820sUM2Zj8t1k
+oFfPSyho2D8+wzgFzciTPbNCwWP+0sOtNuhJ7s5ZvDwkRPlb03lnDwPRybfHn84s
+NMIHSFUW4FFU+6XeDv0geSYjQqpKCvZF0v//typ1T/dMrDy9u53A0sBqWkmemeL2
+JAYfp2l0u7ZNoURjoVw+k5+64/7k3zmqCVdeJY9/XaYCA9GczyEJ+t9toxZTIclm
+8Oq5VYodTbhz6Ct/8DlJ7Q3nhFLmsYRJocE/YbPeSjECcUXeO5fjWVu1iTZqp/GY
+Ej1pnrB3GpkhRmUDbbuwWw==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Geen toegang tot systeem sleutelhanger.
+additional.errorMessage.cannotChangeVaultPassword=Kon het kluiswachtwoord niet wijzigen.
+additional.errorMessage.cannotFetchDataFromKeychain=Kan geen gegevens ophalen uit systeem sleutelhanger.
+additional.vaultPasswordChanged=Kluis wachtwoord gewijzigd.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Kan kluis niet ontgrendelen. Kan kluisgeheim niet ontcijferen van systeemsleutelhanger om een nieuwe kluis te initialiseren.
+additional.errorMessage.RANDOMPASSnotPresent=Kluis geheim niet gevonden in systeem sleutelhanger. Poging om te herstellen:
+additional.message.requestToken=Vul Restoration Code:
+additional.errorMessage.invalidToken=Restauratie Code is ongeldig.
+additional.errorMessage.cannotDecryptToken=Kan decoderen met Restoration Code.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Kan geen kluis te openen. Niet in staat om op te halen of te herstellen kluis geheim met behulp van Restoration Code.
+additional.message.restorationToken=Restauratie Code:
+additional.message.checkingVaultState=Vault-status controleren.
+additional.message.initNewVault=Initialiseren van nieuwe kluis.
+additional.message.existingVault=Bestaande kluis aanwezig.
+additional.message.stateFileMissing=Wachten op VSYNC om vault initialisatie bestand te downloaden ...
+additional.message.pubkeyChanged=Master herstelcode verandering gedetecteerd. Let op! Rekeninghouder als dit niet wordt verwacht.
+additional.message.tokenCopiedClipboard=Restauratie code gekopieerd naar het klembord.
+additional.errorMessage.errCheckingStateFile=Fout bij het controleren van het statusbestand. Afsluiten.
+additional.errorMessage.vaultStateCorrupt=Kluis staat beschadigd. Afsluiten.
+additional.errorMessage.cannotDetermineVaultState=Kluisstatus kan niet worden bepaald. Afsluiten.
+additional.tooltip.restorationToken=Dit herstel code is nodig bij het ontgrendelen of het herstellen van uw kluis op een nieuwe computer. Noteer het neer in bewaring. Klik om te kopiëren naar het klembord.
+
 # main.fxml
 main.emptyListInstructions = Klik hier om een kluis toe te voegen
 main.directoryList.contextMenu.remove = Verwijder van lijst
@@ -26,22 +64,22 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Automatische migratie mi
 unlock.label.password = Wachtwoord
 unlock.label.mountName = Schijfnaam
 unlock.label.winDriveLetter = Schijfletter
-unlock.label.downloadsPageLink = Alle Cryptomator versies
+unlock.label.downloadsPageLink = Alle VirtualSAFE versies
 unlock.label.advancedHeading = Geavanceerde Opties
 unlock.button.unlock = Ontgrendel Kluis
 unlock.button.advancedOptions.show = Meer Opties
 unlock.button.advancedOptions.hide = Minder Opties
 unlock.choicebox.winDriveLetter.auto = Automatisch toekennen
 unlock.errorMessage.wrongPassword = Verkeerd wachtwoord
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Niet ondersteunde kluis. Deze kluis is gemaakt met een nieuwere versie van Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Niet ondersteunde kluis. Deze kluis is gemaakt met een nieuwere versie van Cryptomator.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Niet ondersteunde kluis. Deze kluis is gemaakt met een nieuwere versie van VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Niet ondersteunde kluis. Deze kluis is gemaakt met een nieuwere versie van VirtualSAFE.
 # change_password.fxml
 changePassword.label.oldPassword = Huidig Wachtwoord
 changePassword.label.newPassword = Nieuw Wachtwoord
 changePassword.label.retypePassword = Herhaal Wachtwoord
-changePassword.label.downloadsPageLink = Alle Cryptomator versies
+changePassword.label.downloadsPageLink = Alle VirtualSAFE versies
 changePassword.button.change = Verander Wachtwoord
-changePassword.errorMessage.wrongPassword = Alle Cryptomator versies
+changePassword.errorMessage.wrongPassword = Alle VirtualSAFE versies
 changePassword.errorMessage.decryptionFailed = Decoderen mislukt
 # unlocked.fxml
 unlocked.button.lock = Vergrendel kluis
@@ -58,14 +96,14 @@ settings.checkForUpdates.label = Controleer op updates
 tray.menu.open = Open
 tray.menu.quit = Afsluiten
 tray.infoMsg.title = Nog Steeds Actief
-tray.infoMsg.msg = Cryptomator is nog steeds actief. Sluit af via het icoon in het systeemvak.
-tray.infoMsg.msg.osx = Cryptomator is nog steeds actief. Sluit af via het icoon op de menubalk.
+tray.infoMsg.msg = VirtualSAFE is nog steeds actief. Sluit af via het icoon in het systeemvak.
+tray.infoMsg.msg.osx = VirtualSAFE is nog steeds actief. Sluit af via het icoon op de menubalk.
 initialize.messageLabel.passwordStrength.0 = Zeer zwak
 initialize.messageLabel.passwordStrength.1 = Zwak
 initialize.messageLabel.passwordStrength.2 = Redelijk
 initialize.messageLabel.passwordStrength.3 = Sterk
 initialize.messageLabel.passwordStrength.4 = Zeer sterk
-initialize.label.doNotForget = BELANGRIJK\: Indien je het wachtwoord vergeet, is er geen manier om je data te herstellen.
+initialize.label.doNotForget=Vul een nieuw wachtwoord voor uw kluis.\n\nBELANGRIJK\: Als u uw wachtwoord vergeet, slechts goed eigenaar of bewaarder met een grote recovery key kan herstellen.
 main.directoryList.remove.confirmation.title = Verwijder Kluis
 main.directoryList.remove.confirmation.header = Weet je zeker dat je deze kluis wilt verwijderen?
 main.directoryList.remove.confirmation.content = De kluis zal alleen van de lijst worden verwijdert. Verwijder de bestanden van het bestandssysteem voor permanente verwijdering.
@@ -104,15 +142,15 @@ settings.volume.webdav = WebDAV
 settings.volume.fuse = STOP
 unlock.successLabel.vaultCreated = Kluis was succesvol gecreeerd
 unlock.successLabel.passwordChanged = Wachtwoord is succesvol aangepast
-unlock.successLabel.upgraded = Cryptomator succesvol vernieuwd.
+unlock.successLabel.upgraded = VirtualSAFE succesvol vernieuwd.
 unlock.label.useOwnMountPath = Gebruik een eigen koppelpunt
 welcome.askForUpdateCheck.dialog.title = Update check
 welcome.askForUpdateCheck.dialog.header = Geintegreerde update check aanzetten
-welcome.askForUpdateCheck.dialog.content = Om te controleren op updates haalt Cryptomator het huidige versienummer van de Cryptomatorservers en toont een hint indien een nieuwere versie beschikbaar is.\n\nWe raden aan om de geintegreerde update check aan te zetten om zeker te weten dat je de nieuwste versie van Cryptomator met alle beveiligings aanpassingen hebt geinstalleerd. Indien je deze niet aanzet kun je zelf de versie controleren en downloaden van https\://cryptomatr.org/downloads/.\n\n\nJe kan dit te allen tijden bij instellingen aanpassen.
+welcome.askForUpdateCheck.dialog.content = Om te controleren op updates haalt VirtualSAFE het huidige versienummer van de VirtualSAFEservers en toont een hint indien een nieuwere versie beschikbaar is.\n\nWe raden aan om de geintegreerde update check aan te zetten om zeker te weten dat je de nieuwste versie van VirtualSAFE met alle beveiligings aanpassingen hebt geinstalleerd. Indien je deze niet aanzet kun je zelf de versie controleren en downloaden van https\://cryptomatr.org/downloads/.\n\n\nJe kan dit te allen tijden bij instellingen aanpassen.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Vergrendelen kluis/kluizen mislukt
 main.gracefulShutdown.dialog.header = Vault(s) in use
-main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow Cryptomator to shut down properly, then try again.\n\nIf this doesn't work, Cryptomator can shut down forcefully, but this can incur data loss and is not recommended.
+main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow VirtualSAFE to shut down properly, then try again.\n\nIf this doesn't work, VirtualSAFE can shut down forcefully, but this can incur data loss and is not recommended.
 main.gracefulShutdown.button.tryAgain = Probeer opnieuw
 main.gracefulShutdown.button.forceShutdown = Geforceerd afsluiten
 unlock.pendingMessage.unlocking = Unlocking vault...

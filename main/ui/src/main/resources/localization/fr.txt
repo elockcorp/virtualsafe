@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/iDwaUbNMPogPnXe9yv8TOgj7zVGe7/Fw/SXhbTA1BAxTnqhRuj8Z5
+UeBOoR71MdtWt0PutWbClfQpaWX3Gpr9PtzmVP/pPJqzp9LIWHzB9wrOwVLARDFK
++tFlhU4I3twFxQi87SVrftfaibdOkMpw1ygKc4dxZ2ZQTZMYYVtPkbBtXhTMSlYW
+q87ukkbJrXDo7dE+kQim4XPI0fJesv0DRKS1ltm4+2KfuUhyP0+x3CmjU8hwhlMr
+9grA91ZKSf/ZpsZnbeg5xjS7GcEarlvHmq2Kyh8wFYCjD/on8EA3kMb5SRolubEp
+0wKPYrG0ULcSf6yE9eoKGdqAE9pvZvPcaUXYqjtJw70mp9sT73D47m1o/VZBEzvH
+ifaYTHzFg54pCcAO9uLZUm8BjhEDGTnSsfYp52tZBnhkfIWl/8acZMn/6Owb+1ge
++adFgt6QPCTAUARXINPjIDEed4WqkH30KI4Dt/H8YHUy0k0LBPg7iw9lMGn3Nri/
+CHXpuFsvqwug3rtXDhiiZVLmIS+e+XY9OCTsUFuD8qwIclHNv58Tl6M7ToRKNdqw
+of/malgR6Jjn2KEkaT+B1d7FVxuiFjdWrGck1YElf8VAXAvTSxUObZ9gRWjVoY20
+HKhINOv+aqYsbkWkzXEwYZxrCgDofG7HwkI/zIWq1+b0cnvkZ+DoyRWZshOShokS
+PWHrRk4/w5wynfrXxMgT7A==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Impossible d'accéder au trousseau du système.
+additional.errorMessage.cannotChangeVaultPassword=Impossible de changer le mot de passe du coffre-fort.
+additional.errorMessage.cannotFetchDataFromKeychain=Impossible de récupérer les données du trousseau système.
+additional.vaultPasswordChanged=Le mot de passe du coffre-fort a changé.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Impossible de déverrouiller le coffre-fort. Impossible d'accéder au secret du coffre-fort depuis le trousseau système pour initialiser un nouveau coffre-fort.
+additional.errorMessage.RANDOMPASSnotPresent=Le secret du coffre-fort est introuvable dans le trousseau du système. Tenter de restaurer:
+additional.message.requestToken=S'il vous plaît entrer le code de restauration:
+additional.errorMessage.invalidToken=Code de restauration est invalide.
+additional.errorMessage.cannotDecryptToken=Impossible de déchiffrer le code à l'aide de la restauration.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Impossible de déverrouiller la voûte. Impossible de récupérer ou de restaurer secret voûte en utilisant le code de restauration.
+additional.message.restorationToken=Code Restauration:
+additional.message.checkingVaultState=Vérification de l'état du coffre-fort.
+additional.message.initNewVault=Initialisation du nouveau coffre-fort.
+additional.message.existingVault=Coffre existant présent.
+additional.message.stateFileMissing=En attendant VSYNC pour télécharger le fichier d'initialisation voûte ...
+additional.message.pubkeyChanged=Recovery Master changement clé détectée. S'il vous plaît alerter le propriétaire du compte si cela ne devrait pas.
+additional.message.tokenCopiedClipboard=Code de restauration copié dans le presse-papiers.
+additional.errorMessage.errCheckingStateFile=Erreur lors de la vérification du fichier d'état. Éteindre.
+additional.errorMessage.vaultStateCorrupt=État du coffre-fort corrompu. Éteindre.
+additional.errorMessage.cannotDetermineVaultState=L'état du coffre-fort ne peut pas être déterminé. Éteindre.
+additional.tooltip.restorationToken=Ce code de restauration est nécessaire lors du déverrouillage ou la restauration de votre coffre-fort sur un nouvel ordinateur. S'il vous plaît noter vers le bas pour la garde. Cliquez pour copier dans le presse papier.
+
 # main.fxml
 main.emptyListInstructions = Cliquer ici pour ajouter un coffre-fort
 main.directoryList.contextMenu.remove = Retirer de la liste
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = La conversion automatiqu
 unlock.label.password = Mot de passe
 unlock.label.mountName = Nom du lecteur
 unlock.label.winDriveLetter = Lettre du lecteur
-unlock.label.downloadsPageLink = Toutes les versions de Cryptomator
+unlock.label.downloadsPageLink = Toutes les versions de VirtualSAFE
 unlock.label.advancedHeading = Options avancées
 unlock.button.unlock = Déverrouiller le coffre-fort
 unlock.button.advancedOptions.show = Plus d'options
 unlock.button.advancedOptions.hide = Moins d'options
 unlock.choicebox.winDriveLetter.auto = Assigner automatiquement
 unlock.errorMessage.wrongPassword = Mot de passe incorrect
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Coffre-fort non supporté. Ce coffre a été créé avec une ancienne version de Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Coffre-fort non supporté. Ce coffre a été créé avec une version de Cryptomator plus récente.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Coffre-fort non supporté. Ce coffre a été créé avec une ancienne version de VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Coffre-fort non supporté. Ce coffre a été créé avec une version de VirtualSAFE plus récente.
 # change_password.fxml
 changePassword.label.oldPassword = Ancien mot de passe
 changePassword.label.newPassword = Nouveau mot de passe
 changePassword.label.retypePassword = Vérification
-changePassword.label.downloadsPageLink = Toutes les versions de Cryptomator
+changePassword.label.downloadsPageLink = Toutes les versions de VirtualSAFE
 changePassword.button.change = Modification du mot de masse
 changePassword.errorMessage.wrongPassword = Mot de passe incorrect
 # En français, on dit déchiffrement lorsque la clé est connue
@@ -59,14 +97,14 @@ settings.checkForUpdates.label = Vérifier les mises à jour
 tray.menu.open = Ouvrir
 tray.menu.quit = Quitter
 tray.infoMsg.title = Action en cours
-tray.infoMsg.msg = Cryptomator est toujours en fonctionnement. Utiliser l'icône de la barre des tâches pour quitter.
-tray.infoMsg.msg.osx = Cryptomator est toujours en fonctionnement. Utilisez la barre de menu pour quitter.
+tray.infoMsg.msg = VirtualSAFE est toujours en fonctionnement. Utiliser l'icône de la barre des tâches pour quitter.
+tray.infoMsg.msg.osx = VirtualSAFE est toujours en fonctionnement. Utilisez la barre de menu pour quitter.
 initialize.messageLabel.passwordStrength.0 = Très faible
 initialize.messageLabel.passwordStrength.1 = Faible
 initialize.messageLabel.passwordStrength.2 = Correct
 initialize.messageLabel.passwordStrength.3 = Fort
 initialize.messageLabel.passwordStrength.4 = Très fort
-initialize.label.doNotForget = ATTENTION \: Si vous oubliez votre mot de passe, il n'y aura aucun moyen de récupérer vos données.
+initialize.label.doNotForget=S'il vous plaît entrer un nouveau mot de passe pour votre coffre-fort.\n\nIMPORTANT\: Si vous oubliez votre mot de passe, seul compte propriétaire ou le gardien avec clé de récupération maître peut récupérer.
 main.directoryList.remove.confirmation.title = Supprimer le coffre-fort
 main.directoryList.remove.confirmation.header = Voulez-vous vraiment supprimer ce coffre-fort ?
 main.directoryList.remove.confirmation.content = Le coffre-fort sera seulement retiré de la liste. Pour le supprimer complètement, supprimez les fichiers depuis votre système de fichiers.
@@ -105,15 +143,15 @@ settings.volume.webdav = WebDAV
 settings.volume.fuse = limite
 unlock.successLabel.vaultCreated = Le coffre-fort a été créé avec succès
 unlock.successLabel.passwordChanged = Le mot de passe a été changé avec succès
-unlock.successLabel.upgraded = Cryptomator a été mise à jour avec succès
+unlock.successLabel.upgraded = VirtualSAFE a été mise à jour avec succès
 unlock.label.useOwnMountPath = Utiliser son propre point de montage
 welcome.askForUpdateCheck.dialog.title = vérification de la mise à jour
 welcome.askForUpdateCheck.dialog.header = Activer le contrôle de mise à jour intégré ?
-welcome.askForUpdateCheck.dialog.content = Pour vérifier les mises à jour, Cryptomator récupère la version actuelle sur les serveurs Cryptomator et vous donne un aperçu si une nouvelle version est disponible.\n\nNous vous recommandons d'activer la vérification de mise à jour pour vous assurer que vous avez toujours la dernière version de Cryptomator, avec tous les correctifs de sécurité, installés. Si vous n'activez pas le contrôle de mise à jour, vous pouvez vérifier et télécharger la version actuelle à partir de https\://cryptomator.org/downloads/.\n\nVous pouvez le modifier à tout moment à partir des paramètres.
+welcome.askForUpdateCheck.dialog.content = Pour vérifier les mises à jour, VirtualSAFE récupère la version actuelle sur les serveurs VirtualSAFE et vous donne un aperçu si une nouvelle version est disponible.\n\nNous vous recommandons d'activer la vérification de mise à jour pour vous assurer que vous avez toujours la dernière version de VirtualSAFE, avec tous les correctifs de sécurité, installés. Si vous n'activez pas le contrôle de mise à jour, vous pouvez vérifier et télécharger la version actuelle à partir de https\://VirtualSAFE.org/downloads/.\n\nVous pouvez le modifier à tout moment à partir des paramètres.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Échec en fermant le coffre-fort.
 main.gracefulShutdown.dialog.header = Coffre-fort est en cours d'utilisation.
-main.gracefulShutdown.dialog.content = Un ou plusieurs coffre-forts sont en cours d'utilisation par d'autres logiciels. S'il vous plait, fermer-les pour permettre à Cryptomator de finir proprement.\n\nSi ça ne marche pas, Cryptomator peut fermer par force, mais cela peut résulter d'une perte de vos fichiers (non recommandé).
+main.gracefulShutdown.dialog.content = Un ou plusieurs coffre-forts sont en cours d'utilisation par d'autres logiciels. S'il vous plait, fermer-les pour permettre à VirtualSAFE de finir proprement.\n\nSi ça ne marche pas, VirtualSAFE peut fermer par force, mais cela peut résulter d'une perte de vos fichiers (non recommandé).
 main.gracefulShutdown.button.tryAgain = Réessayez
 main.gracefulShutdown.button.forceShutdown = Arrêt forcé
 unlock.pendingMessage.unlocking = Unlocking vault...

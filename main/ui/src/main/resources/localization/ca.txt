@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/fCotRs7U6fIRgW8GBpw00HryJcVfoyo7HZsmODnsmyGHTS7e2xEAr
+vr6xvYGc2g8N7W1HQ3DTxfGiJT3kY+fm4CNlRQh4GHrUdqyI55cIx3enHsNlcNfN
+TsJ/P5y/L4XNnEITftoaLBrH9h4F8KYv/q63UA0Xo2BP7lgxnDEZFzgtOkQJumbv
+8AmHJYmLf4GLG2dhyJjPz196BEkKfB13j3aRvuAht8g4iO7vl50zEBY3HuX2Cjwz
+jdg7ZudtQL/Qt7DgKoNUNLv1FWyDRlhyUg6WnWlGFvzkoVVVlYDtmL+GjhRHCgQ4
+6sNqfv6ysf5Jk3HunsFAzCS2X3pbpVj7YA/I7IuXI26TjkPcYGZ/GLrss5DbJXhu
+SMdq5i/p58HvueSJV1+L/vdHOcJkneQHmmUJm2Lfa4ySz5XiGnMymimB76ZO2afz
+q8DY2nl1J/MDThi++o3zyYvMBepKnoHHpIgufe1rabTGZtI+yXAgqnEWKdIhwlcP
+tELDnw9MaqA+mdB+m1/v+IRgfndMOPutM7fA92vGxUQoksVrtwipBbvg7YL9iZT7
+eHYgUw74lvD0dALmu0KaZifSy+ivVkL2v8G9Kz9C3Ey8F8NL074NI5bYT7/q9qjJ
+gfSVd5SgLuuXVvKD4yKafCCKVO4aRu54o20lqzSd6DMcL6g5Y37vEPotQqVuny0o
+AvOBtF+stCcyyTrDon41hQ==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=No es pot accedir al clauer del sistema.
+additional.errorMessage.cannotChangeVaultPassword=No es pot canviar la contrasenya de volta.
+additional.errorMessage.cannotFetchDataFromKeychain=No es poden recuperar dades del clauer del sistema.
+additional.vaultPasswordChanged=La contrasenya del magatzem ha canviat.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=No es pot desbloquejar la volta. No s’ha pogut accedir al secret del magatzem del clauer del sistema per inicialitzar un magatzem nou.
+additional.errorMessage.RANDOMPASSnotPresent=No es va trobar el secret de la volta al clauer del sistema. Intentar restaurar:
+additional.message.requestToken=Si us plau, introdueixi el codi de Restauració:
+additional.errorMessage.invalidToken=Codi de restauració no és vàlid.
+additional.errorMessage.cannotDecryptToken=No s'ha pogut desxifrar utilitzant codi de Restauració.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=No és possible desbloquejar la volta. No es pot recuperar o restaurar la volta secreta utilitzant codi de Restauració.
+additional.message.restorationToken=Codi de Restauració:
+additional.message.checkingVaultState=Comprovació de l'estat de la volta.
+additional.message.initNewVault=Inicialització de la caixa forta.
+additional.message.existingVault=Presenti el voltant existent.
+additional.message.stateFileMissing=A l'espera de VSYNC per descarregar l'arxiu d'inicialització volta ...
+additional.message.pubkeyChanged=Mestre de modificació clau de recuperació detectada. Si us plau, avisi propietari del compte si això no s'espera.
+additional.message.tokenCopiedClipboard=codi de restauració copiar al porta-retalls.
+additional.errorMessage.errCheckingStateFile=S'ha produït un error en comprovar el fitxer d’estat. Apagant.
+additional.errorMessage.vaultStateCorrupt=Estat de la volta corrupte. Apagant.
+additional.errorMessage.cannotDetermineVaultState=No es pot determinar l’estat de la volta. Apagant.
+additional.tooltip.restorationToken=Aquest Codi de Restauració és necessari quan el desbloqueig o la restauració de la seva volta en un equip nou. Si us plau, gravar cap avall per la seva custòdia. Feu clic per copiar al porta-retalls.
+
 # main.fxml
 main.emptyListInstructions = Feu click ací per afegir una caixa forta
 main.directoryList.contextMenu.remove = Elimina de la llista
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Error en la migració au
 unlock.label.password = Contrasenya
 unlock.label.mountName = Nom de la unitat
 unlock.label.winDriveLetter = Lletra de la unitat
-unlock.label.downloadsPageLink = Totes les versions de Cryptomator
+unlock.label.downloadsPageLink = Totes les versions de VirtualSAFE
 unlock.label.advancedHeading = Opcions avançades
 unlock.button.unlock = Debloqueja la caixa forta
 unlock.button.advancedOptions.show = Més opcions
 unlock.button.advancedOptions.hide = Menys opcions
 unlock.choicebox.winDriveLetter.auto = Assigna automàticament
 unlock.errorMessage.wrongPassword = Contrasenya incorrecta
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = La caixa forta no és compatible. Aquesta caixa forta s'ha creat amb una versió anterior de Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = La caixa forta no és compatible. Aquesta caixa forta s'ha creat amb una versió més nova de Cryptomator.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = La caixa forta no és compatible. Aquesta caixa forta s'ha creat amb una versió anterior de VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = La caixa forta no és compatible. Aquesta caixa forta s'ha creat amb una versió més nova de VirtualSAFE.
 # change_password.fxml
 changePassword.label.oldPassword = Contrasenya antiga
 changePassword.label.newPassword = Contrasenya nova
 changePassword.label.retypePassword = Torneu a escriure la contrasenya
-changePassword.label.downloadsPageLink = Totes les versions de Cryptomator
+changePassword.label.downloadsPageLink = Totes les versions de VirtualSAFE
 changePassword.button.change = Canvia la contrasenya
 changePassword.errorMessage.wrongPassword = Contrasenya incorrecta
 changePassword.errorMessage.decryptionFailed = Ha fallat el desencriptatge
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = Comprova si hi ha actualitzacions
 tray.menu.open = Obri
 tray.menu.quit = Surt
 tray.infoMsg.title = Encara s'està executant
-tray.infoMsg.msg = Cryptomator encara està executant-se. Sortiu des de la icona de la safata.
-tray.infoMsg.msg.osx = Cryptomator encara està executant-se. Sortiu des de la icona de la barra de menú
+tray.infoMsg.msg = VirtualSAFE encara està executant-se. Sortiu des de la icona de la safata.
+tray.infoMsg.msg.osx = VirtualSAFE encara està executant-se. Sortiu des de la icona de la barra de menú
 initialize.messageLabel.passwordStrength.0 = Molt dèbil
 initialize.messageLabel.passwordStrength.1 = Dèbil
 initialize.messageLabel.passwordStrength.2 = Acceptable
 initialize.messageLabel.passwordStrength.3 = Forta
 initialize.messageLabel.passwordStrength.4 = Molt forta
-initialize.label.doNotForget = IMPORTANT\: No hi ha manera de recuperar les dades si oblideu la contrasenya.
+initialize.label.doNotForget=Si us plau, introdueixi una nova contrasenya per a la seva volta.\n\nIMPORTANT\: Si oblideu la contrasenya, només es compta amb l'amo o el guardià principal clau de recuperació pot recuperar.
 main.directoryList.remove.confirmation.title = Suprimeix la caixa forta
 main.directoryList.remove.confirmation.header = ¿Esteu segur que voleu suprimir aquesta caixa forta?
 main.directoryList.remove.confirmation.content = La caixa forta només es suprimeix de la llista. Per tal de eliminar-la permanentment esborreu la caixa forta del vostre sistema de fitxers.
@@ -102,15 +140,15 @@ settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = La caixa forta s'ha creat correctament.
 unlock.successLabel.passwordChanged = La contrasenya s'ha canviat correctament.
-unlock.successLabel.upgraded = Cryptomator s'ha actualitzat correctament.
+unlock.successLabel.upgraded = VirtualSAFE s'ha actualitzat correctament.
 unlock.label.useOwnMountPath = Utilitza un punt de muntatge personalitzat
 welcome.askForUpdateCheck.dialog.title = Comprovació d'actualizacions
 welcome.askForUpdateCheck.dialog.header = Activo la comprovació automàtica d'actualitzacions?
-welcome.askForUpdateCheck.dialog.content = Recomanat\: Activa la comprovació d'actualitzacions per assegurar-vos que sempre teniu la darrera versió de Cryptomator instal·lada amb totes les actualitzacions de seguretat.\n\nPodeu canviar aquesta opció des de la configuració en qualsevol moment.
+welcome.askForUpdateCheck.dialog.content = Recomanat\: Activa la comprovació d'actualitzacions per assegurar-vos que sempre teniu la darrera versió de VirtualSAFE instal·lada amb totes les actualitzacions de seguretat.\n\nPodeu canviar aquesta opció des de la configuració en qualsevol moment.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Ha fallat el bloqueig de la caixa(es) forta(es)
 main.gracefulShutdown.dialog.header = La caixa(es) forta(es) és(són) en ús
-main.gracefulShutdown.dialog.content = Hi ha programes encara estan utilitzant una caixa forta o més d'una. Tanqueu-los per permetre que Cryptomator es tanqui correctament i, a continuació, torneu-ho a intentar.\n\nSi això no funciona, es pot forçar l'aturada de Cryptomator tot i que no es recomana, donç pot comportar pèrdua de dades.
+main.gracefulShutdown.dialog.content = Hi ha programes encara estan utilitzant una caixa forta o més d'una. Tanqueu-los per permetre que VirtualSAFE es tanqui correctament i, a continuació, torneu-ho a intentar.\n\nSi això no funciona, es pot forçar l'aturada de VirtualSAFE tot i que no es recomana, donç pot comportar pèrdua de dades.
 main.gracefulShutdown.button.tryAgain = Torna-ho a intentar
 main.gracefulShutdown.button.forceShutdown = Força l'aturada
 unlock.pendingMessage.unlocking = La caixa forta s'està desbloquejant...

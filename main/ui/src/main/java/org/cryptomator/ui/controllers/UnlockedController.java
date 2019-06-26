@@ -42,6 +42,19 @@ import javax.inject.Inject;
 import java.util.Optional;
 import java.util.concurrent.ExecutorService;
 
+/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1++EKzuZmYXJNvX2I1Mf7M3PUgIXggCAQLNiIlMGDTo+nxL1M6JYQ8M
+###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+import org.cryptomator.ui.util.SecureCharSequence;
+import org.cryptomator.keychain.KeychainAccess;
+import javafx.application.Platform;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
+import javafx.scene.control.Tooltip;
+import javafx.util.Duration;
+import javafx.scene.text.Font;
+
 import static java.lang.String.format;
 
 public class UnlockedController implements ViewController {
@@ -56,6 +69,16 @@ public class UnlockedController implements ViewController {
 	private final ObjectProperty<Vault> vault = new SimpleObjectProperty<>();
 	private Optional<LockListener> listener = Optional.empty();
 	private Timeline ioAnimation;
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18NpzhhNlx+zk6042kAMGiHo9bRP+QbawPVE2VZoCooOdBiCfItiqBM
+F1yA5hjmOeo4UytdQyYeJQ==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	private final Optional<KeychainAccess> keychainAccess;
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+oxf82SDz01oulTJmTsMX/tTdtwWUNZ7bdNYzzOG5yyl/kcnDW3r8e
+TDyxjLJiO+gCLe6MUwnX5Q==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	private final Tooltip rcTooltip = new Tooltip();
 
 	@FXML
 	private Label messageLabel;
@@ -76,15 +99,37 @@ public class UnlockedController implements ViewController {
 	private VBox root;
 
 	@Inject
-	public UnlockedController(Localization localization, ExecutorService executor) {
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19Y/Efqltcl5hdY755vG/ZAbLj3xWRHCbIedBGIH0BbFsITDWkcvZa8
+SRcqBOkmlVX0owDB3KkyO5bbzsVS36HHEsoow1pdkXGOCzPrfcGZ7Y/+HPoMqiwV
+Cq/qz/CwK9Y3M/a2tMmlJqNcoPNyYYTGAp5RpR9/qkhtkjKMj+AKWVPMQLUUEf8u
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	public UnlockedController(Localization localization, ExecutorService executor, Optional<KeychainAccess> keychainAccess) {
 		this.localization = localization;
 		this.executor = executor;
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+cxvrtVWt2nXy1U1YYHK6CtFC3JZuSTX1GaGE7CfVBsYkNHiRVJyI9
+HN2SoG5P9UWAq0P0ailVmA==
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		this.keychainAccess = keychainAccess;
 	}
 
 	@Override
 	public void initialize() {
 		EasyBind.subscribe(vault, this::vaultChanged);
 		EasyBind.subscribe(moreOptionsMenu.showingProperty(), moreOptionsButton::setSelected);
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/K9tJ0Z/oWyt8bdjyJi4CRt2vmSJvbW93HdiDwfclPpJT7NCGySdwX
+IhwzU37vEWird2dUeWPwDhQLL73V2ZpF+WP1rNf27VY=
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		rcTooltip.setWrapText(true);
+		rcTooltip.setPrefWidth(250);
+		rcTooltip.setShowDelay(Duration.millis(10));
+		rcTooltip.setHideDelay(Duration.millis(2000));
+		rcTooltip.setShowDuration(Duration.millis(10000));
+		rcTooltip.setFont(Font.font("", 12));
+		rcTooltip.setStyle("-fx-background-color: cornsilk; -fx-padding: 10;");
+		rcTooltip.setText(localization.getString("additional.tooltip.restorationToken"));
 	}
 
 	@Override
@@ -174,14 +219,65 @@ public class UnlockedController implements ViewController {
 		Tasks.create(() -> {
 			vault.reveal();
 		}).onSuccess(() -> {
+			/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18838CjeJuRoFwo7oUC+yQGj1UwRrv29LRvO9Y3aOjGonA1CKH2wrrQ
+qSFCH511y+VeicNScXPPqtTXX8kRvpjrhSgGzjFL4Kt5QvKWMN3Ji+iSTzqAQdKy
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+			if (keychainAccess.isPresent()) {
+				final SecureCharSequence storedToken = new SecureCharSequence(keychainAccess.get().loadPassphrase(vault.getId()+"_TOKEN"));
+				messageLabel.setText(localization.getString("additional.message.restorationToken") + " " + storedToken);
+			}
 			LOG.trace("Reveal succeeded.");
-			messageLabel.setText(null);
+			//messageLabel.setText(null);
 		}).onError(Exception.class, e -> {
 			LOG.error("Reveal failed.", e);
 			messageLabel.setText(localization.getString("unlocked.label.revealFailed"));
 		}).runOnce(executor);
 	}
 
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18ZHX8Iz985yzauOj4oJXrpDSo+Px05WJMk18acP7Ae+uVROsMzAJFs
+0B0/9C519/SlmWsAg0yEukbQ7eHMUkvc5iEd8oZD9aXsKwpEwoIUJMvkvr+B1pmA
+ZPfnkA27NjEhUE69uGrNYrhC/BDBH2BXgoVqg3ngm1DKMgVHn0hAfYRk96R+JZWp
+UTp7cSQjen9enjIwAgSgyz4RrmRNxwaEBPg7zFNkVmUC6cY7rxH8Zxad6RljuHde
+edl85cxF36pJhnGu0KM+0kpGEO0iAuE654Osm8U9bgKomMBVz4mvxPhoJ0orbbHy
+1zRJZDm6/629tiKz1a81FrHnWZjFmdnt2rt3SZYbrzI=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	@FXML
+	private void didClickCopyToken(MouseEvent event) {
+		if (messageLabel.getText().toLowerCase().contains("restoration code")) {
+			ClipboardContent clipboardContent = new ClipboardContent();
+			clipboardContent.putString(messageLabel.getText().substring(messageLabel.getText().lastIndexOf(":") + 2));
+			Clipboard.getSystemClipboard().setContent(clipboardContent);
+
+			Platform.runLater(() -> {
+				Alert debugInfoDialog = DialogBuilderUtil.buildInformationDialog("Info", null, localization.getString("additional.message.tokenCopiedClipboard"), ButtonType.OK);
+				debugInfoDialog.showAndWait();
+			});
+		}
+	}
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX181k1WJBi6/EIVFT3J4RIg9hLsF1NDti1+H03CMHFca2NLhKDfk7K3l
+3XESClCaKFTzAe1zVDnZSNwJ26WEYEFAlHwXdtb3n3zf1StOMiYSYxbpXVsbPi1O
+5SFsSesOtSWDYzHcyccW7w==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	@FXML
+	private void showRCtooltip(MouseEvent event) {
+		if (messageLabel.getText().toLowerCase().contains("restoration code")) {
+			messageLabel.setTooltip(rcTooltip);
+		}
+	}
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18R8GbpQCL/zgLW9efaBx+xeZerLHNVl0lEDKI406fszVht7LKuTfPH
+PTnTzsmezVvMlkrIL9CgOW53jvBNEP+Ia0UxfpPrz7E=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	@FXML
+	private void hideRCtooltip(MouseEvent event) {
+		messageLabel.setTooltip(null);
+	}
+	
 	// ****************************************
 	// IO Graph
 	// ****************************************

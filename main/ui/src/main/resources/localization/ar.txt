@@ -1,4 +1,42 @@
-app.name = كريبتوماتور
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19ntSmcfwrLnJGlEm8yWVQVEtF+IdiBRLPwcZY64jL+1nnBlOqrg/Ap
+QCHsTgoRkZkIqyPyX7wtEeNGaoGOX2q33mhpas2oa6ml7xh1j20OAcQY+JxJhOQt
+sChFBLC3JmX7A43loCs12ZthYRIiQ2xu1s4FLQJnZVKMrFMS7tNUlerpZRo7Vdah
+kxx6rLePb3z6ktbsf+nAwz1ZDMI0A/pzgNuqsiM9zKw9ZIpqNLoIhVhNbk2RZaks
+r+CWt/HLuXdrmII621O4BFNmaBOpOHHV3QvaW99R+WKHGYZ+i0nNb5ggvHICpSAM
+uljP519bBUhSXsuDRrREkZrjvtu6wokA+ytWmEdQ37r7lD3qUMvnkK5lxFGP0c7k
+d7FUBdYGcjq9F3fOcIy4Z87kNTmoo+uk8vTv6GIAp9PkWkSSOxRp3qQxiTjYEIZx
+LNeUjQNw//4iSTueRtCyUbrGwvqeSA49vH4xvM8TXFMVzpz4FoNK/ZOuzv0ykGSd
+u0lRdhV2TGJKAnRifSbGdp68k+a3zI7jQqQuo9+UZfaKIRgFseUsZNbTVETJrW9G
+/EwDg4Ah+QfKd/1DcS8u1rTVDnE7fcZbyuEpBpc1JO0/+8wC247W6qKtwnUyYsOs
+TWdNZjzW8DbYxU+8+tZ59yoRGyCxJcgxIlSok2aX1a7gwNWzKhMD5MBsoS++5HF9
+J3xjHn5B4utPItZZaAE3fQ==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=غير قادر على الوصول إلى نظام المفاتيح.
+additional.errorMessage.cannotChangeVaultPassword=غير قادر على تغيير كلمة سر قبو.
+additional.errorMessage.cannotFetchDataFromKeychain=لا يمكن استرداد البيانات من المفاتيح النظام.
+additional.vaultPasswordChanged=تم تغيير كلمة مرور المدفن.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=غير قادر على فتح القبو. غير قادر على الوصول إلى سر قبو من سلسلة مفاتيح النظام لتهيئة قبو جديد.
+additional.errorMessage.RANDOMPASSnotPresent=سر المدفن غير موجود في سلسلة المفاتيح النظام. محاولة لاستعادة:
+additional.message.requestToken=الرجاء إدخال الرمز استعادة:
+additional.errorMessage.invalidToken=كود استعادة غير صالح.
+additional.errorMessage.cannotDecryptToken=فشل في فك تشفير باستخدام كود ترميم.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=غير قادر على فتح قبو. غير قادر على استرداد أو استعادة قبو سري باستخدام كود ترميم.
+additional.message.restorationToken=كود استعادة:
+additional.message.checkingVaultState=التحقق من حالة قبو.
+additional.message.initNewVault=تهيئة قبو جديد.
+additional.message.existingVault=قبو موجود حاليًا.
+additional.message.stateFileMissing=انتظار VSYNC لتحميل ملف التهيئة قبو ...
+additional.message.pubkeyChanged=سيد تغيير مفتاح الاسترداد الكشف. يرجى تنبيه صاحب الحساب إن لم يكن يتوقع هذا.
+additional.message.tokenCopiedClipboard=كود استعادة نسخها إلى الحافظة.
+additional.errorMessage.errCheckingStateFile=خطأ في التحقق من ملف الحالة. اغلاق.
+additional.errorMessage.vaultStateCorrupt=حالة قبو تالفة. اغلاق.
+additional.errorMessage.cannotDetermineVaultState=لا يمكن تحديد حالة المدفن. اغلاق.
+additional.tooltip.restorationToken=هناك حاجة إلى هذا القانون لاستعادة عندما فتح أو إعادة قبو الخاصة بك على جهاز كمبيوتر جديد. يرجى تسجيل عليه لحفظها. انقر لنسخ إلى الحافظة.
+
 # main.fxml
 main.emptyListInstructions = اضغط هنا لاضافة محفظة
 main.directoryList.contextMenu.remove = ازل من القائمة
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = افحص التحديثات
 tray.menu.open = فتح
 tray.menu.quit = اغلاق
 tray.infoMsg.title = لا يزال مستخدم
-tray.infoMsg.msg = Cryptomator is still alive. Quit it from the tray icon.
-tray.infoMsg.msg.osx = Cryptomator is still alive. Quit it from the menu bar icon.
+tray.infoMsg.msg = VirtualSAFE is still alive. Quit it from the tray icon.
+tray.infoMsg.msg.osx = VirtualSAFE is still alive. Quit it from the menu bar icon.
 initialize.messageLabel.passwordStrength.0 = ضعيف جدا
 initialize.messageLabel.passwordStrength.1 = ضعيف
 initialize.messageLabel.passwordStrength.2 = عادي
 initialize.messageLabel.passwordStrength.3 = قوي
 initialize.messageLabel.passwordStrength.4 = قوي جدا
-initialize.label.doNotForget = هام \: في حالة نسيانك لكلمة المرور , لا يوجد طريقة لاستعادتها مره اخري
+initialize.label.doNotForget=الرجاء إدخال كلمة مرور جديدة لقبو الخاص بك.\n\nمهم\: إذا كنت قد نسيت كلمة المرور، حساب فقط المالك أو الوصي مع مفتاح الانتعاش رئيسية يمكن استرداد.
 main.directoryList.remove.confirmation.title = ازالة المحفظة
 main.directoryList.remove.confirmation.header = هل تريد فعلا ازالة المحفظة ؟
 main.directoryList.remove.confirmation.content = The vault will only be removed from the list. To permanently delete it, please delete the vault from your filesystem.
@@ -106,11 +144,11 @@ unlock.successLabel.upgraded = Vault was successfully upgraded.
 unlock.label.useOwnMountPath = Use Custom Mount Point
 welcome.askForUpdateCheck.dialog.title = Update check
 welcome.askForUpdateCheck.dialog.header = Enable the integrated update check?
-welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of Cryptomator, with all security patches, installed.\n\nYou can change this from within the settings at any time.
+welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of VirtualSAFE, with all security patches, installed.\n\nYou can change this from within the settings at any time.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Locking vault(s) failed
 main.gracefulShutdown.dialog.header = Vault(s) in use
-main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow Cryptomator to shut down properly, then try again.\n\nIf this doesn't work, Cryptomator can shut down forcefully, but this can incur data loss and is not recommended.
+main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow VirtualSAFE to shut down properly, then try again.\n\nIf this doesn't work, VirtualSAFE can shut down forcefully, but this can incur data loss and is not recommended.
 main.gracefulShutdown.button.tryAgain = Try Again
 main.gracefulShutdown.button.forceShutdown = Force Shutdown
 unlock.pendingMessage.unlocking = Unlocking vault...

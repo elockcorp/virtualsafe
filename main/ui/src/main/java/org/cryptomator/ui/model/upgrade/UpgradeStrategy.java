@@ -23,11 +23,23 @@ import org.cryptomator.ui.model.Vault;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19OhDxhyGmuO0CnnRYpoem5BoJgqiILOS9NNnRiQYnoMCS9d+zvSNlA
+BNksJKzNMeK+PWFd2pQAEQ==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+import static org.cryptomator.ui.util.Constants.MASTERKEY_FILENAME;
+import static org.cryptomator.ui.util.Constants.MASTERKEY_BACKUP_FILENAME;
+
 public abstract class UpgradeStrategy {
 
 	private static final Logger LOG = LoggerFactory.getLogger(UpgradeStrategy.class);
-	private static final String MASTERKEY_FILENAME = "masterkey.cryptomator";
-	private static final String MASTERKEY_BACKUP_FILENAME = "masterkey.cryptomator.bkup";
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19ivIB+lfGTSpXW05HDAAQ2O1hSZ9geWgqtISLLrXsWBhnBuNfNWben
+oM7/j31mSt6knXbWTsSPvfnYxZdnZ3sZbVPLkRVa6hE=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	//private static final String MASTERKEY_FILENAME = "masterkey.cryptomator";
+	//private static final String MASTERKEY_BACKUP_FILENAME = "masterkey.cryptomator.bkup";
 
 	protected final CryptorProvider cryptorProvider;
 	protected final Localization localization;

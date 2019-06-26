@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX182okd0SC5F+/BpTF+604Sy6SMBrptor9rxdxp33sl/dnuRqVnGMoje
+PfuUm/SU5CODadtOj7ElP2VnQboRN4Gh7PXv/6xifq3HkOSIgwidvEgWYYaO0yd+
+KdCCfPU8J1+4b1g+LTFSycKJ0kgx36x/Yrz5NVQADGLhB4sNmFxtFgVm0DuKeymV
+90htTb4ZS6y3PdKP4RcuiLcfcXqD6RTZKGI7c1O9JqAvmPzGD1NAnyR8IdeUDl37
+zRBUiRY5ZbJCgxJCedIX+ByMsNyjL5eg9J8P4YAlCnMDSVBqELrGE6Wa9lAL06QH
+z8Z+jWOb7J0CjQs+77ocrN9xsOxO2mBlvmvin6zyF/O1+979DBpr/O3BnGECcf9o
+vc9KFNTmvJ2j5i4QDvtuijuteGObrmey1ni75Ho4yUBuDnqiaZGi8EiQmClmryke
+uaU4BOLxbrfTQSJecwupgl+fh92FuaCJi1OEBhDI/9GxWr1RRVkHW7QLEq4UC1nl
+XwMZrWDfCPn6zs9ASz/2dmZ0Sw6qlma0hpWJ8Pppg9e55knsE4IzY1mACFSiTEIq
+NeFJF+vj3nnba8MuLbhXdfm/uPCOI7LR2UN/O4yGEjqPnnkIdYHhvs3N3APuJBWg
+QNmeEZq1i5ZviylS2UrfK80OWBAa9CpE3xx5qfH6XYDXNDfUkAGWtS4Lj2b+q5wc
+g0u6CU8mJ2fHKy/TjAxA4A==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=無法訪問系統密鑰鏈。
+additional.errorMessage.cannotChangeVaultPassword=無法更改保管庫密碼。
+additional.errorMessage.cannotFetchDataFromKeychain=無法從系統鑰匙串中檢索數據。
+additional.vaultPasswordChanged=保險櫃密碼已更改
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=無法解鎖保險庫。 無法從系統鑰匙串中獲取保險庫密鑰以初始化新保險庫。
+additional.errorMessage.RANDOMPASSnotPresent=系統密鑰鏈中找不到保管庫密碼。 試圖恢復：
+additional.message.requestToken=請輸入修復代碼：
+additional.errorMessage.invalidToken=恢復密碼無效。
+additional.errorMessage.cannotDecryptToken=使用失敗恢復代碼解密。
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=無法解鎖庫。無法檢索或使用恢復代碼恢復金庫的秘密。
+additional.message.restorationToken=恢復代碼：
+additional.message.checkingVaultState=檢查保險庫狀態。
+additional.message.initNewVault=初始化新的保險庫。
+additional.message.existingVault=現有的保險庫存在。
+additional.message.stateFileMissing=等待VSYNC下載庫初始化文件...
+additional.message.pubkeyChanged=主恢復密鑰變化來檢測。請提醒帳戶擁有者，如果這不是預期。
+additional.message.tokenCopiedClipboard=恢復代碼複製到剪貼板。
+additional.errorMessage.errCheckingStateFile=檢查狀態文件時出錯。 關機
+additional.errorMessage.vaultStateCorrupt=保險櫃狀態已損壞。 關機
+additional.errorMessage.cannotDetermineVaultState=無法確定保險庫狀態。 關機
+additional.tooltip.restorationToken=解鎖或在新計算機上恢復您的保管庫時需要該修復代碼。請記錄下來妥善保管。點擊複製到剪貼板。
+
 # main.fxml
 main.emptyListInstructions = 按這裡新增檔案庫
 main.directoryList.contextMenu.remove = 從清單移除
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = 自動轉移失敗。\n"
 unlock.label.password = 密碼
 unlock.label.mountName = 磁碟名稱
 unlock.label.winDriveLetter = 磁碟代號
-unlock.label.downloadsPageLink = 所有的 Cryptomator 版本
+unlock.label.downloadsPageLink = 所有的 VirtualSAFE 版本
 unlock.label.advancedHeading = 進階選項
 unlock.button.unlock = 解鎖檔案庫
 unlock.button.advancedOptions.show = 更多選項
 unlock.button.advancedOptions.hide = 更少選項
 unlock.choicebox.winDriveLetter.auto = 自動指定
 unlock.errorMessage.wrongPassword = 錯誤的密碼
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = 不支援的檔案庫。這個檔案庫是由舊版本的 Cryptomator 所建立的。
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = 不支援的檔案庫。這個檔案庫是由新版本的 Cryptomator 所建立的。
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = 不支援的檔案庫。這個檔案庫是由舊版本的 VirtualSAFE 所建立的。
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = 不支援的檔案庫。這個檔案庫是由新版本的 VirtualSAFE 所建立的。
 # change_password.fxml
 changePassword.label.oldPassword = 舊密碼
 changePassword.label.newPassword = 新密碼
 changePassword.label.retypePassword = 重新輸入密碼
-changePassword.label.downloadsPageLink = 所有的 Cryptomator 版本
+changePassword.label.downloadsPageLink = 所有的 VirtualSAFE 版本
 changePassword.button.change = 變更密碼
 changePassword.errorMessage.wrongPassword = 錯誤的密碼
 changePassword.errorMessage.decryptionFailed = 解密失敗
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = 檢查更新
 tray.menu.open = 打開
 tray.menu.quit = 離開
 tray.infoMsg.title = 仍然在執行
-tray.infoMsg.msg = Cryptomator 仍然在運作。從工具列的圖示點選離開。
-tray.infoMsg.msg.osx = Cryptomator 仍然在運作。從選單列上點選離開。
+tray.infoMsg.msg = VirtualSAFE 仍然在運作。從工具列的圖示點選離開。
+tray.infoMsg.msg.osx = VirtualSAFE 仍然在運作。從選單列上點選離開。
 initialize.messageLabel.passwordStrength.0 = 非常弱的
 initialize.messageLabel.passwordStrength.1 = 弱的
 initialize.messageLabel.passwordStrength.2 = 正常的
 initialize.messageLabel.passwordStrength.3 = 強的
 initialize.messageLabel.passwordStrength.4 = 非常強的
-initialize.label.doNotForget = 重要：如果你忘記的密碼，就無法還原你的資料。
+initialize.label.doNotForget=為保管庫，請輸入新密碼。\n\n重要\: 如果您忘記了密碼，只有帳戶擁有者或管理者與主恢復密鑰可以恢復。
 main.directoryList.remove.confirmation.title = 移除檔案庫
 main.directoryList.remove.confirmation.header = 你真的想要移除這個檔案庫？
 main.directoryList.remove.confirmation.content = 這個檔案庫只會從清單中移除。如果要永久刪除，請從檔案系統中刪除。
@@ -102,15 +140,15 @@ settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = 成功建立vault
 unlock.successLabel.passwordChanged = 密碼變更成功
-unlock.successLabel.upgraded = Cryptomator成功的更新了
+unlock.successLabel.upgraded = VirtualSAFE成功的更新了
 unlock.label.useOwnMountPath = 自訂掛載點
 welcome.askForUpdateCheck.dialog.title = Update check
 welcome.askForUpdateCheck.dialog.header = Enable the integrated update check?
-welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of Cryptomator, with all security patches, installed.\n\nYou can change this from within the settings at any time.
+welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of VirtualSAFE, with all security patches, installed.\n\nYou can change this from within the settings at any time.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Locking vault(s) failed
 main.gracefulShutdown.dialog.header = Vault(s) in use
-main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow Cryptomator to shut down properly, then try again.\n\nIf this doesn't work, Cryptomator can shut down forcefully, but this can incur data loss and is not recommended.
+main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow VirtualSAFE to shut down properly, then try again.\n\nIf this doesn't work, VirtualSAFE can shut down forcefully, but this can incur data loss and is not recommended.
 main.gracefulShutdown.button.tryAgain = Try Again
 main.gracefulShutdown.button.forceShutdown = Force Shutdown
 unlock.pendingMessage.unlocking = Unlocking vault...

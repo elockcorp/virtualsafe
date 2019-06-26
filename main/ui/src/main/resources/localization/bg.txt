@@ -1,4 +1,42 @@
-app.name = Криптоматор
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+0LueP7FQpMYD3eiSHvDa/+NTrAvc7zs+fg1X+svH1nHTlav10JrjT
+RHu5AUUJ/jqc66XbtPwhF8q9BWTAcaMESFKvrI3aWmdr9v5qaN4Egr62S0zWnVLx
+pyVYHAWz1qUYa67vwlcfz+MX9nmeLfXJIXn0EvkmDHaofIqxu4bsDrwneb2V3xts
+F/nk2Mf2A7lOMInOhslCyN715e9+6JWPzQhTHUH9aeclGth6YN0jZ4Xm5PUKsjGp
+pCCOPmqysPwhX8zAsIZTP/jtzBB4Ab03jJhFeGMkNGETfATgRK2EMWkfFLMxxlZu
+ObKhWGGwUg4oo/XvXqYS4WgprMFC+pQtl95k0khjqdK02LOROROq0yky0kq//Q9P
+3kW2ct/GGwbpXc9BOfL4U3F38aRo6/b/wsFsgpmHXRmuKoPucifZjgqOR/xExIYH
+eGRGJTuC9m67f9XfCrtOPCZX2tfzdZLaYRQf20i5jPnKJfl/5xdenST0YzrhNpMl
+6rrZw7Oza6o1glF+ipqDNbyuMi0lOIktphesw8bpxwDnctyByJ5reQkCaWDwktxR
+NHNemsCgOmZDyOe+Y36Qvfvkl7vkYjl9UjRTUKVDLGAXTjyRzbsU42f18iUjt4Ty
+wTHTGs8Ov9NW92AR9IVPnkrX8n0K6Jhpf/XvwEHVkRj+2rDIhuQ5NeWdQTYpfUPQ
+NLnj9/LilxbvMczGF5xkkQ==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Не може да се осъществи достъп до системния ключодържател.
+additional.errorMessage.cannotChangeVaultPassword=Паролата на хранилището не може да се промени.
+additional.errorMessage.cannotFetchDataFromKeychain=Данните от системния ключодържател не могат да бъдат извлечени.
+additional.vaultPasswordChanged=Парола на хранилището се промени.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Не може да се отключи хранилището. Не може да се присвои тайната на хранилището от системния ключодържател, за да се инициализира новото хранилище.
+additional.errorMessage.RANDOMPASSnotPresent=Тайната на хранилището не е намерена в системния ключодържател. Опит за възстановяване:
+additional.message.requestToken=Моля, въведете Реставрация код:
+additional.errorMessage.invalidToken=Реставрация код е невалиден.
+additional.errorMessage.cannotDecryptToken=Не може да се декриптира с помощта Реставрация кодекс.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Не може да се отключи свод. Не мога да получа или възстановяване на трезора тайна използване Реставрация кодекс.
+additional.message.restorationToken=Реставрация код:
+additional.message.checkingVaultState=Проверка на състоянието на хранилището.
+additional.message.initNewVault=Инициализиране на нов хранилище.
+additional.message.existingVault=Налице е съществуващ трезор.
+additional.message.stateFileMissing=В очакване на VSYNC да изтеглите свод инициализация файл ...
+additional.message.pubkeyChanged=Магистър промяна ключ за възстановяване открити. Моля, уведомете собственик сметка, ако това не се очаква.
+additional.message.tokenCopiedClipboard=Реставрация код копиран в клипборда.
+additional.errorMessage.errCheckingStateFile=Грешка при проверка на файла на състоянието. Изключвам.
+additional.errorMessage.vaultStateCorrupt=Състоянието на хранилището е повредено. Изключвам.
+additional.errorMessage.cannotDetermineVaultState=Състоянието на хранилището не може да бъде определено. Изключвам.
+additional.tooltip.restorationToken=Това е необходимо за възстановяване код при отключване или възстановяването си свод на нов компютър. Моля, запишете го надолу за пазене. Кликнете, за да копирате в клипборда.
+
 # main.fxml
 main.emptyListInstructions = Натиснете тук за добавяне на сейф
 main.directoryList.contextMenu.remove = Премахване от листата
@@ -63,7 +101,7 @@ initialize.messageLabel.passwordStrength.1 = Слаба
 initialize.messageLabel.passwordStrength.2 = Добра
 initialize.messageLabel.passwordStrength.3 = Силна
 initialize.messageLabel.passwordStrength.4 = Много силна
-initialize.label.doNotForget = ВАЖНО\: Ако забравите паролата, няма начин да възстановите данните.
+initialize.label.doNotForget=Моля, въведете нова парола за вашия свод.\n\nВАЖНО\: Ако сте забравили паролата си, само акаунт собственик или попечител с ключ майстор възстановяване може да се възстанови.
 main.directoryList.remove.confirmation.title = Премахване на сейф
 main.directoryList.remove.confirmation.header = Наистина ли искате да премахнете този сейф?
 main.directoryList.remove.confirmation.content = Този сейф ще бъде премахнат само от листа. За да го изтриете напълно, моля, изтрийте сейфа от файл системата.
@@ -106,11 +144,11 @@ unlock.successLabel.upgraded = Криптоматор беше обновен
 unlock.label.useOwnMountPath = Използвайте собствена точка за монтиране
 welcome.askForUpdateCheck.dialog.title = Update check
 welcome.askForUpdateCheck.dialog.header = Enable the integrated update check?
-welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of Cryptomator, with all security patches, installed.\n\nYou can change this from within the settings at any time.
+welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of VirtualSAFE, with all security patches, installed.\n\nYou can change this from within the settings at any time.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Locking vault(s) failed
 main.gracefulShutdown.dialog.header = Vault(s) in use
-main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow Cryptomator to shut down properly, then try again.\n\nIf this doesn't work, Cryptomator can shut down forcefully, but this can incur data loss and is not recommended.
+main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow VirtualSAFE to shut down properly, then try again.\n\nIf this doesn't work, VirtualSAFE can shut down forcefully, but this can incur data loss and is not recommended.
 main.gracefulShutdown.button.tryAgain = Try Again
 main.gracefulShutdown.button.forceShutdown = Force Shutdown
 unlock.pendingMessage.unlocking = Unlocking vault...

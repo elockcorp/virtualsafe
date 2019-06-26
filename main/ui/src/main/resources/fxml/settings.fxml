@@ -20,6 +20,12 @@
 
 <VBox fx:controller="org.cryptomator.ui.controllers.SettingsController" fx:id="root" prefWidth="400.0" alignment="TOP_CENTER" spacing="12.0" xmlns:fx="http://javafx.com/fxml" cacheShape="true" cache="true">
 	<Label VBox.vgrow="NEVER" fx:id="versionLabel" alignment="CENTER" cacheShape="true" cache="true" />
+	<!-- ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+0MO8lEEpNyd045M5W6QUR9n//GmMTVF2oJRyfWWwb7wo/3S3UezET
+Ht79g5zZaqfzGFAFo2870A==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### -->
+	<Label VBox.vgrow="NEVER" fx:id="wwwLabel" alignment="CENTER" cacheShape="true" cache="true" />
+	<Label VBox.vgrow="NEVER" fx:id="copyrightLabel" alignment="CENTER" cacheShape="true" cache="true" />
 	<GridPane VBox.vgrow="ALWAYS" vgap="12.0" hgap="12.0" cacheShape="true" cache="true">
 		<padding>
 			<Insets top="24.0" right="12.0" bottom="24.0" left="12.0" />
@@ -32,12 +38,30 @@
 	
 		<children>
 			<!-- Row 0 -->
-			<Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="%settings.checkForUpdates.label" cacheShape="true" cache="true" />
-			<CheckBox GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="checkForUpdatesCheckbox" cacheShape="true" cache="true" />
+			<!-- ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/vha96jlzyCsLNLJet/vMChjS8kqEgiOLIdG9y+pOjVDryIY+aGRmY
+r0JxvCFayLnblay/4krRFrZ3Wp4hTitHKp1WG92MHmSzdGoTpxSYZNM7T6KX04Oy
+oSWFUS33BHoMPVTwaVZu8P9EGXvvYy4G5YUi4sOd9vFvJIcPb/LtQ8fxngOON9BG
+dfMNBpzOt6vLppKownW98Q2l6BQ1Ci1PmU+8hI9EBRHIeNsKu01utjSzsqjgCkQE
+3j3WQH3wEuPVFkvQzfBtS9uHiywLztAUWnuVrf5GUI8j/pDypN+9LX9Ztnq2j2Dx
+iScAZ60pyuMTS7nUgcEv/A1KbiciZe6g5LuMUFfUc1yJ6y6XR8DoEPInBuzYrYPr
+jzS6qSS4SLk8R8zyNNe7PYCvEgFUZxPN70ptlv85eD5mIQ13ImqlOh6hKR12ipQp
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### -->
 
 			<!-- Row 1 -->
-			<Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="%settings.debugMode.label" cacheShape="true" cache="true" />
-			<CheckBox GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="debugModeCheckbox" cacheShape="true" cache="true" />
+			<!-- ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+U10FZJNNGGvyqgGM5SqXY8ye8HFrPshMUOuDNv84OMTipfI5jtxLM
+o4yub6G6PBNhBHG0sqYqi6ieM26kCFk0LbkFjXaJcatAJwoW4z06Fr1hw9mRUA8S
+l5KrDeLHIlF3OscyZgTVocPbGs0QcsL9a7QhnMI98ty/NGUW+pJOYWcSfx5qKlFQ
+WG7P3m4jJhz5JXuvtEe0ktsktIZKVee1ADqIDOl8Yy8XJsLSIpfqk/cKdR1xRCUZ
+QxSRuY439wBTAJ++KfkIG2vdhZzYN93YclhagEmBCWCizVwP8LLc53IXFgMCzTWU
+yWAFm7vEjFRuhIPPv5M4hoVcU5adCdB9bDwzW/H35QB0nO7EbH2RxCuGNFqL8cgX
+aG2BXVWGwQHG8T7MPd2ruAOLNVDbYqgGZjs0uHN64WSav8F4RqPNOkJEP8Ire0sA
+GQTlLy3V4dGCt3ksTv/oUNDVO/s0t0lJbiwFoukY4G6g40Re3cLMp3W7caBaGll0
+o7BvQxnoY1FarWcz/t8QuKwNyYH1IMtYPB7h5emE1so42ONSAImIl+REgNVStu4P
+2b/JpipIYGaB/GBJG/rt4r9gYRvG5xQnP3j08QvOIof+Jo1MHlEuStldZ3/2L6bx
+mqsJq3WmvSbBcftEaQBCcQ==
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### -->
 
 			<!-- Row 2 -->
 			<Label fx:id="volumeLabel" GridPane.rowIndex="2" GridPane.columnIndex="0" text="%settings.volume.label" cacheShape="true" cache="true" />

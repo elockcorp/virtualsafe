@@ -19,6 +19,12 @@ import org.slf4j.LoggerFactory;
 import javax.inject.Inject;
 import java.io.IOException;
 
+/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+h7AYSkavkuHDG/Zku4BcTjpFvFynTzx5W8X2ZmFZY1Iom/fLMGaUd
+yhVvfg3a2JYgZyQ7eUp5eQ==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+import static org.cryptomator.ui.util.Constants.MASTERKEY_FILENAME;
+
 @FxApplicationScoped
 class UpgradeVersion5toX extends UpgradeStrategy {
 
@@ -42,7 +48,13 @@ class UpgradeVersion5toX extends UpgradeStrategy {
 	@Override
 	public void upgrade(Vault vault, CharSequence passphrase) throws UpgradeFailedException {
 		try {
-			Migrators.get().migrate(vault.getPath(), "masterkey.cryptomator", passphrase);
+			/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+sE5NLyKB5jtoqnzOZDTujD4wSm8JSQfSQoltRVJ/tyPSaDYSdJ0eK
+kb/qRPK0lp4q+Y56r9yASfvamDsXxpIF9y4SZ/NeIklMigqWbt8WwbyuXMAkZ1WZ
+zhoIs/wfnhpCg48E+AFacdbqLfYF6jBpN/UKnOm9Ws9wm2WG+Q99/BIhE6f5s9C+
+ziau9+xzkfYiuA5CFzQTyA==
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+			Migrators.get().migrate(vault.getPath(), MASTERKEY_FILENAME, passphrase);
 		} catch (InvalidPassphraseException e) {
 			throw new UpgradeFailedException(localization.getString("unlock.errorMessage.wrongPassword"));
 		} catch (NoApplicableMigratorException | IOException e) {
@@ -60,7 +72,13 @@ class UpgradeVersion5toX extends UpgradeStrategy {
 	@Override
 	public boolean isApplicable(Vault vault) {
 		try {
-			return Migrators.get().needsMigration(vault.getPath(), "masterkey.cryptomator");
+			/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/jO0NyJf1h24AUJMLct85VFktNL9wW8Dsx0WLNN3TLzheFb0f9mqrV
+h5YRl8e4GtBq2VXckzFxXqI9JMZlzjfZ4UOJyDw2NHfIb/zSmvnBbtM/OKHnih4o
+WaTXmOf6C//hDKZQoera8S4P1uceaaGLWTS0gP9zpgdX4sfyeHAt04PBV2eXovFn
+wQDK+xvUX2eIAtSn/3jzsw==
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+			return Migrators.get().needsMigration(vault.getPath(), MASTERKEY_FILENAME);
 		} catch (IOException e) {
 			LOG.warn("Could not determine, whether upgrade is applicable.", e);
 			return false;

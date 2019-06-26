@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/Jb7M/YGfxIRT9BdajISMN/NK1PPNJhgYyxL3OkosRvlbwhSIona7m
+Pevdy/Fccfv/4Q+Jp78i3KKJVgadn5omIOKKlqDyx/aVZ8JVr14K49rdqxu5MPls
+TeJCFvxePfGtT4IFwSB2bsigkWhT/OTHvFS0A0pRthGhZkthv1siAH31n6PkY2cq
+F36Q+YwKVfuXP53tPH6KTuzU7+PJBgZ0pQvZWhp287/QQzAkOWCDreqCPZakhnyt
+0+jlFRFetKBkn0BGQhCrEUTHs9e6BVaOTHpLmODItF1xY38yIpBxgrARG7/QCsJo
+iW/ZaVdGyV/SyovJz2CH1Um79V6k2JyMJJPO4F/VJzvPrlKhMlHsJ6YX4EFhwQIS
+DmT6YXG0hsrWSz9ZT0YCdpNU0PTE8fQLXqpp/dVgOU+IM+qTbe0xFHMhvhlIDY/r
+D5FYWBH9cnF8MWdmrbYo9FG1DJkV5upN3sM0SF7hqWv/O2p5a9FjfDjlvK/uUTPd
+DI4HGMHuko8I5djEumvbseejrRfXgNghOL0Gy/4cRpvSZix7oHQjHle1rPQP30P5
+YpoBuEmBZDCbqpRqKEwgEyKHrApZzYJlbC7/t6o0mXP2kyIMZCx4XR4IZ3bnNffd
+tFwQlSjzCor/qsHvbyN3cGONXMUpmRAEVC3I7B54mO1wlrmSGEOT+Ppkf6P8uSDB
+jmE7Wy37MFWi8iosAry4EA==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Zugriff auf Systemschlüsselbund nicht möglich.
+additional.errorMessage.cannotChangeVaultPassword=Tresorkennwort kann nicht geändert werden.
+additional.errorMessage.cannotFetchDataFromKeychain=Daten können nicht vom Systemschlüsselbund abgerufen werden.
+additional.vaultPasswordChanged=Tresorkennwort geändert.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Tresor kann nicht entsperrt werden. Tresorgeheimnis kann nicht vom Systemschlüsselbund abgerufen werden, um den neuen Tresor zu initialisieren
+additional.errorMessage.RANDOMPASSnotPresent=Tresorgeheimnis im Schlüsselbund des Systems nicht gefunden. Wiederherstellungsversuch:
+additional.message.requestToken=Bitte geben Sie Restoration Code:
+additional.errorMessage.invalidToken=Restoration-Code ist ungültig.
+additional.errorMessage.cannotDecryptToken=Fehlgeschlagen mit Restoration-Code zu entschlüsseln.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Unfähig Gewölbe zu entsperren. Kann nicht abgerufen werden oder Gewölbe Geheimnis mit Restoration-Code wiederherzustellen.
+additional.message.restorationToken=Restoration Code:
+additional.message.checkingVaultState=Überprüfen des Tresorstatus
+additional.message.initNewVault=Neuer Tresor wird initialisiert.
+additional.message.existingVault=Vorhandener Tresor vorhanden.
+additional.message.stateFileMissing=Warten auf VSYNC zu Gewölbe Initialisierung-Datei herunterladen ...
+additional.message.pubkeyChanged=Master-Wiederherstellungsschlüssel Änderung festgestellt. Bitte benachrichtigen Kontoinhaber, wenn dies nicht zu erwarten ist.
+additional.message.tokenCopiedClipboard=Restoration Code in die Zwischenablage kopiert.
+additional.errorMessage.errCheckingStateFile=Fehler beim Überprüfen der Statusdatei. Herunterfahren.
+additional.errorMessage.vaultStateCorrupt=Tresorzustand beschädigt. Herunterfahren.
+additional.errorMessage.cannotDetermineVaultState=Der Tresorzustand kann nicht ermittelt werden. Herunterfahren.
+additional.tooltip.restorationToken=Dieses Restoration-Code benötigt wird, wenn Ihr Depot auf einem neuen Computer entsperren oder wiederherzustellen. Bitte notieren Sie zur Aufbewahrung nach unten. Klicken Sie in die Zwischenablage zu kopieren.
+
 # main.fxml
 main.emptyListInstructions = Klicken Sie hier, um neue Tresore hinzuzufügen
 main.directoryList.contextMenu.remove = Aus Liste entfernen
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Migration fehlgeschlagen
 unlock.label.password = Passwort
 unlock.label.mountName = Laufwerksname
 unlock.label.winDriveLetter = Laufwerksbuchstabe
-unlock.label.downloadsPageLink = Alle Cryptomator Versionen
+unlock.label.downloadsPageLink = Alle VirtualSAFE Versionen
 unlock.label.advancedHeading = Erweiterte Optionen
 unlock.button.unlock = Tresor entsperren
 unlock.button.advancedOptions.show = Weitere Optionen
 unlock.button.advancedOptions.hide = Weniger Optionen
 unlock.choicebox.winDriveLetter.auto = Automatisch ermitteln
 unlock.errorMessage.wrongPassword = Falsches Passwort
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Tresor nicht unterstützt. Der Tresor wurde mit einer älteren Version von Cryptomator erstellt.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Tresor nicht unterstützt. Der Tresor wurde mit einer neueren Version von Cryptomator erstellt.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Tresor nicht unterstützt. Der Tresor wurde mit einer älteren Version von VirtualSAFE erstellt.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Tresor nicht unterstützt. Der Tresor wurde mit einer neueren Version von VirtualSAFE erstellt.
 # change_password.fxml
 changePassword.label.oldPassword = Altes Passwort
 changePassword.label.newPassword = Neues Passwort
 changePassword.label.retypePassword = Passwort bestätigen
-changePassword.label.downloadsPageLink = Alle Cryptomator Versionen
+changePassword.label.downloadsPageLink = Alle VirtualSAFE Versionen
 changePassword.button.change = Passwort ändern
 changePassword.errorMessage.wrongPassword = Falsches Passwort
 changePassword.errorMessage.decryptionFailed = Entschlüsselung fehlgeschlagen
@@ -55,15 +93,15 @@ settings.checkForUpdates.label = Auf Updates prüfen
 # tray icon
 tray.menu.open = Öffnen
 tray.menu.quit = Beenden
-tray.infoMsg.title = Cryptomator läuft noch
-tray.infoMsg.msg = Cryptomator läuft noch. Mit dem Tray-Icon beenden.
-tray.infoMsg.msg.osx = Cryptomator läuft noch. Über die Menüleiste beenden.
+tray.infoMsg.title = VirtualSAFE läuft noch
+tray.infoMsg.msg = VirtualSAFE läuft noch. Mit dem Tray-Icon beenden.
+tray.infoMsg.msg.osx = VirtualSAFE läuft noch. Über die Menüleiste beenden.
 initialize.messageLabel.passwordStrength.0 = Sehr schwach
 initialize.messageLabel.passwordStrength.1 = Schwach
 initialize.messageLabel.passwordStrength.2 = Mittel
 initialize.messageLabel.passwordStrength.3 = Stark
 initialize.messageLabel.passwordStrength.4 = Sehr stark
-initialize.label.doNotForget = WICHTIG\: Falls Sie Ihr Passwort vergessen, gibt es keine Möglichkeit Ihre Daten wiederherzustellen.
+initialize.label.doNotForget=Bitte geben Sie ein neues Passwort für Ihr Gewölbe.\n\nWICHTIG\: Wenn Sie Ihr Passwort vergessen haben, machen nur Eigentümer oder Verwalter mit Schlüssel Master Recovery wiederherstellen können.
 main.directoryList.remove.confirmation.title = Tresor entfernen
 main.directoryList.remove.confirmation.header = Möchten Sie diesen Tresor wirklich entfernen?
 main.directoryList.remove.confirmation.content = Dieser Tresor wird nur aus der Liste entfernt. Um den Tresor unwiderruflich zu löschen, entfernen Sie bitte den Tresor aus Ihrem Dateisystem.
@@ -97,7 +135,7 @@ settings.webdav.port.label = WebDAV-Port
 settings.webdav.port.prompt = 0 \= automatische Auswahl
 settings.webdav.port.apply = Anwenden
 settings.webdav.prefGvfsScheme.label = WebDAV URL Schema
-settings.volume.label = Laufwerkseinbindung
+settings.volume.label = Laufwerkseinbindung *
 settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = Der Tresor wurde erfolgreich erstellt.
@@ -106,11 +144,11 @@ unlock.successLabel.upgraded = Der Tresor wurde erfolgreich aktualisiert.
 unlock.label.useOwnMountPath = Eigenes Laufwerksverzeichnis nutzen
 welcome.askForUpdateCheck.dialog.title = Auf Updates prüfen
 welcome.askForUpdateCheck.dialog.header = Eingebaute Update-Prüfung aktivieren?
-welcome.askForUpdateCheck.dialog.content = Empfehlung\: Aktivieren Sie die Update-Prüfung, um sicherzustellen, dass Sie stets die neueste Cryptomator-Version mit allen Sicherheits-Patches verwenden.\n\nDiese Einstellung können Sie jederzeit im Einstellungs-Menü ändern.
+welcome.askForUpdateCheck.dialog.content = Empfehlung\: Aktivieren Sie die Update-Prüfung, um sicherzustellen, dass Sie stets die neueste VirtualSAFE-Version mit allen Sicherheits-Patches verwenden.\n\nDiese Einstellung können Sie jederzeit im Einstellungs-Menü ändern.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Sperren des Tresors gescheitert
 main.gracefulShutdown.dialog.header = Tresor in Gebrauch
-main.gracefulShutdown.dialog.content = Ein oder mehrere Tresore werden noch von anderen Programmen genutzt. Bitte schliessen Sie die Programme um es Cryptomator zu ermöglichen richtig herunter zu fahren. Versuchen Sie es danach erneut.\n\nFalls dies nicht klappt, kann Cryptomator das Beenden erzwingen. Dies kann zu einem Datenverlust führen und ist nicht empfohlen.
+main.gracefulShutdown.dialog.content = Ein oder mehrere Tresore werden noch von anderen Programmen genutzt. Bitte schliessen Sie die Programme um es VirtualSAFE zu ermöglichen richtig herunter zu fahren. Versuchen Sie es danach erneut.\n\nFalls dies nicht klappt, kann VirtualSAFE das Beenden erzwingen. Dies kann zu einem Datenverlust führen und ist nicht empfohlen.
 main.gracefulShutdown.button.tryAgain = Versuchen Sie es erneut
 main.gracefulShutdown.button.forceShutdown = Herunterfahren erzwingen
 unlock.pendingMessage.unlocking = Entsperre Tresor...

@@ -47,10 +47,26 @@ import java.util.concurrent.TimeUnit;
 
 import static org.cryptomator.ui.util.DialogBuilderUtil.buildYesNoDialog;
 
+/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/mAn/pkrzeq0MSB/re0XgjwBKTniLweQGzhvk/MKw0kiBg3w8qOcKs
+###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+import org.cryptomator.ui.util.VaultState;
+
 @FxApplicationScoped
 public class WelcomeController implements ViewController {
 
 	private static final Logger LOG = LoggerFactory.getLogger(WelcomeController.class);
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/4oVPKj0Z4NOYweixlmhPtq7QDGFkl5hAhPkC2zZShmK4OdyiSyz5Y
+sOUu5bGINwIa6MKSKI8Puw==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	public static VaultState.State state = VaultState.State.UNDEFINED;
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18i7SAYSLecuFiF00CmmW1yT1cvcEnj8oueqZ1RFzlcv148PPZgiY65
+hB3gPGy+9O4ruqnA7mspVQ==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	private Optional<WelcomeListener> listener = Optional.empty();
 
 	private final Application app;
 	private final Optional<String> applicationVersion;
@@ -58,20 +74,60 @@ public class WelcomeController implements ViewController {
 	private final Settings settings;
 	private final Comparator<String> semVerComparator;
 	private final ScheduledExecutorService executor;
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/9JxhxS9rtjTqDc3UnuE7AfFNwDc3ikNucmb0Zi+gT1kGZ7le6qWGg
+pBxdl1MXpG2ZmZFMtVgmSA==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	private final VaultState vaultState;
 
 	@Inject
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18Nbzz4wgx4BII3VaL0zsI/DmKb9lZ20/ILg8WjlwxUMU8L6zJBmIj5
+k69JYiJcQg2mvJ5/fRcF9OBFtD/tuxMTSW2paL779YsIlJss1ZcAAARbBRqmkrsK
+hs/SNTkbvuwivJ5iD5dAGARptjtKU7WPYx9GwE4BOVqehM0a2Tm0zn1tTU85w3sD
+eUUW4pZJlrtaGKPTl+DblKK5MDsaDLhyEUdEJs8YcBKPFxYZ6gcsMqeSOnGmW/wn
+f1X4o9bLtXcxphbNLTXSO9bOq+zE/pbbfMkBCQlXPkN19SquYLAs4zezgx7ILQ/W
+0pfjTC6t9hAGGO1cFXg7Q6EFmwGFAi2eHPs4XvaJtRNRAIbFgghxHOm6m9g2r6M/
+E6DkiPOG9aHnlJHQK2gLTw==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
 	public WelcomeController(Application app, @Named("applicationVersion") Optional<String> applicationVersion, Localization localization, Settings settings, @Named("SemVer") Comparator<String> semVerComparator,
-							 ScheduledExecutorService executor) {
+							 ScheduledExecutorService executor, VaultState vaultState) {
 		this.app = app;
 		this.applicationVersion = applicationVersion;
 		this.localization = localization;
 		this.settings = settings;
 		this.semVerComparator = semVerComparator;
 		this.executor = executor;
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19hMl1X/ZN1g6uFPkPLh+hn6IFyo4ZoHpMC6G2BmhBmrihzMAM2ebNE
+eza7IyxKiEeMae/fwkPqkA==
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		this.vaultState = vaultState;
 	}
 
 	@FXML
 	private Node checkForUpdatesContainer;
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/RTUZWNEOYkKr/W7/3L3plJ8MAHibU2QwpykwYgvDsIjh1if262q7u
+DoQXDEYylxm7LrL/JphiMIQW+UMx2QYkJ6994xUewC4=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	@FXML
+	private Node checkForVaultStateContainer;
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+G2fR20GLyLhHDiG+DUA9/X+64Snei3/H/41yHjxV8LRJZVoAdMwk5
+GPMjMd6IMZQTUsB6a+gbT51cRhazoLTvoe4DOaySk24=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	@FXML
+	private Label checkForVaultStateStatus;
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19lHgktnTKhNKhIX+s4pMOhHRCLCK9BXMvMKQs7sm7B9alZcRaAXbgZ
+t/YVeyqdCKZwkAZfGO0lgTU8hnBzpzCNxfycaTDqO98=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	@FXML
+	private ProgressIndicator checkForVaultStateIndicator;
 
 	@FXML
 	private Label checkForUpdatesStatus;
@@ -87,6 +143,11 @@ public class WelcomeController implements ViewController {
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19HYB2pD4dVt1+JNYgZ5VbaUAb4s3OiUK36KErSj9CE0uKo69DOA5e2
+GkpNAZutXkT9hY9gjYE9bFpvVNqBKOh2xZtuWaWBjcQ=
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		/*
 		if (areUpdatesManagedExternally()) {
 			checkForUpdatesContainer.setVisible(false);
 		} else if (!settings.askedForUpdateCheck().get()) {
@@ -94,11 +155,84 @@ public class WelcomeController implements ViewController {
 		} else if (settings.checkForUpdates().get()) {
 			this.checkForUpdates();
 		}
+		*/
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/Y++/WvZJNM6zm9h9n//tiJkzfNy/kEbLBxh7UEQgzhGxkPgIObszW
+4l8AKx623qbuVa5XO0MBWQ==
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		checkForUpdatesContainer.setVisible(false);
+
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19ClqT1oARrNzrKpO1KoVEFQOedTMHTTMb7zsER4YSDhIBmFmf3cmZo
+M+WFUsiuf6PSgfc1hlGoQQ==
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		checkForVaultStateContainer.setVisible(true);
+
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+RHgSD/I+WCxxBNuiBWU5YfQoLvafDjoLU2liaAmKeAKRdDE6AK0n2
+PpWvtGoiRxel1f0KnQ5l4cbf2ea1hFboNDvYvTj8cP4=
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		this.checkForVaultState();
 	}
 
 	@Override
 	public Parent getRoot() {
 		return root;
+	}
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+hXazwkumUoSjI5P8J+2xfzlFOEjKTQlse0x7qmXOu45zyH+6KZ7MK
+PW8TUVGxlRWkypu1l1fKV7gy4WuDHpHdiHYjkC78Lf8=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	private void checkForVaultState() {
+		checkForVaultStateStatus.setText(localization.getString("additional.message.checkingVaultState"));
+		checkForVaultStateIndicator.setVisible(true);
+		Tasks.create(() -> {
+			state = vaultState.check();
+	    	switch (state) {
+	        case NEW:
+	        	Platform.runLater(() -> {
+					this.checkForVaultStateStatus.setText(localization.getString("additional.message.initNewVault"));
+				});
+	        	listener.ifPresent(lstnr -> lstnr.didWelcome(state));
+				break;
+	        case RUN:
+	        	Platform.runLater(() -> {
+					this.checkForVaultStateStatus.setText(localization.getString("additional.message.existingVault"));
+				});
+	        	listener.ifPresent(lstnr -> lstnr.didWelcome(state));
+				break;
+	        case NOTFOUND:
+	        	Platform.runLater(() -> {
+					this.checkForVaultStateStatus.setText(localization.getString("additional.message.stateFileMissing"));
+				});
+				try {
+				    Thread.sleep(5000);
+				} catch(InterruptedException ex) {
+				    Thread.currentThread().interrupt();
+				}
+				this.checkForVaultState();
+				break;
+	        case ERROR:
+	        	Platform.runLater(() -> {
+					this.checkForVaultStateStatus.setText(localization.getString("additional.errorMessage.errCheckingStateFile"));
+				});
+	        	listener.ifPresent(lstnr -> lstnr.didWelcome(state));
+				break;
+	        case UNDEFINED:
+	        	Platform.runLater(() -> {
+					this.checkForVaultStateStatus.setText(localization.getString("additional.errorMessage.vaultStateCorrupt"));
+				});
+	        	listener.ifPresent(lstnr -> lstnr.didWelcome(state));
+				break;
+	        default:
+	        	Platform.runLater(() -> {
+					this.checkForVaultStateStatus.setText(localization.getString("additional.errorMessage.cannotDetermineVaultState"));
+				});
+	        	listener.ifPresent(lstnr -> lstnr.didWelcome(state));
+				break;
+			}
+		}).runOnce(executor);
 	}
 
 	// ****************************************
@@ -190,6 +324,19 @@ public class WelcomeController implements ViewController {
 	@FXML
 	public void didClickUpdateLink(ActionEvent event) {
 		app.getHostServices().showDocument("https://cryptomator.org/");
+	}
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/uXr/BOrEGJwL7nHovCt2LXU91fKQK3+TeObdbBAQd0JVyvKFHrEuI
+QzxKsx1pebdS74zzqmM1izFwo+qlAM9qyi8q4AQIODI=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	public void setListener(WelcomeListener listener) {
+		this.listener = Optional.ofNullable(listener);
+	}
+
+	@FunctionalInterface
+	interface WelcomeListener {
+		void didWelcome(VaultState.State state);
 	}
 
 }

@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18R0fSnVgqP6Fmuf/hvXPAj5Wdqj2RYFd7lEsaqkEAaZgxSTUNgDKx5
+MNkcSLbMvrY6qNcQWw/w7BQFOd+bVKDRUs+lAWH9hmwBP41UmBNeaTRlUePs7xjU
+tRzohj67FxHYT8B/xpSg10x/03mbftHYqWKJ15KGbpizRgwhx2t6+YJkGdOicYUB
+DQlfXjW6i0LFrG6QwEoCVPrMrxvKn9KZI5Ddxu5IAfDZrla5C8RC6OLTpgcF+033
+d3tgBxVZdZ6euD+ss+u+lbaMOMgghRAXMvluzN9u8LoiY6P9fJXZU7vplmNBwa1D
+tqRXSn+n7U2EsNy66Pkp3MQTRsAkKPvbaj20dTikEuu92nGVxRrpDgD9f1OHUMUN
+Pz084G4o/x7LG+p9US510uXB8iskIvJuBJvNlYhbE3xw3tgkiYEgHw0QqXK51QSN
+Cls3jlrc+NtV0bYj7QEpTMQ3MQmnzzKKq1rZGSifevwDPn8MMv5JVrmnerMfZJFa
+p/xzl18sRsnQjaqco3l2OU571CE/hxFxDQRlBX+GXUFr5DxstQCo9WAktACXgGDS
+AAampIFVfTtQ6pd2b2c4WA/Uu85RuXo5Z3OvV4kvbdIcNgr1i09+r/vuMaJwWBpb
+CrgTCau8qKON2fiS+TjTzCPMMw/CUHxb8exTqm/VEuY91V5HUM8Hr6hAp5FZjw+c
+dcLlyOjhcg9Py87vFFrgMg==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Nem sikerült elérni a rendszer kulcstartóját.
+additional.errorMessage.cannotChangeVaultPassword=Nem lehet megváltoztatni a boltozat jelszavát.
+additional.errorMessage.cannotFetchDataFromKeychain=Nem lehet adatokat letölteni a rendszer kulcstartójából.
+additional.vaultPasswordChanged=A Vault jelszó megváltozott.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Nem lehet kinyitni a boltozatot. Nem sikerült titkosítani a boltozat titkát a rendszer kulcstartójával az új boltív inicializálásához.
+additional.errorMessage.RANDOMPASSnotPresent=A rendszer kulcstartójában nem található a boltozat titka. Megpróbál visszaállítani:
+additional.message.requestToken=Kérjük, adja Restoration kód:
+additional.errorMessage.invalidToken=Restoration kód érvénytelen.
+additional.errorMessage.cannotDecryptToken=Nem sikerült visszafejteni a Restoration kód.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Nem lehet, hogy kinyit boltozat. Nem lehet letölteni, vagy helyreállítani boltozat titkos segítségével Restaurálás kód.
+additional.message.restorationToken=Restoration kód:
+additional.message.checkingVaultState=A boltozat állapotának ellenőrzése.
+additional.message.initNewVault=Új boltozat inicializálása.
+additional.message.existingVault=A meglévő boltív jelen van.
+additional.message.stateFileMissing=Várakozás VSYNC letölteni boltozat inicializáló fájlt ...
+additional.message.pubkeyChanged=Mester helyreállítási kulcs változás észlelhető. Kérjük figyelmezteti számla tulajdonosa, ha ez nem várható.
+additional.message.tokenCopiedClipboard=Restoration kód a vágólapra másolva.
+additional.errorMessage.errCheckingStateFile=Hiba az állapotfájl ellenőrzése során. Leállítás.
+additional.errorMessage.vaultStateCorrupt=A Vault állapot sérült. Leállítás.
+additional.errorMessage.cannotDetermineVaultState=A Vault állapot nem határozható meg. Leállítás.
+additional.tooltip.restorationToken=Ez Restoration kód szükséges feloldása során vagy a visszaállítás boltozat egy új számítógépen. Kérjük, jegyezze le megőrzésre. Kattintson másolni a vágólapra.
+
 # main.fxml
 main.emptyListInstructions = Kattints ide egy széf létrehozásához
 main.directoryList.contextMenu.remove = Eltávolítás listából
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Automatikus migráció m
 unlock.label.password = Jelszó
 unlock.label.mountName = Meghajtó neve
 unlock.label.winDriveLetter = Meghajtó betűjele
-unlock.label.downloadsPageLink = Összes Cryptomator verzió
+unlock.label.downloadsPageLink = Összes VirtualSAFE verzió
 unlock.label.advancedHeading = Haladó beállítások
 unlock.button.unlock = Széf feloldása
 unlock.button.advancedOptions.show = További beállítások
 unlock.button.advancedOptions.hide = Alapbeállítások
 unlock.choicebox.winDriveLetter.auto = Automatikus hozzárendelés
 unlock.errorMessage.wrongPassword = Hibás jelszó
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Nem támogatott széf. Ez a széf a Cryptomator egy korábbi verziójával került létrehozásra.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Nem támogatott széf. Ez a széf a Cryptomator egy újabb verziójával került létrehozásra.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Nem támogatott széf. Ez a széf a VirtualSAFE egy korábbi verziójával került létrehozásra.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Nem támogatott széf. Ez a széf a VirtualSAFE egy újabb verziójával került létrehozásra.
 # change_password.fxml
 changePassword.label.oldPassword = Régi jelszó
 changePassword.label.newPassword = Új jelszó
 changePassword.label.retypePassword = Új jelszó ismét
-changePassword.label.downloadsPageLink = Összes Cryptomator verzió
+changePassword.label.downloadsPageLink = Összes VirtualSAFE verzió
 changePassword.button.change = Jelszó megváltoztatása
 changePassword.errorMessage.wrongPassword = Hibás jelszó
 changePassword.errorMessage.decryptionFailed = A titkosítás feloldása meghíusúlt
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = Frissítések keresése
 tray.menu.open = Megnyit
 tray.menu.quit = Kilépés
 tray.infoMsg.title = Művelet folyamatban
-tray.infoMsg.msg = Cryptomator még fut. A tálcán található ikon segítségével bezárhatod.
-tray.infoMsg.msg.osx = Cryptomator még fut. A menüsávban található ikon segítségével bezárhatod.
+tray.infoMsg.msg = VirtualSAFE még fut. A tálcán található ikon segítségével bezárhatod.
+tray.infoMsg.msg.osx = VirtualSAFE még fut. A menüsávban található ikon segítségével bezárhatod.
 initialize.messageLabel.passwordStrength.0 = Nagyon gyenge
 initialize.messageLabel.passwordStrength.1 = Gyenge
 initialize.messageLabel.passwordStrength.2 = Megfelelő
 initialize.messageLabel.passwordStrength.3 = Erős
 initialize.messageLabel.passwordStrength.4 = Nagyon erős
-initialize.label.doNotForget = FONTOS\: Ha elfelejted a jelszavadat, akkor nincs lehetőség az adataid visszaállítására.
+initialize.label.doNotForget=Kérjük, adjon meg egy új jelszót a boltozat.\n\nFONTOS\: Ha elfelejtette a jelszavát, csak a fiók tulajdonosa vagy letétkezelő mester helyreállítási kulcs lehet visszaállítani.
 main.directoryList.remove.confirmation.title = Széf eltávolítása
 main.directoryList.remove.confirmation.header = Tényleg törölni akarod ezt a széfet?
 main.directoryList.remove.confirmation.content = A széf csak a listából lesz eltávolítva. Végleges törléshez kérlek töröld a merevlemezen tárolt fájlokat.
@@ -102,15 +140,15 @@ settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = A széf sikeresen létrehozva.
 unlock.successLabel.passwordChanged = A jelszó sikeresen megváltoztatva.
-unlock.successLabel.upgraded = A Cryptomator sikeresen frissítésre került.
+unlock.successLabel.upgraded = A VirtualSAFE sikeresen frissítésre került.
 unlock.label.useOwnMountPath = Use Custom Mount Point
 welcome.askForUpdateCheck.dialog.title = Update check
 welcome.askForUpdateCheck.dialog.header = Enable the integrated update check?
-welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of Cryptomator, with all security patches, installed.\n\nYou can change this from within the settings at any time.
+welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of VirtualSAFE, with all security patches, installed.\n\nYou can change this from within the settings at any time.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Locking vault(s) failed
 main.gracefulShutdown.dialog.header = Vault(s) in use
-main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow Cryptomator to shut down properly, then try again.\n\nIf this doesn't work, Cryptomator can shut down forcefully, but this can incur data loss and is not recommended.
+main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow VirtualSAFE to shut down properly, then try again.\n\nIf this doesn't work, VirtualSAFE can shut down forcefully, but this can incur data loss and is not recommended.
 main.gracefulShutdown.button.tryAgain = Próbáld újra
 main.gracefulShutdown.button.forceShutdown = Force Shutdown
 unlock.pendingMessage.unlocking = Unlocking vault...

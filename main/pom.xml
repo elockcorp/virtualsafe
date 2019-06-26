@@ -48,6 +48,17 @@
 		<junit.jupiter.version>5.4.2</junit.jupiter.version>
 		<mockito.version>2.27.0</mockito.version>
 		<hamcrest.version>2.1</hamcrest.version>
+
+		<!-- ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19VPj/WlWkZ7iztP9a0DkB80CV7rMdxbiV4qST7V72pTrL6rOVxulpc
+dT1MahhwFpYyjsgHhGSVVnbLqWgdvTHF5zlykohrzMUSx37kWesjY5lxKa2zF/5D
+CyV+1V+EWtThdkNhIwdpUc27Q/sWfbepTdNdy+PoZ7C/MO0KsyMHjNzUz1Kqrbg6
+MgNLIW1CUS/fqpml/j5ERpSnLst6pNhH6Ciepk3V9tGXDSC/ZispQJ5qiqHNpyDg
+d6eLPLalOFJFQUcRD1z04xK7hp7vtCksJCwiS7BDkV/YKWsqcD6GPDm9tAwR83uc
+vdCWuY3Fps7rqXrdS1/j6jP84/5P4glGDX2wsidS3ZDRwKVJ5B8Sq9yF5mL77H/5
+tEw2h4huf8NSG9JLO0ReDW/GKLON+UYKmrOsTSlRdtw=
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### -->
+		<mslinks.version>1.0.5</mslinks.version>
 	</properties>
 
 	<repositories>
@@ -220,6 +231,20 @@
 				<artifactId>javafx-swing</artifactId>
 				<version>${javafx.version}</version>
 				<scope>test</scope>
+			</dependency>
+			<!-- ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19J2+V3AFhOY8Jr+b8U6CzM/IOkWS2n5T/JCzn/qVFmSSsfHXYxVriD
+YpneA5Xz01ndKpTGAWkU6Zvcj7nEgrMrbjN1sQQpDcWAeperjLA3kwiw6jdMV7Qw
+V9GaEyFfwQ8VaL9GsCYKcbqO7MWuFkb7hoXwHFL7GDBMfkHTdkkescyRGTL/eXbV
+RwPA9qIY1vFnjhespFkYIM2L7CEJCh60S5lNykrNicBtP6XDWHO9Q+AZAn6VRUWh
+wXnh/Y+NUU30DIm5fvtt0gTu8lwQCykSA0p0b8N4GuJHL5CSl1PhbVWMc5DzObed
+QzPg5ctLbdS4XPYBedGVj4ovqNd+TzBvHnyqpPrf5Y63CWrGx9sAp3n/tJHCItb/
+tjjNMnBBP8WqLV88EPuThWBlRRvdPCyKzfOkz/CEj/I=
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### -->
+			<dependency>
+				<groupId>com.github.vatbub</groupId>
+				<artifactId>mslinks</artifactId>
+				<version>${mslinks.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

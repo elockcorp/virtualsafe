@@ -43,7 +43,12 @@ import java.util.stream.Collectors;
 class IpcFactory {
 
 	private static final Logger LOG = LoggerFactory.getLogger(IpcFactory.class);
-	private static final String RMI_NAME = "Cryptomator";
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/VPiXwm4ciolJN0kxi63g4+AnldNsblmvLSHs5OhX8uv8109WuEefC
+S1RIh4pMZFIH2xWnCKbrceJqV5Ku4ncKK+LGXuZMjkBi5It1gRDlFbD558RR+Izz
+sHX/FjQyJ39WQH7aREbaYg==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	private static final String RMI_NAME = "VirtualSAFE";
 
 	private final List<Path> portFilePaths;
 	private final IpcProtocolImpl ipcHandler;

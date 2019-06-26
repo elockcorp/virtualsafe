@@ -83,9 +83,21 @@ public class FuseVolume implements Volume {
 
 	private Path chooseNonExistingTemporaryMountPoint() throws VolumeException {
 		Path parent = environment.getMountPointsDir().orElseThrow();
+
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/OtZCZ1k19MjRJz/63LF5u28W+Pj+pGmObtF21D9BjwiojGk9Lu96u
+Xl9aMCnbbFSTFugpplthf7tYw25E6sDffycbU1a1kq69aNmlveiNlfa7DXKXOwAt
+nGqbrtcUp9oxKuOGFDM1WB/cehuoOQIkWgIIOiud0pc/WtgZt6kVJ0Im6gQILbjP
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		Path mountPoint = parent.resolve("VirtualSAFE");
+		if (Files.notExists(mountPoint)) {
+			return mountPoint;
+		}
+
 		String basename = vaultSettings.getId();
 		for (int i = 0; i < MAX_TMPMOUNTPOINT_CREATION_RETRIES; i++) {
-			Path mountPoint = parent.resolve(basename + "_" + i);
+			//Path mountPoint = parent.resolve(basename + "_" + i);
+			mountPoint = parent.resolve(basename + "_" + i);
 			if (Files.notExists(mountPoint)) {
 				return mountPoint;
 			}
@@ -96,9 +108,14 @@ public class FuseVolume implements Volume {
 
 	private void mount(Path root) throws VolumeException {
 		try {
+			/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19Aft+nYIlRMyAiA02m/pign43jGk98nT4HTjvEBsNqGK9eK7ZK/ZN9
+B2/yqcdL5nzictSClli43gcZ7bfEiN6GE9v4rKYhu9A=
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
 			EnvironmentVariables envVars = EnvironmentVariables.create() //
 					.withMountName(vaultSettings.mountName().getValue()) //
 					.withMountPath(mountPoint) //
+					.withVolIconPath("../Resources/VolumeIcon.icns") //
 					.build();
 			this.fuseMnt = FuseMountFactory.getMounter().mount(root, envVars);
 		} catch (CommandFailedException e) {

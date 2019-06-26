@@ -45,12 +45,28 @@ import java.util.Objects;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Predicate;
 
+/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19TCsOZzk4HanCAODSJeOUv+TTsko/7w2W1DRPvskmbuDzXJgkmAq7L
+###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+import static org.cryptomator.ui.util.Constants.MASTERKEY_FILENAME;
+import static java.nio.file.StandardCopyOption.*;
+import java.nio.file.DirectoryIteratorException;
+import java.nio.file.AccessDeniedException;
+import java.util.List;
+import java.util.ArrayList;
+import java.nio.file.DirectoryStream;
+import mslinks.ShellLink;
+
 @PerVault
 public class Vault {
 
 	public static final Predicate<Vault> NOT_LOCKED = hasState(State.LOCKED).negate();
 	private static final Logger LOG = LoggerFactory.getLogger(Vault.class);
-	private static final String MASTERKEY_FILENAME = "masterkey.cryptomator";
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/nI2BISjlaNnGv0qpI8q7OFxHUywNntCl1bra38Wpx9+R1qW+2rvz0
+JRKa6Oq7d1LDwof7ubL9zVwLvOWRL1Tj3QjAC1MzYdd0MSkXODEKeRB6rZ3ue92U
+yfQjtOH9mzAODGN6JFZdXHfsgjfwbbB3Kee88iyX9TsYXOnN78azKyOLGS/e8qPn
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
 
 	private final VaultSettings vaultSettings;
 	private final Provider<Volume> volumeProvider;
@@ -114,6 +130,95 @@ public class Vault {
 			Platform.runLater(() -> {
 				state.set(State.UNLOCKED);
 			});
+
+			/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/cvfDcFJbomMYV4iyDkA6aWoDlWw7XiXtXxIizXrNe3Ob1Mil9VbIs
+iSmtM2+nawtIymQS7a029EnUjP7kRgWXYLQwH/+NJRc=
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+			if (SystemUtils.IS_OS_MAC_OSX) {
+				final Path icns = Paths.get("../Resources/VolumeIcon.icns");
+				final Path icns_res_fork = Paths.get("../Resources/_.VolumeIcon.icns");
+				final Path folder_res_fork = Paths.get("../Resources/_.");
+
+				/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+xkMMWcArAl1FA692RU9Oak1N6EgvHuFxTz6LIlG7iXNS18OhAxKNv
+ZwKWR8e7fhQQekJ3oHz/RTlu7Agu3q8bGdP84AyO9znAdnxbs+I0kR7+7yfcbgWM
+51sTqzPfrY1e7fSLnngICup0KrFTlZ5UaKgQwPiSYyAD9NqZdCd8ROu0i8vozpJz
+YECzQwWiTpKHaqX6+wLI2x12zwDgpZzC4+QnqeIdLzoOpiTNZSfuYLgfTcTzsdxO
+m87w89Jqw+BbQaGHDNB8Xz7tnwIqQxhfV23xsxCqU6w=
+				###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+				List<Path> possible_mount_points = new ArrayList<>();
+				try (DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get("/Volumes"), this.getMountName() + "*")) {
+					for (Path entry: stream) {
+						possible_mount_points.add(entry);
+					}
+				} catch (Exception e) {
+					// I/O error encounted during the iteration, the cause is an IOException
+					LOG.error("Fail to iterate mount volumes.", e);
+				}
+
+				for (Path entry: possible_mount_points) {
+					try {
+						Files.copy(icns, Paths.get(entry.toString() + "/.VolumeIcon.icns"), REPLACE_EXISTING);
+						Files.copy(icns_res_fork, Paths.get(entry.toString() + "/._.VolumeIcon.icns"), REPLACE_EXISTING);
+						Files.copy(folder_res_fork, Paths.get(entry.toString() + "/._."), REPLACE_EXISTING);
+					} catch (AccessDeniedException se) {
+					} catch (Exception e) {
+						LOG.error("Fail to set mounted vault icon.", e);
+					}
+				}
+			}
+
+			/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/+0UglEvUe6Xwsxc2bDUj9cLOFcPoXqoTYx8fCWHoEmjx6YLa7fhk7
+SLV+FG0VQr6l6Mw9GxD04UCNSadVmO+uxWFYry79xQJUqdnMcD5KZp25hIO2DINF
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+			if (SystemUtils.IS_OS_WINDOWS) {
+				final Path iconPath = Paths.get(SystemUtils.USER_DIR + "\\..\\VirtualSAFE.ico").normalize();
+				final Path shortcutLinkPath = Paths.get(SystemUtils.USER_HOME + "\\Desktop\\My VirtualSAFE.lnk");
+				final Path mountPath = Paths.get(this.getWinDriveLetter() + ":\\");
+				
+				LOG.debug("iconPath: " + iconPath.toString());
+				LOG.debug("shortcutLinkPath: " + shortcutLinkPath.toString());
+				LOG.debug("mountPath: " + mountPath.toString());
+				
+				if (shortcutLinkPath != null && !Files.exists(shortcutLinkPath)) {
+					if (mountPath != null && Files.isDirectory(mountPath))
+					{
+						if (iconPath != null) {
+							/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18o/e0gLj7q22fRFyrlMZHuf/2sKtZ3CCFJGu+LzCWHVG7tB7n2A8KR
+KvNGikh64RDsSECaFaU8rajPmFywODZ+KxIcBoSnsj4=
+							###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+							try {
+								ShellLink sl = ShellLink.createLink(mountPath.toString())
+									.setWorkingDir("..")
+									.setIconLocation(iconPath.toString());
+								sl.getConsoleData()
+									.setFont(mslinks.extra.ConsoleData.Font.Consolas)
+									.setFontSize(24)
+									.setTextColor(5);
+								sl.saveTo(shortcutLinkPath.toString());
+								LOG.debug("sl.getWorkingDir: " + sl.getWorkingDir());
+								LOG.debug("sl.resolveTarget: " + sl.resolveTarget());
+							} catch (Exception e) {
+								LOG.error("Fail to create Desktop shortcut and set its icon.", e);
+							}
+						} else {
+							/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+b5UzqsmNKeuW1K1+Tbst+cyGM2xKmzYlVDtB4msC6IWaMoCqa9LKw
+2Q+2jMoAbSgNUOkyRhNae6feAhha6T6f8bh3rWYwSVE=
+							###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+							LOG.error("Cannot set icon for Desktop shortcut. Missing icon file.");
+							try {
+								ShellLink sl = ShellLink.createLink(mountPath.toString(), shortcutLinkPath.toString());
+							} catch (Exception e) {
+								LOG.error("Fail to create Desktop shortcut.", e);
+							}
+						}
+					}
+				}						
+			}
 		} catch (Exception e) {
 			Platform.runLater(() -> state.set(State.LOCKED));
 			throw e;
@@ -213,6 +318,16 @@ public class Vault {
 	 */
 	public Binding<String> name() {
 		return EasyBind.map(vaultSettings.path(), Path::getFileName).map(Path::toString);
+	}
+
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18hfPYaeksMrf0hpBU/7iEV+YUJGrvZmMGqMgHGIDMt+ALe48vu2X2e
+iGZAMwuUHUIuDiXaCHY231NjJqhKJRGZbqAlP0b0QJ4=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	public Binding<String> mountName() {
+		return EasyBind.map(vaultSettings.mountName(), p -> {
+			return p.toString();
+		});
 	}
 
 	public boolean doesVaultDirectoryExist() {

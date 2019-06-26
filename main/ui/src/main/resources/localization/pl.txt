@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18/mv+0GDvsq4e5WGkvXowJ0h5Yk+gbvIaJMCZKRrpwIFsYp4tqubsC
+vmD7vRQScNM2BYmL9ksH9GPOmnLOwQYVX8m+T+cBZaWddgYRKJpSFHPH5UIm3MkW
+pta8LlMC1XLNGq/KKRLYdzCPnQ/Uc9aay/8e/jDIGzGdYiWNic6RwUQnJdT+0+hA
+1ELjzYO5nyf/NZwDpO+xWbiMZX/ob1B9SPsMrUszvflM3sTcu8/NXAfPqc7KSTjL
+0Bte52dDqaLqGnbKndugV4BZgYuVlhGW+tbGE9tPSUhPUioGYpXdYaT339DzuABK
+WTPuuMV709hf8TyaHNfhr4JWwQvqlRBPULHmJQvwU7J58ZbfDCuIdvE3Gck2Rxgp
+1rLhsuS0gOv+rcH9+3CmJAS8R+iqKfc1HpTTO7OGV4IHIW0nFxDunR5imuOSnEAu
+Rilzc+N1zB1ilwJg804O6KycNoyw84Rz1Q/yUQ1C/Pp04QJzFzF6Mqci1AnG/SG5
+jK8zf0mbDU5jvmC+wheFgr6kuDRFp0Y7KuEGhosKChLRytH3KkmYZNiDE/iSo72a
+l4lOuVSOvkbwuMbdtSgrLbx1ObmeLhUhGi/0U7v1PruYW8MZCirU0vYi9qEYKL06
+mqyMYPXQ2HVwGVq7BYcjHHe308HEis2i1XmJqS1ROyp1lWoOVCBgSvfrTuEsgl0K
+fv9z45XK3n/glBAX1z+nUg==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Nie można uzyskać dostępu do systemowego pęku kluczy.
+additional.errorMessage.cannotChangeVaultPassword=Nie można zmienić hasła przechowalni.
+additional.errorMessage.cannotFetchDataFromKeychain=Nie można pobrać danych z pęku kluczy systemowych.
+additional.vaultPasswordChanged=Zmieniono hasło skarbca.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Nie można odblokować skarbca. Nie można uzyskać dostępu do sekretu skarbca z pęku kluczy systemu w celu zainicjowania nowego skarbca.
+additional.errorMessage.RANDOMPASSnotPresent=Nie znaleziono tajemnicy skarbca w pęku kluczy systemowych. Próba przywrócenia:
+additional.message.requestToken=Proszę wpisać kod Restoration:
+additional.errorMessage.invalidToken=Kod przywrócenie jest nieprawidłowy.
+additional.errorMessage.cannotDecryptToken=Nie udało się odszyfrować za pomocą kodu konserwatorskich.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Nie można odblokować skarbiec. Nie można odzyskać lub przywrócić przechowalni tajemnicy używając kodu konserwatorskich.
+additional.message.restorationToken=Kod odbudowa:
+additional.message.checkingVaultState=Sprawdzanie stanu skarbca.
+additional.message.initNewVault=Inicjowanie nowego skarbca.
+additional.message.existingVault=Istniejące sklepienie.
+additional.message.stateFileMissing=Oczekiwanie na VSYNC ściągnąć przechowalni plików inicjalizacji ...
+additional.message.pubkeyChanged=wykryte zmiany klucza odzyskiwania mistrz. Proszę o poinformowanie właściciela konta, jeśli ten nie ma.
+additional.message.tokenCopiedClipboard=Kod przywrócenie skopiowany do schowka.
+additional.errorMessage.errCheckingStateFile=Błąd podczas sprawdzania pliku stanu. Wyłączanie.
+additional.errorMessage.vaultStateCorrupt=Uszkodzony stan skarbca. Wyłączanie.
+additional.errorMessage.cannotDetermineVaultState=Nie można określić stanu skarbca. Wyłączanie.
+additional.tooltip.restorationToken=Kod ten jest potrzebny Przywrócenie podczas odblokowywania lub przywrócenie sklepienie na nowym komputerze. Proszę nagrać go na przechowanie. Kliknij, aby skopiować do schowka.
+
 # main.fxml
 main.emptyListInstructions = Kliknij tutaj, aby utworzyć nowy portfel
 main.directoryList.contextMenu.remove = Usuń z listy
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Automatyczna migracja ni
 unlock.label.password = Hasło
 unlock.label.mountName = Nazwa Napędu
 unlock.label.winDriveLetter = Litera Napędu
-unlock.label.downloadsPageLink = Wszystkie wersje Cryptomatora
+unlock.label.downloadsPageLink = Wszystkie wersje VirtualSAFEa
 unlock.label.advancedHeading = Opcje Zaawansowane
 unlock.button.unlock = Odblokuj Portfel
 unlock.button.advancedOptions.show = Więcej Opcji
 unlock.button.advancedOptions.hide = Mniej Opcji
 unlock.choicebox.winDriveLetter.auto = Przydziel automatycznie
 unlock.errorMessage.wrongPassword = Nieprawidłowe hasło
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Nieobsługiwana wersja portfela. Ten portfel został utworzony przez starszą wersję Cryptomatora.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Nieobsługiwana wersja portfela. Ten portfel został utworzony przez nowszą wersję Cryptomatora.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Nieobsługiwana wersja portfela. Ten portfel został utworzony przez starszą wersję VirtualSAFEa.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Nieobsługiwana wersja portfela. Ten portfel został utworzony przez nowszą wersję VirtualSAFEa.
 # change_password.fxml
 changePassword.label.oldPassword = Stare Hasło
 changePassword.label.newPassword = Nowe Hasło
 changePassword.label.retypePassword = Powtórz Hasło
-changePassword.label.downloadsPageLink = Wszystkie wersje Cryptomatora
+changePassword.label.downloadsPageLink = Wszystkie wersje VirtualSAFEa
 changePassword.button.change = Zmień Hasło
 changePassword.errorMessage.wrongPassword = Nieprawidłowe hasło
 changePassword.errorMessage.decryptionFailed = Błąd odszyfrowywania
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = Sprawdź aktualizacje
 tray.menu.open = Otwórz
 tray.menu.quit = Wyjdź
 tray.infoMsg.title = Nadal Uruchomiony
-tray.infoMsg.msg = Cryptomator jest nadal uruchomiony. Zamknij go z ikony z paska zadań.
-tray.infoMsg.msg.osx = Cryptomator jest nadal uruchomiony. Zamknij go z ikony z paska menu.
+tray.infoMsg.msg = VirtualSAFE jest nadal uruchomiony. Zamknij go z ikony z paska zadań.
+tray.infoMsg.msg.osx = VirtualSAFE jest nadal uruchomiony. Zamknij go z ikony z paska menu.
 initialize.messageLabel.passwordStrength.0 = Bardzo słabe
 initialize.messageLabel.passwordStrength.1 = Słabe
 initialize.messageLabel.passwordStrength.2 = Dostateczne
 initialize.messageLabel.passwordStrength.3 = Mocne
 initialize.messageLabel.passwordStrength.4 = Bardzo mocne
-initialize.label.doNotForget = WAŻNE\: Jeśli zapomnisz hasło, nie ma żadnej innej możliwości odzyskania twoich danych.
+initialize.label.doNotForget=Wpisz nowe hasło dla Twojego skarbca.\n\nWAŻNY\: Jeśli użytkownik zapomni hasła, tylko konto właściciela lub opiekuna z klucza odzyskiwania mistrz można odzyskać.
 main.directoryList.remove.confirmation.title = Usuń Portfel
 main.directoryList.remove.confirmation.header = Czy na pewno chcesz usunąć ten portfel?
 main.directoryList.remove.confirmation.content = Ten portfel zostanie usunięty tylko z listy. Jeśli chcesz trwale go usunąć, usuń pliki portfela ze swojego systemu plików.
@@ -102,15 +140,15 @@ settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = Portfel został pomyślnie utworzony.
 unlock.successLabel.passwordChanged = Hasło zostało pomyślnie zmienione.
-unlock.successLabel.upgraded = Cryptomator został pomyślnie zaktualizowany.
+unlock.successLabel.upgraded = VirtualSAFE został pomyślnie zaktualizowany.
 unlock.label.useOwnMountPath = Użyj indywidualnego punktu montowania
 welcome.askForUpdateCheck.dialog.title = Sprawdź aktualizację
 welcome.askForUpdateCheck.dialog.header = Włącz zintegrowane sprawdzenie aktualizacji?
-welcome.askForUpdateCheck.dialog.content = Aby sprawdzić dostępność aktualizacji, Cryptomator pobierze bieżącą wersję z serwerów Cryptomator i wyświetli podpowiedź, jeśli dostępna będzie nowsza wersja.\n\nZalecamy włączenie sprawdzania aktualizacji, aby zawsze mieć pewność, że zainstalowana jest najnowsza wersja Cryptomatora ze wszystkimi poprawkami zabezpieczeń. Jeśli nie włączysz sprawdzania aktualizacji, możesz sprawdzić i pobrać aktualną wersję z https\://cryptomator.org/downloads/.\n\nMożesz to zmienić w dowolnym momencie, korzystając z ustawień.
+welcome.askForUpdateCheck.dialog.content = Aby sprawdzić dostępność aktualizacji, VirtualSAFE pobierze bieżącą wersję z serwerów VirtualSAFE i wyświetli podpowiedź, jeśli dostępna będzie nowsza wersja.\n\nZalecamy włączenie sprawdzania aktualizacji, aby zawsze mieć pewność, że zainstalowana jest najnowsza wersja VirtualSAFEa ze wszystkimi poprawkami zabezpieczeń. Jeśli nie włączysz sprawdzania aktualizacji, możesz sprawdzić i pobrać aktualną wersję z https\://VirtualSAFE.org/downloads/.\n\nMożesz to zmienić w dowolnym momencie, korzystając z ustawień.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Nie udało się zablokować porfela(i)
 main.gracefulShutdown.dialog.header = Portfel(e) w użyciu
-main.gracefulShutdown.dialog.content = Jedna lub więcej porfelii jest nadal używana przez inne programy. Zamknij je, aby umożliwić prawidłowe zamknięcie Cryptomator, a następnie spróbuj ponownie.\n\nJeśli to nie zadziała, Cryptomator może zamknąć na siłę, ale może to spowodować utratę danych i nie jest zalecane.
+main.gracefulShutdown.dialog.content = Jedna lub więcej porfelii jest nadal używana przez inne programy. Zamknij je, aby umożliwić prawidłowe zamknięcie VirtualSAFE, a następnie spróbuj ponownie.\n\nJeśli to nie zadziała, VirtualSAFE może zamknąć na siłę, ale może to spowodować utratę danych i nie jest zalecane.
 main.gracefulShutdown.button.tryAgain = Spróbuj ponownie
 main.gracefulShutdown.button.forceShutdown = Wymuś zamknięcie
 unlock.pendingMessage.unlocking = Unlocking vault...

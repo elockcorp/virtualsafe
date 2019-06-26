@@ -37,7 +37,14 @@
 	
 	<HBox VBox.vgrow="NEVER">
 		<Pane HBox.hgrow="ALWAYS">
-			<Label fx:id="messageLabel" cacheShape="true" cache="true" />
+			<!-- ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+lhzOlBdPtZ4OSKuw0I+7xzIf8rv/qJ07LfPxfMm/iUG19otrL4VtS
+1c5MAqrlWhoBZfHwo6nb2gfxQmsb5Cp0M1YVxE/c+Y0/EHox5/bOkmmSQaY0sv6j
+zynE1DnaXBaR7/PBgq76/XUj8WA/MZ71G/k+x+SNPzpuhpy7EXXqML3o/wO44twM
+8SgygcYfRfFRME+cQ4wz5WhkcjCRJaqGN6awQN1/nZBZ3BcOox82vt8keqzW4XeA
+yCUAIgNKSzIzpT7XE3HifQ==
+			###_VIRTUALSAFE_CHANGE_TRACKING_END_### -->
+			<Label fx:id="messageLabel" cacheShape="true" cache="true" onMouseClicked="#didClickCopyToken" onMouseEntered="#showRCtooltip" onMouseExited="#hideRCtooltip"/>
 		</Pane>
 		<HBox styleClass="segmented-button-bar" HBox.hgrow="NEVER" alignment="CENTER_RIGHT" cacheShape="true" cache="true">
 			<Button text="%unlocked.button.lock" styleClass="first" onAction="#didClickLockVault" focusTraversable="true" cacheShape="true" cache="true"/>

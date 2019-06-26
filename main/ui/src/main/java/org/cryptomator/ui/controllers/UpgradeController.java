@@ -135,6 +135,13 @@ public class UpgradeController implements ViewController {
 					progressIndicator.setVisible(false);
 					passwordField.setDisable(false);
 					passwordField.swipe();
+					/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+a09eZZE8qJcCgR0Y/I6qNGGp6+wOouXSiaC3nnQfbrsgDMejmDT6z
+EoVfI74I5GsU7AbPHLlQMmU7Z93jEIvN3L8lhuj10XKDNz5xoDZDNIq4CY6t2oG7
+THvMnPGGT9tD+bLglZ4IIGYBuCscIprwvpvlZiQ0EKAC4Bd2ZBXyrKr5VmwvSgWD
+JQ+b5DKvHd24qVKXRaMNfgXX1TQmwvFEyEhphhS/4yI=
+					###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+					passwordField.setPassword("");
 				}).runOnce(executor);
 	}
 

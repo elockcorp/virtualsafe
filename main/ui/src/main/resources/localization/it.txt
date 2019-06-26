@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+YQucQkeLyyoqSwbgFc0k3BuoKFWv8cKRpNaedjDF4a5J/jsvEvAQZ
+ZHBAkeFVLp7GARIvenGiaab8ZnfO4olcIgHMcx2rLObKHZmE+9orO2ipS62KVxMw
+G6ZlMPxOz7NkaRL7W5VnxW5EzMQF2y5mAgzz/dJbVUPC3Ky7Rn2PmxhSST5D5Cei
+RRFgSLXFpvU2wgfKZALCRZQKre/LeaEb/t0JLscY/VSKBOMhfmherN6VQKniIqCi
+gWU4KaVXtu0+8/pZ8CEJqgVLOml95UJnYOs3Md4E2PfrUpXdqr/T5n4empaBaz/e
+uFGMR+6blONFqjUsOveUszcLkNKGotFc5I1z4diLI3iiqxLNel+QZUjXalVnId66
+XGgxVWDl3oBV2Gk66bk05wkZTjstxFkgS91+UJzevisrFeNtaAO+SY2+3TortRY7
+MHnk2al6lyTFQkEXutBOYXru00AILqomvMwef9pSojSAfLpPvQFrQjthFwkE7Dgt
+6SJ9el2xomvdXZUeEwKUpUCEPw4o3+mrjlIEI3kA/LkPT4AGvrDGSHVIxD/4CZ+r
+WSCAUtyUJ2cvBXa24xZnbyPW8PDl4j2aRY9SnXj1ir+vHykyIOIRsjeoGi/ZDL+G
+JKiKR6Nybojl6quA4jSWPnx+sTll9AUxquCpy+7o8tNU7rbR4EDZVVaqib56frrH
+iZkGP9FG9gq78lcb26vgLA==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Impossibile accedere al portachiavi del sistema.
+additional.errorMessage.cannotChangeVaultPassword=Impossibile modificare la password del vault.
+additional.errorMessage.cannotFetchDataFromKeychain=Impossibile recuperare i dati dal portachiavi del sistema.
+additional.vaultPasswordChanged=Password del Vault modificata.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Impossibile sbloccare il vault. Impossibile accedere al segreto del vault dal portachiavi del sistema per inizializzare il nuovo vault.
+additional.errorMessage.RANDOMPASSnotPresent=Segreto del Vault non trovato nel portachiavi del sistema. Tentativo di ripristino:
+additional.message.requestToken=Si prega di inserire codice Restauro:
+additional.errorMessage.invalidToken=Codice di restauro non è valido.
+additional.errorMessage.cannotDecryptToken=Impossibile decrittografare utilizzando il Codice di restauro.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=In grado di sbloccare caveau. Impossibile recuperare o ripristinare segreto classificatore utilizzando codice Restaurazione.
+additional.message.restorationToken=Codice Restauro:
+additional.message.checkingVaultState=Verifica dello stato del vault.
+additional.message.initNewVault=Inizializzazione di un nuovo vault.
+additional.message.existingVault=Presente presente esistente.
+additional.message.stateFileMissing=In attesa di VSYNC per scaricare file di inizializzazione volta ...
+additional.message.pubkeyChanged=Maestro cambiamento chiave di ripristino rilevato. Si prega di avvisare account del proprietario se questo non è previsto.
+additional.message.tokenCopiedClipboard=Codice Restauro copiato negli appunti.
+additional.errorMessage.errCheckingStateFile=Errore durante il controllo del file di stato. Chiudere.
+additional.errorMessage.vaultStateCorrupt=Stato Vault corrotto. Chiudere.
+additional.errorMessage.cannotDetermineVaultState=Lo stato di Vault non può essere determinato. Chiudere.
+additional.tooltip.restorationToken=Il presente Codice di restauro è necessaria quando si sblocca o il ripristino volta su un nuovo computer. Si prega di registrare il basso per la custodia. Clicca per copiare negli appunti.
+
 # main.fxml
 main.emptyListInstructions = Clicca qui per aggiungere un vault
 main.directoryList.contextMenu.remove = Rimuovi dalla lista
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Migrazione automatica fa
 unlock.label.password = Password
 unlock.label.mountName = nome del drive
 unlock.label.winDriveLetter = lettera del drive
-unlock.label.downloadsPageLink = Tutte le versioni di Cryptomator
+unlock.label.downloadsPageLink = Tutte le versioni di VirtualSAFE
 unlock.label.advancedHeading = Opzioni avanzate
 unlock.button.unlock = Sblocca vault
 unlock.button.advancedOptions.show = Più opzioni
 unlock.button.advancedOptions.hide = Meno opzioni
 unlock.choicebox.winDriveLetter.auto = Assegna automaticamente
 unlock.errorMessage.wrongPassword = Password errata
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Vault non supportato. Questo vault è stato creato con una versione di Cryptomator più vecchia.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Vault non supportato. Questo vault è stato creato con una versione di Cryptomator più recente.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Vault non supportato. Questo vault è stato creato con una versione di VirtualSAFE più vecchia.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Vault non supportato. Questo vault è stato creato con una versione di VirtualSAFE più recente.
 # change_password.fxml
 changePassword.label.oldPassword = Vecchia password
 changePassword.label.newPassword = Nuova password
 changePassword.label.retypePassword = Conferma password
-changePassword.label.downloadsPageLink = Tutte le versioni di Cryptomator
+changePassword.label.downloadsPageLink = Tutte le versioni di VirtualSAFE
 changePassword.button.change = Cambia la password
 changePassword.errorMessage.wrongPassword = Password errata
 changePassword.errorMessage.decryptionFailed = Decriptaggio fallito
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = Verifica aggiornamenti
 tray.menu.open = Apri
 tray.menu.quit = Chiudi
 tray.infoMsg.title = Ancora in esecuzione
-tray.infoMsg.msg = Cryptomator è ancora in esecuzione. Chiudilo utilizzando l'icona nel menù di stato.
-tray.infoMsg.msg.osx = Cryptomator è ancora in esecuzione. Chiudilo utilizzando l'icona nella barra del menù.
+tray.infoMsg.msg = VirtualSAFE è ancora in esecuzione. Chiudilo utilizzando l'icona nel menù di stato.
+tray.infoMsg.msg.osx = VirtualSAFE è ancora in esecuzione. Chiudilo utilizzando l'icona nella barra del menù.
 initialize.messageLabel.passwordStrength.0 = Molto debole
 initialize.messageLabel.passwordStrength.1 = Debole
 initialize.messageLabel.passwordStrength.2 = Buona
 initialize.messageLabel.passwordStrength.3 = Sicura
 initialize.messageLabel.passwordStrength.4 = Molto sicura
-initialize.label.doNotForget = IMPORTANTE\: Se dimentichi la password, non c'è modo di recuperare i tuoi dati.
+initialize.label.doNotForget=Si prega di inserire una nuova password per il vostro caveau.\n\nIMPORTANTE\: Se si dimentica la password, il solo proprietario o custode con chiave di ripristino maestro in grado di recuperare.
 main.directoryList.remove.confirmation.title = Rimuovi vault
 main.directoryList.remove.confirmation.header = Vuoi davvero rimuovere questo vault?
 main.directoryList.remove.confirmation.content = Il vault sarà rimosso solo dalla lista. Per eliminarlo definitivamente, elimina per favore i file dal tuo hard disk.
@@ -97,20 +135,20 @@ settings.webdav.port.label = WebDAV Port
 settings.webdav.port.prompt = 0 \= Scelta automatica
 settings.webdav.port.apply = Applica
 settings.webdav.prefGvfsScheme.label = WebDAV Scheme
-settings.volume.label = Mount-Methode
+settings.volume.label = Mount-Methode *
 settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = Vaul creato con successo.
 unlock.successLabel.passwordChanged = Password modificata con successo.
-unlock.successLabel.upgraded = Cryptomator aggiornato con successo.
+unlock.successLabel.upgraded = VirtualSAFE aggiornato con successo.
 unlock.label.useOwnMountPath = Use Custom Mount Point
 welcome.askForUpdateCheck.dialog.title = Update check
 welcome.askForUpdateCheck.dialog.header = Enable the integrated update check?
-welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of Cryptomator, with all security patches, installed.\n\nYou can change this from within the settings at any time.
+welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of VirtualSAFE, with all security patches, installed.\n\nYou can change this from within the settings at any time.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Locking vault(s) failed
 main.gracefulShutdown.dialog.header = Vault(s) in use
-main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow Cryptomator to shut down properly, then try again.\n\nIf this doesn't work, Cryptomator can shut down forcefully, but this can incur data loss and is not recommended.
+main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow VirtualSAFE to shut down properly, then try again.\n\nIf this doesn't work, VirtualSAFE can shut down forcefully, but this can incur data loss and is not recommended.
 main.gracefulShutdown.button.tryAgain = Try Again
 main.gracefulShutdown.button.forceShutdown = Force Shutdown
 unlock.pendingMessage.unlocking = Unlocking vault...

@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+3kWwoK5VRCTeFvxCCcJ648RGskmgx6mGNMhvmovnoHniAi+1tHxte
+m9EDvgM3RcJbMntthE1aCUhn4ukSc5CcvhU+U3BQFBb9PpQ8lKtvWDTqK/iuut8R
+iLYo3XNEJOpoz+5JhgLLiVDl7BMmOhppdqPRxWgXturZp4/HMvaHhZ2FdWl4PIB7
+iCALYJ0iqKiQHFK130KBxhn4Oh/vzX1Aw3VHpRFj4yQ4uBIqq8XeJ3bUV5aI867j
+u48ImR67zsnj72mGmmJEjv46TRe2KYuuF7PZ+CYyqW1mCU458mlXSXRm/BhfOxX/
+n2ko8bRvcoMEFc+blLy6eyxqS+pIhpflNixQAiCPUEwNjrI1irZp3xh86yC+7W89
+oamU571WCxnQruK73SvNSMw4BbnbJ+TxHxWNKAb6s1Tyd5VxBjipkKvs2cj+IclF
+ExtJkMb98VKw7iO4+5srlOfukwR66dBkzKtUMCilNevFAH4Irjc//R6iDeUu7WiX
+urcLRQ1Tthpnqhf2PvDh9wbF0UR1RfBlh3F/Bc2cHf/uhGgORP9ARSErUqM5lrFI
+U03B26vyW5EAp/JTcHmwKBxpm1kYuOwTOZgAap6KlfiKbUQAzU/GTyczvvNQ6h/Y
+xxK9ihJK4ZPg+pNtNaIkXSddZ3TZcQDOD4ON6qIxFMF5+A174MQMY/yRTbQirO82
+fTwJ1nGkG7VOlO61GSpbDg==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=시스템 키 체인에 액세스 할 수 없습니다.
+additional.errorMessage.cannotChangeVaultPassword=볼트 암호를 변경할 수 없습니다.
+additional.errorMessage.cannotFetchDataFromKeychain=시스템 키 체인에서 데이터를 검색 할 수 없습니다.
+additional.vaultPasswordChanged=Vault 비밀번호가 변경되었습니다.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=볼트를 잠금 해제 할 수 없습니다. 새 볼트를 초기화하기 위해 시스템 키 체인에서 볼트 비밀을 액세스 할 수 없습니다.
+additional.errorMessage.RANDOMPASSnotPresent=시스템 키 체인에 Vault 비밀 번호가 없습니다. 복원 시도 :
+additional.message.requestToken=복원 코드를 입력하십시오 :
+additional.errorMessage.invalidToken=복원 코드가 잘못되었습니다.
+additional.errorMessage.cannotDecryptToken=복원 코드를 사용하여 암호를 해독하는 데 실패했습니다.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=금고의 잠금을 해제 할 수 없습니다. 검색하거나 복원 코드를 사용하여 볼트 비밀을 복원 할 수 없습니다.
+additional.message.restorationToken=복원 코드 :
+additional.message.checkingVaultState=볼트 상태 확인 중.
+additional.message.initNewVault=새 볼트를 초기화하는 중입니다.
+additional.message.existingVault=기존의 금고가 있습니다.
+additional.message.stateFileMissing=VSYNC 기다리는 금고 초기화 파일을 다운로드 ...
+additional.message.pubkeyChanged=마스터 복구 키 변화가 감지되었습니다. 이 예상되지 않는 경우 계정 소유자에게 경고하시기 바랍니다.
+additional.message.tokenCopiedClipboard=복원 코드가 클립 보드에 복사.
+additional.errorMessage.errCheckingStateFile=상태 파일을 검사하는 중 오류가 발생했습니다. 닥쳐.
+additional.errorMessage.vaultStateCorrupt=Vault 상태가 손상되었습니다. 닥쳐.
+additional.errorMessage.cannotDetermineVaultState=Vault 상태를 확인할 수 없습니다. 닥쳐.
+additional.tooltip.restorationToken=잠금 해제하거나 새 컴퓨터에서 볼트를 복원 할 때 복원 코드가 필요합니다. 보관을 위해 그것을 아래로 기록하십시오. 클립 보드에 복사를 클릭합니다.
+
 # main.fxml
 main.emptyListInstructions = 여기를 클릭하여 보관함 추가하기
 main.directoryList.contextMenu.remove = 목록에서 삭제
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = 자동 마이그레이�
 unlock.label.password = 비밀번호
 unlock.label.mountName = 드라이브 이름
 unlock.label.winDriveLetter = 드라이브 문자
-unlock.label.downloadsPageLink = 모든 Cryptomator 버전
+unlock.label.downloadsPageLink = 모든 VirtualSAFE 버전
 unlock.label.advancedHeading = 고급 옵션
 unlock.button.unlock = 보관함 해제
 unlock.button.advancedOptions.show = 더 많은 옵션
 unlock.button.advancedOptions.hide = 기본 옵션
 unlock.choicebox.winDriveLetter.auto = 자동으로 할당
 unlock.errorMessage.wrongPassword = 잘못된 비밀번호
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = 지원되지 않는 보관함. 이 보관함은 이전 버전의 Cryptomator에서 생성되었습니다.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = 지원되지 않는 보관함. 이 보관함은 상위 버전의 Cryptomator에서 생성되었습니다.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = 지원되지 않는 보관함. 이 보관함은 이전 버전의 VirtualSAFE에서 생성되었습니다.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = 지원되지 않는 보관함. 이 보관함은 상위 버전의 VirtualSAFE에서 생성되었습니다.
 # change_password.fxml
 changePassword.label.oldPassword = 이전 비밀번호
 changePassword.label.newPassword = 새로운 비밀번호
 changePassword.label.retypePassword = 비밀번호 재입력
-changePassword.label.downloadsPageLink = 모든 Cryptomator 버전
+changePassword.label.downloadsPageLink = 모든 VirtualSAFE 버전
 changePassword.button.change = 비밀번호 변경
 changePassword.errorMessage.wrongPassword = 잘못된 비밀번호
 changePassword.errorMessage.decryptionFailed = 암호화 해제 실패
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = 업데이트 확인
 tray.menu.open = 열기
 tray.menu.quit = 종료
 tray.infoMsg.title = 계속 실행 중입니다.
-tray.infoMsg.msg = Cryptomator가 계속 실행 중입니다. 종료는 트레이 아이콘에서 해주세요.
-tray.infoMsg.msg.osx = Cryptomator가 계속 실행중입니다. 종료는 메뉴바 아이콘에서 해주세요.
+tray.infoMsg.msg = VirtualSAFE가 계속 실행 중입니다. 종료는 트레이 아이콘에서 해주세요.
+tray.infoMsg.msg.osx = VirtualSAFE가 계속 실행중입니다. 종료는 메뉴바 아이콘에서 해주세요.
 initialize.messageLabel.passwordStrength.0 = 매우 약함
 initialize.messageLabel.passwordStrength.1 = 약함
 initialize.messageLabel.passwordStrength.2 = 괜찮음
 initialize.messageLabel.passwordStrength.3 = 강력함
 initialize.messageLabel.passwordStrength.4 = 매우 강력함
-initialize.label.doNotForget = 중요\: 만약 비밀번호를 잊으셨다면, 여러분의 데이터를 복구할 수 없습니다.
+initialize.label.doNotForget=당신의 볼트에 대한 새 암호를 입력하십시오.\n\n중대한\: 암호를 잊어 버린 경우 만 복구 할 수 있습니다 마스터 복구 키와 소유자 또는 관리인을 차지한다.
 main.directoryList.remove.confirmation.title = 보관함 삭제
 main.directoryList.remove.confirmation.header = 정말 이 보관함을 삭제하시겠습니까?
 main.directoryList.remove.confirmation.content = 보관함이 목록에서만 제거되었습니다. 데이터를 완전히 제거하시려면, 사용자의 파일시스템이서 제거해 주시기 바랍니다.
@@ -97,20 +135,20 @@ settings.webdav.port.label = WebDAV 포트
 settings.webdav.port.prompt = 0 \= 자동으로 선택
 settings.webdav.port.apply = 적용
 settings.webdav.prefGvfsScheme.label = WebDAV 스킴
-settings.volume.label = 마운트-방법
+settings.volume.label = 마운트-방법 *
 settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = 보관함이 성공적으로 생성되었습니다.
 unlock.successLabel.passwordChanged = 비밀번호가 성공적으로 변경되었습니다.
-unlock.successLabel.upgraded = Cryptomator가 성공적으로 업그레이드 되었습니다.
+unlock.successLabel.upgraded = VirtualSAFE가 성공적으로 업그레이드 되었습니다.
 unlock.label.useOwnMountPath = 커스텀 마운트 지점 사용
 welcome.askForUpdateCheck.dialog.title = 업데이트 확인
 welcome.askForUpdateCheck.dialog.header = 통합 업데이트 확인을 활성화 하겠습니까?
-welcome.askForUpdateCheck.dialog.content = 추천\: 모든 보안 패치가 적용된 최신 버전의 Cryptomator를 유지하기 위해 업데이트 확인을 활성화 하십시오.\n설정에서 언제든지 바꿀 수 있습니다.
+welcome.askForUpdateCheck.dialog.content = 추천\: 모든 보안 패치가 적용된 최신 버전의 VirtualSAFE를 유지하기 위해 업데이트 확인을 활성화 하십시오.\n설정에서 언제든지 바꿀 수 있습니다.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = 보관함 잠그기 실패
 main.gracefulShutdown.dialog.header = 보관함이 사용중입니다.
-main.gracefulShutdown.dialog.content = 하나 이상의 보관함을 다른 프로그램이 사용하고 있습니다. Cryptomator를 올바르게 종료하려면 프로그램을 먼저 종료하고 다시 시도해 주세요.
+main.gracefulShutdown.dialog.content = 하나 이상의 보관함을 다른 프로그램이 사용하고 있습니다. VirtualSAFE를 올바르게 종료하려면 프로그램을 먼저 종료하고 다시 시도해 주세요.
 main.gracefulShutdown.button.tryAgain = 다시 시도
 main.gracefulShutdown.button.forceShutdown = 강제 종료
 unlock.pendingMessage.unlocking = 보관함 여는 중
@@ -118,7 +156,7 @@ unlock.failedDialog.title = 잠금 해제 실패
 unlock.failedDialog.header = 잠금 해제 실패
 unlock.failedDialog.content.mountPathNonExisting = 마운트 지점이 존재하지 않습니다.
 unlock.failedDialog.content.mountPathNotEmpty = 마운트 지점이 비어있지 않습니다.
-unlock.label.useReadOnlyMode = 읽기 전용
-unlock.label.chooseMountPath = 빈 디렉토리 선택
-ctrl.secPasswordField.nonPrintableChars = 패스워드에 특수문자가 포함되어 있습니다.\n권장사항 \: 다른 클라이언트와의 호환성을 보증하기 위해 해당하는 문자를 제거하시기 바랍니다.
-ctrl.secPasswordField.capsLocked = Caps Lock 키가 활성화 되어있습니다.
+unlock.label.useReadOnlyMode = Read-Only
+unlock.label.chooseMountPath = Choose empty directory…
+ctrl.secPasswordField.nonPrintableChars = Password contains control characters.\nRecommendation\: Remove them to ensure compatibility with other clients.
+ctrl.secPasswordField.capsLocked = Caps Lock is activated.

@@ -65,7 +65,12 @@ public class AutoUnlocker {
 	}
 
 	private void unlockSilently(Vault vault) {
-		char[] storedPw = keychainAccess.get().loadPassphrase(vault.getId());
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18R0O2RfoMEfx2A4O94WzEY+ed7ihmT4annRaVBZy6qPYEhwZht4zj/
+PpibLg/z3I2Q0gllkyXq4iNjeg3us4/+zD2KbpnlUnuShPanNukuE/bv8IiDTHd9
+HIpKNBrzbM95uBAlARGtbUX3n5wWokQBJK1ykglIRGM=
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		char[] storedPw = keychainAccess.get().loadPassphrase(vault.getId()+"_RANDOMPASS");
 		if (storedPw == null) {
 			LOG.warn("No passphrase stored in keychain for vault registered for auto unlocking: {}", vault.getPath());
 			return;

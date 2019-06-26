@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18VrgOD3u9tdr2H64rNxw4ZisEiNqupl/9ynXYxJ+2q9TE1bX8isbEO
+WS54wPV+wclzIiNmE9UPPI3uEkATPElQxOk8xSt0FWkl7GrUym4HrlEuqyORlBRb
+ow8CUcXWmQ7sIUPx6lNc5g5b/ctJJ3wuVG6D/nwgSWCUcyfJcBlCzudgLl9I4eE0
+ijFClFtQLTOQfHHsi8fHoN0XBFGY9Ns3uYzec/13kLgTkN6m2BXTStVR1Ja+fINo
+Yv2M0/gx+7wgt2rldnbv65Dy4Rg/kgm1A0ih3xZHe6umYdU3Mo8H/UcpLleTa+AJ
+CyJj/L1bMQLUkw2a21EIbyDi8c7h1ZNHAAp+OMvk346aN3LYSSMAi/L1lfe+7kmE
+QgeXOy5MQTrN/SnR3d+dWFs6sqjsdm58V5a5kZh6zYUJOU6iMLozXYtVTQhA4Pmk
+rFDVwOVwL6O7jKLoHLNrilQGxPbJH0FEwt26m2h7kMSOuvOfklRSSf/qkYrpL/+D
+3yEZqmUypqSLjinggHoVRlzMIl/sgsiZKPJ93MKmRZbI8Dhh2j8ehecM7H5NsOLS
+pHuHXtHaObhEvW7TXlDpncmxZhkD6zNIkzPWdwf/BxCE4ZuhpsrYOccgIp/pkToe
+2nIGb6y7qkuwrZzcC0fMnnLbdzM1JvscGzhfDR24jBf5RwR9PxwqysAhp7AslP4q
+wPMFrjA8Y2KLi0TCWQurmQ==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Kan ikke få adgang til system nøglering.
+additional.errorMessage.cannotChangeVaultPassword=Kan ikke ændre vault password.
+additional.errorMessage.cannotFetchDataFromKeychain=Kan ikke hente data fra system nøglering.
+additional.vaultPasswordChanged=Vault password ændret.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Kan ikke låse op for hvælving. Kunne ikke hylle hvelvet hemmeligt fra system nøglering til at initialisere nyt hvælving.
+additional.errorMessage.RANDOMPASSnotPresent=Vault hemmelighed findes ikke i system nøglering. Forsøger at gendanne:
+additional.message.requestToken=Indtast venligst Restaurering Kode:
+additional.errorMessage.invalidToken=Restaurering kode er ugyldig.
+additional.errorMessage.cannotDecryptToken=Det lykkedes ikke at dekryptere bruge Restaurering kode.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Kan ikke låse hvælving. Kan ikke hente eller genoprette hvælving hemmelighed hjælp Restaurering kode.
+additional.message.restorationToken=Restaurering Kode:
+additional.message.checkingVaultState=Kontrollerer vault tilstand.
+additional.message.initNewVault=Initialisering af nyt hvælving.
+additional.message.existingVault=Eksisterende hvælving til stede.
+additional.message.stateFileMissing=Venter på VSYNC at hente hvælving initialisering fil ...
+additional.message.pubkeyChanged=Master genoprettelsesnøgle ændring opdaget. Venligst advare konto ejer, hvis dette ikke er forventet.
+additional.message.tokenCopiedClipboard=Restaurering kode kopieret til udklipsholderen.
+additional.errorMessage.errCheckingStateFile=Fejl ved kontrol af tilstandsfilen. Lukker ned.
+additional.errorMessage.vaultStateCorrupt=Vault tilstand ødelagt. Lukker ned.
+additional.errorMessage.cannotDetermineVaultState=Vault tilstand kan ikke bestemmes. Lukker ned.
+additional.tooltip.restorationToken=Denne Restaurering kode er nødvendig, når oplåsning eller genoprette din hvælving på en ny computer. Venligst optage det ned til opbevaring. Klik for at kopiere til udklipsholderen.
+
 # main.fxml
 main.emptyListInstructions = Tryk her for at tilføje en ny Vault
 main.directoryList.contextMenu.remove = Fjern fra listen
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Automatisk migrering fej
 unlock.label.password = Adgangskode
 unlock.label.mountName = Drev navn
 unlock.label.winDriveLetter = Drev bogstav
-unlock.label.downloadsPageLink = Alle Cryptomator versioner
+unlock.label.downloadsPageLink = Alle VirtualSAFE versioner
 unlock.label.advancedHeading = Avancerede Indstillinger
 unlock.button.unlock = Lås op for Vault
 unlock.button.advancedOptions.show = Flere valgmuligheder
 unlock.button.advancedOptions.hide = Færre valgmuligheder
 unlock.choicebox.winDriveLetter.auto = Tildel automatisk
 unlock.errorMessage.wrongPassword = Forkert adgangskode
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Ikke-understøttet Vault. Denne Vault er blevet oprettet med en ældre version af Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Ikke-understøttet Vault. Denne Vault er blevet oprettet med en nyere version af Cryptomator.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Ikke-understøttet Vault. Denne Vault er blevet oprettet med en ældre version af VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Ikke-understøttet Vault. Denne Vault er blevet oprettet med en nyere version af VirtualSAFE.
 # change_password.fxml
 changePassword.label.oldPassword = Gammel adgangskode
 changePassword.label.newPassword = Ny adgangskode
 changePassword.label.retypePassword = Gentag adgangskode
-changePassword.label.downloadsPageLink = Alle Cryptomator versioner
+changePassword.label.downloadsPageLink = Alle VirtualSAFE versioner
 changePassword.button.change = Skift adgangskode
 changePassword.errorMessage.wrongPassword = Forkert adgangskode
 changePassword.errorMessage.decryptionFailed = Dekryptering fejlede
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = Tjek for opdateringer
 tray.menu.open = Åbn
 tray.menu.quit = Afslut
 tray.infoMsg.title = Kører Stadig
-tray.infoMsg.msg = Cryptomator kører stadig. Afslut programmet fra tray-ikonet.
-tray.infoMsg.msg.osx = Cryptomator kører stadig. Afslut programmet fra menu-baren.
+tray.infoMsg.msg = VirtualSAFE kører stadig. Afslut programmet fra tray-ikonet.
+tray.infoMsg.msg.osx = VirtualSAFE kører stadig. Afslut programmet fra menu-baren.
 initialize.messageLabel.passwordStrength.0 = Meget svag
 initialize.messageLabel.passwordStrength.1 = Svag
 initialize.messageLabel.passwordStrength.2 = Mellem
 initialize.messageLabel.passwordStrength.3 = Stærk
 initialize.messageLabel.passwordStrength.4 = Meget stærk
-initialize.label.doNotForget = VIGTIGT\: Hvis du glemmer dit password, er der ingen måde hvorpå data kan genskabes.
+initialize.label.doNotForget=Indtast venligst et nyt kodeord til din hvælving.\n\nVIGTIG\: Hvis du glemmer din adgangskode, konto kun ejer eller depositar med master genoprettelsesnøgle kan komme sig.
 main.directoryList.remove.confirmation.title = Slet Vault
 main.directoryList.remove.confirmation.header = Er du sikker på at du vil slette denne Vault?
 main.directoryList.remove.confirmation.content = Valgte Vault vil kun blive slettet fra listen. For at slette denne permanent, skal du slette filerne fra dit filsystem.
@@ -106,11 +144,11 @@ unlock.successLabel.upgraded = Vault was successfully upgraded.
 unlock.label.useOwnMountPath = Use Custom Mount Point
 welcome.askForUpdateCheck.dialog.title = Update check
 welcome.askForUpdateCheck.dialog.header = Enable the integrated update check?
-welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of Cryptomator, with all security patches, installed.\n\nYou can change this from within the settings at any time.
+welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of VirtualSAFE, with all security patches, installed.\n\nYou can change this from within the settings at any time.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Locking vault(s) failed
 main.gracefulShutdown.dialog.header = Vault(s) in use
-main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow Cryptomator to shut down properly, then try again.\n\nIf this doesn't work, Cryptomator can shut down forcefully, but this can incur data loss and is not recommended.
+main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow VirtualSAFE to shut down properly, then try again.\n\nIf this doesn't work, VirtualSAFE can shut down forcefully, but this can incur data loss and is not recommended.
 main.gracefulShutdown.button.tryAgain = Try Again
 main.gracefulShutdown.button.forceShutdown = Force Shutdown
 unlock.pendingMessage.unlocking = Unlocking vault...

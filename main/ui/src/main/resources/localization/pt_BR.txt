@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/HBlu0Rgz9hrRUDRuQ/EjopBM4q0nAF5SHyo1vUAR06BFqPnQr4ea3
+cjTBN6kq25HFzm1YNkVTt0HNJlSG9OCXUpoDdKlBTYGr72PjngWyVbgojkl9Q0eT
+nrzOVPuNhJyJQVHW06P8X4/NLmXgWxMhIOVG3mZzS7Cb/RiuYBwqXw8ZsYJQuulq
+k0ZxFUyVU8+8JcF0VBXt3bImJbgdhQ08/aC1sLRN28VScrnGVgipVQQVL+DoTMNB
+kgAeTlboBKrQej7RM/dEAu8fiOJxTx3UV1iO2kt9vQBGekbPeitaT/U45XYHyaVL
+bduc7uNJSb32TJ2mfC/OsMBMY98APz4Z/LaDGgiKniJNSjh1z5Gqu6Fp1SuFDKgq
+8LNpmQbeoLF6+HzczyELzTpg1+aLUu6Tlm/65ooSSUQaTwuJRPaiq5JTLIHcIP7m
+DssxKSuiteBYoDqYweGyAzyPjYTUYClHi36eBf+B8cFukZqvOxI2F2wHrRQ2X9yD
+s1paMxGsW5P2DXwFD/lWKBrhy1nRZ+brym6plsMk4g0mijTSfzwDy4snaSeBOloY
+vxCoAgUrveZD6pnAuJfgynZIS81jjNvXWSQfaCKz/JFgfShobYN5O/5nWjJxvqVE
+Ckjre7LrCHzK6K5l0swR3cMCvd751ufiTsnCm7mpQG1eqelH8kvW9khYDMz4UinP
+BHYO74nx3CcpWjiNVuHLeA==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Não é possível acessar o chaveiro do sistema.
+additional.errorMessage.cannotChangeVaultPassword=Não é possível alterar a senha do vault.
+additional.errorMessage.cannotFetchDataFromKeychain=Não é possível recuperar dados das chaves do sistema.
+additional.vaultPasswordChanged=Senha do cofre alterada.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Não é possível desbloquear o cofre. Não é possível acessar o segredo do cofre a partir do chaveiro do sistema para inicializar o novo cofre.
+additional.errorMessage.RANDOMPASSnotPresent=Segredo do cofre não encontrado no chaveiro do sistema. Tentando restaurar:
+additional.message.requestToken=Por favor insira o Código de Restauração:
+additional.errorMessage.invalidToken=Código restauração é inválido.
+additional.errorMessage.cannotDecryptToken=Falha ao decodificar usando o Código Restauração.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Incapaz de desbloquear cofre. Não é possível recuperar ou restaurar segredo vault usando o Código Restauração.
+additional.message.restorationToken=Código Restauração:
+additional.message.checkingVaultState=Verificando o estado do cofre.
+additional.message.initNewVault=Inicializando o novo cofre.
+additional.message.existingVault=Cofre existente.
+additional.message.stateFileMissing=Esperando VSYNC baixar arquivo de inicialização cofre ...
+additional.message.pubkeyChanged=Mestre mudança chave de recuperação detectada. Por favor alertar dono da conta se isso não for o esperado.
+additional.message.tokenCopiedClipboard=código de restauração copiados para o clipboard.
+additional.errorMessage.errCheckingStateFile=Erro ao verificar o arquivo de estado. Desligando.
+additional.errorMessage.vaultStateCorrupt=Estado do cofre corrompido. Desligando.
+additional.errorMessage.cannotDetermineVaultState=O estado do cofre não pode ser determinado. Desligando.
+additional.tooltip.restorationToken=Este Código Restauração é necessária quando desbloquear ou restaurar seu cofre em um novo computador. Por favor, registre-a para baixo para a custódia. Clique para copiar a área de transferência.
+
 # main.fxml
 main.emptyListInstructions = Clique para adicionar um cofre
 main.directoryList.contextMenu.remove = Remover da lista
@@ -24,15 +62,15 @@ upgrade.version3dropBundleExtension.err.alreadyExists = A Migração automática
 unlock.label.password = Senha
 unlock.label.mountName = Nome do Volume
 unlock.label.winDriveLetter = Letra do Volume
-unlock.label.downloadsPageLink = Todas as versões do Cryptomator
+unlock.label.downloadsPageLink = Todas as versões do VirtualSAFE
 unlock.label.advancedHeading = Opções Avançadas
 unlock.button.unlock = Destravar Cofre
 unlock.button.advancedOptions.show = Mais Opções
 unlock.button.advancedOptions.hide = Menos Opções
 unlock.choicebox.winDriveLetter.auto = Atribuir automaticamente
 unlock.errorMessage.wrongPassword = Senha errada
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Cofre não suportado. Esse Cofre foi criado em uma versão antiga do Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Cofre não suportado. Esse Cofre foi criado em uma versão mais recente do Cryptomator.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Cofre não suportado. Esse Cofre foi criado em uma versão antiga do VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Cofre não suportado. Esse Cofre foi criado em uma versão mais recente do VirtualSAFE.
 # change_password.fxml
 changePassword.label.oldPassword = Senha antiga
 changePassword.label.newPassword = Nova senha
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = Procurar por atualizações
 tray.menu.open = Abrir
 tray.menu.quit = Sair
 tray.infoMsg.title = Ainda em Execução
-tray.infoMsg.msg = O Cryptomator ainda está ativo. Feche-o através do icone da bandeja.
-tray.infoMsg.msg.osx = O Cryptomator ainda está ativo. Feche-o através do menu da barra de ícones.
+tray.infoMsg.msg = O VirtualSAFE ainda está ativo. Feche-o através do icone da bandeja.
+tray.infoMsg.msg.osx = O VirtualSAFE ainda está ativo. Feche-o através do menu da barra de ícones.
 initialize.messageLabel.passwordStrength.0 = Muito fraca
 initialize.messageLabel.passwordStrength.1 = Fraca
 initialize.messageLabel.passwordStrength.2 = Razoável
 initialize.messageLabel.passwordStrength.3 = Forte
 initialize.messageLabel.passwordStrength.4 = Muito forte
-initialize.label.doNotForget = IMPORTANTE\: NÂO existe maneira alguma de recuperar seus dados se você perder a sua senha, 
+initialize.label.doNotForget=Por favor insira uma nova senha para o seu cofre.\n\nIMPORTANTE\: Se você esquecer sua senha, representam apenas proprietário ou guardião com chave de recuperação mestre pode recuperar.
 main.directoryList.remove.confirmation.title = Remover Cofre
 main.directoryList.remove.confirmation.header = Você realmente quer remover esse Cofre?
 main.directoryList.remove.confirmation.content = O Cofre será removido somente da listagem. Para apagá-lo permanentemente é necessario apagá-lo de seu arquivo de sistema.
@@ -97,20 +135,20 @@ settings.webdav.port.label = WebDAV Porta
 settings.webdav.port.prompt = 0 \= Escolher automaticamente
 settings.webdav.port.apply = Aplicar
 settings.webdav.prefGvfsScheme.label = WebDAV Esquema
-settings.volume.label = Método de Montagem
+settings.volume.label = Método de Montagem *
 settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = Cofre foi criado com sucesso.
 unlock.successLabel.passwordChanged = Senha for trocada com sucesso.
-unlock.successLabel.upgraded = Cryptomator foi atualizado com sucesso.
+unlock.successLabel.upgraded = VirtualSAFE foi atualizado com sucesso.
 unlock.label.useOwnMountPath = Usar ponto de montagem individual
 welcome.askForUpdateCheck.dialog.title = Checar atualizações
 welcome.askForUpdateCheck.dialog.header = Ativar a checagem por atualizações?
-welcome.askForUpdateCheck.dialog.content = Para checar as atualizações, Cryptomator irá verificar a versão mais recente em nossos servidores e avisará se existe uma versão disponível.\n\nRecomendamos ativar a checagem por novas atualizações para ter certeza que se tenha a versão mais recente do Cryptomator, com todas as correções de segurança. Se não ativar as atualizações é possivel checar e baixa-las a versão mais recente em https\://cryptomator.org/downloads/.\n\nVocê pode alterar as configurações a qualquer hora.
+welcome.askForUpdateCheck.dialog.content = Para checar as atualizações, VirtualSAFE irá verificar a versão mais recente em nossos servidores e avisará se existe uma versão disponível.\n\nRecomendamos ativar a checagem por novas atualizações para ter certeza que se tenha a versão mais recente do VirtualSAFE, com todas as correções de segurança. Se não ativar as atualizações é possivel checar e baixa-las a versão mais recente em https\://VirtualSAFE.org/downloads/.\n\nVocê pode alterar as configurações a qualquer hora.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Falha ao trancar o cofre
 main.gracefulShutdown.dialog.header = Cofre(s) em uso
-main.gracefulShutdown.dialog.content = Um ou mais cofres ainda estão em uso por outros programas. Por favor feche-os para permitir ao Cryptomator encerrar apropriadamente, então tente novamente.
+main.gracefulShutdown.dialog.content = Um ou mais cofres ainda estão em uso por outros programas. Por favor feche-os para permitir ao VirtualSAFE encerrar apropriadamente, então tente novamente.
 main.gracefulShutdown.button.tryAgain = Tente novamente
 main.gracefulShutdown.button.forceShutdown = Forçar término da execução
 unlock.pendingMessage.unlocking = Destravando Cofre...

@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/Cc2cBaG7UABRI+WC+qqePzMLFfFrMwmudXUCKADicHd7SA82r4Z1d
+WSfPxKQxmlD3HFES6K/0piypw67T79uyC0hk9Ye8GCIGwBvV9Pe+HYwb39JrO4/5
+oMTpcx2Ci56Hnof6xWy3sr16kIAiG8thqmQXL/qS3xESESe8xr7DJqJKObjFuUMp
+QEvL4oAFWCLgA9wB3t+E0v7ugFIkFjKiqPN5puocTF2mouQl8QR53C4Xl2UlS0+C
+b6CljykWY4R9bcBvJN3lLo8Pr2BsUhXcWNHbFUO6Th6yC2Y4HQltNjx7Y5irg1Qy
+UF5v4EB3h3LM85zfLVxl+LzqzzldTxqgvB6GF7SuEaDJfZDdriH/bP53cx7v9D+h
+TFRtzsKxcC45k7SJPIbxEzVZCcvT5zO6vco6/91QkPuyC5nPiiubI8SDQpp3d6k1
+EcD3zVSD14tJMgS7TAaNm+q3tj8zobAwvUN+vR97A8Q5Uzih9Z0DwYyV90FRse3N
+Z8DuFgbLiNmXn1m9ZVDAz9PxI0NLp12g6G1zbLnlkiSZHFFkPTpGqkUWg21TCjSk
+SxFChdweMfZapWjPIOHwUzqKBNyl3+v9+CfAWOJ7OuZTnilZ3B2ea+uc/IHet9Sw
+0P8JL1HnlsdQBUHg0wQMpQzV7VD/YSKxGX6UFCITd4dLf0E23d2vGrDU2/ESeFOJ
+mc0gPip8oqYHpatwbqrulA==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Невозможно получить доступ к системной цепочке для ключей.
+additional.errorMessage.cannotChangeVaultPassword=Невозможно изменить пароль хранилища.
+additional.errorMessage.cannotFetchDataFromKeychain=Не удается получить данные из системной цепочки для ключей.
+additional.vaultPasswordChanged=Пароль хранилища изменен.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Невозможно разблокировать хранилище. Невозможно получить секрет хранилища из системной цепочки ключей для инициализации нового хранилища.
+additional.errorMessage.RANDOMPASSnotPresent=Секретный ключ хранилища не найден в системном брелке. Попытка восстановить:
+additional.message.requestToken=Пожалуйста, введите код Restoration:
+additional.errorMessage.invalidToken=Восстановление Код недействителен.
+additional.errorMessage.cannotDecryptToken=Не удалось расшифровать с помощью Восстановления кода.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Невозможно открыть хранилище. Невозможно получить или восстановить хранилище секрета с помощью Восстановления кода.
+additional.message.restorationToken=Восстановление Код:
+additional.message.checkingVaultState=Проверка состояния хранилища.
+additional.message.initNewVault=Инициализация нового хранилища.
+additional.message.existingVault=Существующее хранилище присутствует.
+additional.message.stateFileMissing=Ожидание VSYNC для загрузки хранилища файлов инициализации ...
+additional.message.pubkeyChanged=обнаружено изменение ключа восстановления Master. Пожалуйста, предупредит владельца счета, если это не ожидается.
+additional.message.tokenCopiedClipboard=Восстановление кода копируется в буфер обмена.
+additional.errorMessage.errCheckingStateFile=Ошибка проверки файла состояния. Выключение.
+additional.errorMessage.vaultStateCorrupt=Состояние хранилища повреждено. Выключение.
+additional.errorMessage.cannotDetermineVaultState=Состояние хранилища не может быть определено. Выключение.
+additional.tooltip.restorationToken=Это восстановление кода требуется при разблокировке или восстановления вашего хранилища на новом компьютере. Пожалуйста, запишите его для хранения. Нажмите, чтобы скопировать в буфер обмена.
+
 # main.fxml
 main.emptyListInstructions = Нажмите здесь, чтобы добавить хранилище
 main.directoryList.contextMenu.remove = Удалить из списка
@@ -25,7 +63,7 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Автоматическ
 unlock.label.password = Пароль
 unlock.label.mountName = Имя диска
 unlock.label.winDriveLetter = Буква диска
-unlock.label.downloadsPageLink = Все версии Cryptomator
+unlock.label.downloadsPageLink = Все версии VirtualSAFE
 # Дополнительные параметры
 unlock.label.advancedHeading = Дополнительно
 unlock.button.unlock = Разблокировать хранилище
@@ -33,13 +71,13 @@ unlock.button.advancedOptions.show = Больше опций
 unlock.button.advancedOptions.hide = Меньше опций
 unlock.choicebox.winDriveLetter.auto = Автоназначение
 unlock.errorMessage.wrongPassword = Неверный пароль
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Неподдерживаемое хранилище. Оно было создано в более старой версии Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Неподдерживаемое хранилище. Оно было создано в более новой версии Cryptomator.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Неподдерживаемое хранилище. Оно было создано в более старой версии VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Неподдерживаемое хранилище. Оно было создано в более новой версии VirtualSAFE.
 # change_password.fxml
 changePassword.label.oldPassword = Старый пароль
 changePassword.label.newPassword = Новый пароль
 changePassword.label.retypePassword = Повторите ввод пароля
-changePassword.label.downloadsPageLink = Все версии Cryptomator
+changePassword.label.downloadsPageLink = Все версии VirtualSAFE
 changePassword.button.change = Сменить пароль
 changePassword.errorMessage.wrongPassword = Неверный пароль
 changePassword.errorMessage.decryptionFailed = Ошибка дешифрования
@@ -60,14 +98,14 @@ tray.menu.open = Открыть
 tray.menu.quit = Выход
 tray.infoMsg.title = Всё ещё выполняется
 # Не нужно использовать жаргонизмы, а также прибегать к вкусовой правке.
-tray.infoMsg.msg = Cryptomator всё ещё работает. Выйдите c помощью значка в области уведомлений.
-tray.infoMsg.msg.osx = Cryptomator всё ещё работает. Выйдите с помощью значка в строке меню.
+tray.infoMsg.msg = VirtualSAFE всё ещё работает. Выйдите c помощью значка в области уведомлений.
+tray.infoMsg.msg.osx = VirtualSAFE всё ещё работает. Выйдите с помощью значка в строке меню.
 initialize.messageLabel.passwordStrength.0 = Очень слабый
 initialize.messageLabel.passwordStrength.1 = Слабый
 initialize.messageLabel.passwordStrength.2 = Приемлемый
-initialize.messageLabel.passwordStrength.3 = Сложный
-initialize.messageLabel.passwordStrength.4 = Очень сложный
-initialize.label.doNotForget = ВАЖНО\: Если вы забудете свой пароль, то восстановить данные будет невозможно.
+initialize.messageLabel.passwordStrength.3 = Стойкий
+initialize.messageLabel.passwordStrength.4 = Очень стойкий
+initialize.label.doNotForget=Пожалуйста, введите новый пароль для хранилища.\n\nВАЖНЫЙ\: Если вы забыли свой пароль, только счета владельца или попечителя с мастер-ключа восстановления может восстановить.
 main.directoryList.remove.confirmation.title = Удаление хранилища
 main.directoryList.remove.confirmation.header = Вы действительно хотите удалить это хранилище?
 main.directoryList.remove.confirmation.content = Хранилище будет удалено только из списка. Чтобы стереть его окончательно, удалите файлы из файловой системы.
@@ -104,28 +142,28 @@ settings.webdav.port.label = Порт WebDAV
 settings.webdav.port.prompt = 0 \= автовыбор
 settings.webdav.port.apply = Применить
 settings.webdav.prefGvfsScheme.label = Схема WebDAV
-settings.volume.label = Метод монтирования
+settings.volume.label = Метод монтирования*
 settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = Хранилище успешно создано.
 unlock.successLabel.passwordChanged = Пароль успешно изменён.
-unlock.successLabel.upgraded = Обновление Cryptomator успешно выполнено.
+unlock.successLabel.upgraded = Обновление VirtualSAFE успешно выполнено.
 unlock.label.useOwnMountPath = Своя точка монтирования
 welcome.askForUpdateCheck.dialog.title = Проверка обновлений
 welcome.askForUpdateCheck.dialog.header = Включить встроенную проверку обновлений?
-welcome.askForUpdateCheck.dialog.content = Для проверки наличия обновлений Cryptomator будет получать номер текущей версии со своих серверов и показывать подсказку, что доступна более новая версия.\n\nРекомендуем включить проверку обновлений, чтобы быть уверенным, что у вас всегда новейшая версия программы, содержащая все патчи безопасности. Если вы не хотите включать проверку обновлений, то проверить наличие новой версии и загрузить её можно по адресу https\://cryptomator.org/downloads/\n\nЭтот параметр можно всегда изменить в настройках программы.
+welcome.askForUpdateCheck.dialog.content = Для проверки наличия обновлений VirtualSAFE будет получать номер текущей версии со своих серверов и показывать подсказку, что доступна более новая версия.\n\nРекомендуем включить проверку обновлений, чтобы быть уверенным, что у вас всегда новейшая версия программы, содержащая все патчи безопасности. Если вы не хотите включать проверку обновлений, то проверить наличие новой версии и загрузить её можно по адресу https\://VirtualSAFE.org/downloads/\n\nЭтот параметр можно всегда изменить в настройках программы.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Ошибка блокировки хранилища
 main.gracefulShutdown.dialog.header = Используемые хранилища
-main.gracefulShutdown.dialog.content = Одно или несколько хранилищ всё ещё используются другими программами. Закройте их, чтобы Cryptomator мог корректно завершить работу, и повторите попытку.\n\nЕсли это не поможет, Cryptomator может завершить работу принудительно, но с риском потери данных, и потому это не рекомендуется.
+main.gracefulShutdown.dialog.content = Одно или несколько хранилищ всё ещё используются другими программами. Закройте их, чтобы VirtualSAFE мог корректно завершить работу, и повторите попытку.\n\nЕсли это не поможет, VirtualSAFE может завершить работу принудительно, но с риском потери данных, и потому это не рекомендуется.
 main.gracefulShutdown.button.tryAgain = Попробовать снова
 main.gracefulShutdown.button.forceShutdown = Принудительно завершить работу
-unlock.pendingMessage.unlocking = Открываем хранилище...
+unlock.pendingMessage.unlocking = Открываем хранилеще
 unlock.failedDialog.title = Разблокировка не удалась
-unlock.failedDialog.header = Разблокировка не удалась
-unlock.failedDialog.content.mountPathNonExisting = Точка монтирования не существует.
-unlock.failedDialog.content.mountPathNotEmpty = Точка монтирования не пуста.
-unlock.label.useReadOnlyMode = Только для чтения
-unlock.label.chooseMountPath = Выберите пустую папку...
-ctrl.secPasswordField.nonPrintableChars = Пароль содержит управляющие символы.\nРекомендация\: Удалите их для совместимости с другими платформами.
-ctrl.secPasswordField.capsLocked = Caps Lock включен.
+unlock.failedDialog.header = Разблокировка не удалась\n
+unlock.failedDialog.content.mountPathNonExisting = Точка монтирования не существует
+unlock.failedDialog.content.mountPathNotEmpty = Точка монтирования не пуста
+unlock.label.useReadOnlyMode = Read-Only
+unlock.label.chooseMountPath = Choose empty directory…
+ctrl.secPasswordField.nonPrintableChars = Password contains control characters.\nRecommendation\: Remove them to ensure compatibility with other clients.
+ctrl.secPasswordField.capsLocked = Caps Lock is activated.

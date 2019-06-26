@@ -1,7 +1,46 @@
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/Sv/u1aqr8Bhi4gDmM6Xpng6QFXd66lnF6MOqo7TS9hxNbyyQ6gnbK
+MQdgWcOfcsGqoPWw9D/Y5JNaa/F3y3/R8MyzLWVQZ7ci9ZDGGqy+sCK3qtqVIsnS
+Mk62BXDcw0erydD2z9ilk/jR1AOpY9AeYtLejZoi0LzFuPEdFnsZCuFV5fhmoCrE
+1lC1YX3aZmvdp/zLLSNNn+w+CncpGJnCyWwfBRNoex1tH72Vss7a2hQQJNAmsCDY
+KLC1Je1Fkjpvtdba7p2Oi1mCiATAnmvnfJd45iDcqgrnYrYaFrfA2AJ162wO69Gh
+vaEGiO6ncbBeEXhUipgw8t8gRML0SHC05HTciL7nSkZqbwogzY2qFe2lg6syAh9m
+34fTFiT0Di1IKN5JuL2TPwxUaD7OYlENtzXJhdPIutYyP6kONkS1f5Q77AUlC5cO
+ZSVJrQBrP46dZcuqHrH1bW0OWH/1CBtWzHrHfGq3VTmbbi8d2Fh6XzXDkbr0H2R0
+O1cNOkQK/IBuv04DI/ksFJSMCkRbGlQ0Lj1yXQkLSq9b6Q6m+oQYEVrP4XVj2xeT
+p+AQxp44Oaj6TYeBFTaQOuQxVjY2YjY7shF0AE71ZXrCdE59lcyM/ZrEm4mdruBn
+aN+432z8IivlHL4Cwr6J5nST74jXm0PSdqsfEqLRw0FadoBB8HGzzrFSzRCRW07z
+/7Xw/Q8jA0byCN16fTlHsA==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
 # Copyright (c) 2016 The Cryptomator Contributors
 # This file is licensed under the terms of the MIT license.
 # See the LICENSE.txt file for more info.
-app.name = Cryptomator
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Nepodarilo sa získať prístup k systémovej kľúčenke.
+additional.errorMessage.cannotChangeVaultPassword=Nie je možné zmeniť heslo vaultu.
+additional.errorMessage.cannotFetchDataFromKeychain=Nie je možné načítať údaje zo systémového kľúča.
+additional.vaultPasswordChanged=Heslo trezora sa zmenilo.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Nie je možné odomknúť trezor. Nie je možné pristupovať k tajnej tajnej schránke zo systémového kľúča na inicializáciu nového trezora.
+additional.errorMessage.RANDOMPASSnotPresent=Tajomstvo trezoru sa nenašlo v systémovej kľúčenke. Pokus o obnovenie:
+additional.message.requestToken=Prosím, zadajte Restoration kód:
+additional.errorMessage.invalidToken=Obnova kód je neplatný.
+additional.errorMessage.cannotDecryptToken=Nepodarilo sa dešifrovať pomocou Restoration kód.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Nemožno odomknúť trezoru. Nemožno načítať alebo obnoviť úložisko tajomstvo pomocou Restoration kód.
+additional.message.restorationToken=Reštaurovanie Code:
+additional.message.checkingVaultState=Kontrola stavu vaultu.
+additional.message.initNewVault=Inicializácia nového trezora.
+additional.message.existingVault=Existujúca vault.
+additional.message.stateFileMissing=Čakanie na VSYNC stiahnuť trezoru inicializačný súbor ...
+additional.message.pubkeyChanged=Master zmeniť obnovovací kľúč detekovaný. Upozornite vlastníka účtu, ak to nepredpokladá.
+additional.message.tokenCopiedClipboard=Obnova kód skopíruje do schránky.
+additional.errorMessage.errCheckingStateFile=Chyba pri kontrole stavu súboru. Vypínať.
+additional.errorMessage.vaultStateCorrupt=Stav trezora je poškodený. Vypínať.
+additional.errorMessage.cannotDetermineVaultState=Stav trezora nie je možné určiť. Vypínať.
+additional.tooltip.restorationToken=Tento Obnova Kódex je pri odomykaní alebo obnove trezoru v novom počítači je potreba. Prosím, nahrať ju na bezpečné miesto. Kliknite na tlačidlo pre skopírovanie do schránky.
+
 # main.fxml
 main.emptyListInstructions = Pridať trezor
 main.directoryList.contextMenu.remove = Odstrániť zo zoznamu
@@ -27,7 +66,7 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Automatická migrácia z
 unlock.label.password = Heslo
 unlock.label.mountName = Názov jednotky
 unlock.label.winDriveLetter = Označenie jednotky
-unlock.label.downloadsPageLink = Všetky verzie Cryptomatoru
+unlock.label.downloadsPageLink = Všetky verzie VirtualSAFEu
 unlock.label.advancedHeading = Pokročilé nastavenia
 unlock.button.unlock = Odomknúť trezor
 unlock.button.advancedOptions.show = Viac nastavení
@@ -35,12 +74,12 @@ unlock.button.advancedOptions.hide = Menej nastavení
 unlock.choicebox.winDriveLetter.auto = Priradiť automaticky
 unlock.errorMessage.wrongPassword = Nesprávne heslo
 unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Nepodporovaný trezor. Tento trezor bol vytvorený staršou verziou Cryptromatoru.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Nepodporovaný trezor. Bol vytvorený z novšou verziou Cryptomatoru.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Nepodporovaný trezor. Bol vytvorený z novšou verziou VirtualSAFEu.
 # change_password.fxml
 changePassword.label.oldPassword = Staré heslo
 changePassword.label.newPassword = Nové heslo
 changePassword.label.retypePassword = Znova zadajte heslo
-changePassword.label.downloadsPageLink = Všetky verzie Cryptomatoru.
+changePassword.label.downloadsPageLink = Všetky verzie VirtualSAFEu.
 changePassword.button.change = Zmeniť heslo
 changePassword.errorMessage.wrongPassword = Nesprávne heslo
 changePassword.errorMessage.decryptionFailed = Dešifrovanie zlyhalo.
@@ -59,14 +98,14 @@ settings.checkForUpdates.label = Skontrolovať aktualizácie
 tray.menu.open = Otvoriť
 tray.menu.quit = Vypnúť
 tray.infoMsg.title = Stále beží
-tray.infoMsg.msg = Cryptomator je stále spustený. Vypnite ho pomocou ikony v systémovej lište.
-tray.infoMsg.msg.osx = Cryptomator je stále sputený. Ukončite ho pomocou ikony v menu.
+tray.infoMsg.msg = VirtualSAFE je stále spustený. Vypnite ho pomocou ikony v systémovej lište.
+tray.infoMsg.msg.osx = VirtualSAFE je stále sputený. Ukončite ho pomocou ikony v menu.
 initialize.messageLabel.passwordStrength.0 = Veľmi slabé
 initialize.messageLabel.passwordStrength.1 = Slabé
 initialize.messageLabel.passwordStrength.2 = Dobré
 initialize.messageLabel.passwordStrength.3 = Silné
 initialize.messageLabel.passwordStrength.4 = Veľmi silné
-initialize.label.doNotForget = DÔLEŽITÉ\: Ak zabudnete heslo, nie je možné získať späť vaše dáta.
+initialize.label.doNotForget=Prosím, zadajte nové heslo k trezoru.\n\ndôležité\: Ak ste zabudli svoje heslo, iba účet vlastníkovi či správcovi s kľúčom master zotavenie môže zotaviť.
 main.directoryList.remove.confirmation.title = Odstrániť trezor
 main.directoryList.remove.confirmation.header = Skutočne chcete odstrániť tento trezor?
 main.directoryList.remove.confirmation.content = Trezor bude odstránení zo zoznamu. Pre úplné zmazanie vymažte súbor s trezorom.
@@ -109,11 +148,11 @@ unlock.successLabel.upgraded = Vault was successfully upgraded.
 unlock.label.useOwnMountPath = Use Custom Mount Point
 welcome.askForUpdateCheck.dialog.title = Update check
 welcome.askForUpdateCheck.dialog.header = Enable the integrated update check?
-welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of Cryptomator, with all security patches, installed.\n\nYou can change this from within the settings at any time.
+welcome.askForUpdateCheck.dialog.content = Recommended\: Enable the update check to always be sure you have the newest version of VirtualSAFE, with all security patches, installed.\n\nYou can change this from within the settings at any time.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Locking vault(s) failed
 main.gracefulShutdown.dialog.header = Vault(s) in use
-main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow Cryptomator to shut down properly, then try again.\n\nIf this doesn't work, Cryptomator can shut down forcefully, but this can incur data loss and is not recommended.
+main.gracefulShutdown.dialog.content = One or more vaults are still in use by other programs. Please close them to allow VirtualSAFE to shut down properly, then try again.\n\nIf this doesn't work, VirtualSAFE can shut down forcefully, but this can incur data loss and is not recommended.
 main.gracefulShutdown.button.tryAgain = Try Again
 main.gracefulShutdown.button.forceShutdown = Force Shutdown
 unlock.pendingMessage.unlocking = Unlocking vault...

@@ -1,9 +1,48 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18HI5Pgzv/5bCeWnJ+BmGIXlLFnB1TIxG/WF6qCTWJCYlUJXiTV/hh5
+rBuyh5bPkiBkfdA9O46FX0MKwwVTf+iqbg+3J/RPjIFenaoJAkVUXGHqr161oUCR
+sMe2nmGWcPYU6nHJL6GlfXdRe6JBNJSVpTfjSrR10ynzaSrJgKkE9GMIj8qpT6ud
+hHpugtZ4b1iXHoxkn5/C4PPArh+nbbnkcWNUQCSYdHI02HwbgT1NjUq2qyUVburX
+usWV4Chbts8pjC6oN60sa/suuNgowKrM1MRBNBT8q1VEIcFcZz+26wAUN9MyLLOB
+y5a8pYHPFepLLkl8SIC6sc/x2f7dGKMaHtGSWungV0B3YPNdA1wx4DwLm8jCpe60
+P3KItsISqX1wUCxmjR7OWRgiR7Ls33La46/R/aHwmSSVq6ZHNEihmTDjVa82hW8s
+7rkb4nirUKVxm033H4eqJvCdF2J2Wwd6jD2tO79v0bydgDRgzG93OYkzq5LCkDc1
+dKmDF4T/RFN3DW5cCgdsi1ds963eJknWKnGE2y5X+iyW/zBx/iP5FHy2tH0h88Yk
+UNUaGtRs7c2Ust5jHlPQZ3yeJtXvxftaG76WRgKNZSF2ddRRs19JNDJakv5DAMYH
+cu94RzSBDUQ2hBsO67LjvsnlzufWixXwOy7eRgXEpB+kSBW4MppowsH1bjo5nIJ+
+GDHR2FmKyoVQGW2pAM1q5g==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=No se puede acceder al llavero del sistema.
+additional.errorMessage.cannotChangeVaultPassword=No se puede cambiar la contraseña de la bóveda.
+additional.errorMessage.cannotFetchDataFromKeychain=No se pueden recuperar datos del llavero del sistema.
+additional.vaultPasswordChanged=Se ha cambiado la contraseña del almacén.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=No se puede desbloquear la bóveda. No se puede acceder al secreto de la bóveda desde el llavero del sistema para inicializar la nueva bóveda.
+additional.errorMessage.RANDOMPASSnotPresent=El secreto de la bóveda no se encuentra en el llavero del sistema. Intentando restaurar:
+additional.message.requestToken=Por favor, introduzca el código de Restauración:
+additional.errorMessage.invalidToken=Código de restauración no es válido.
+additional.errorMessage.cannotDecryptToken=No se ha podido descifrar utilizando código de Restauración.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=No es posible desbloquear la bóveda. No se puede recuperar o restaurar la bóveda secreta utilizando código de Restauración.
+additional.message.restorationToken=Código de Restauración:
+additional.message.checkingVaultState=Comprobando estado de bóveda.
+additional.message.initNewVault=Inicializando nueva bóveda.
+additional.message.existingVault=Bóveda existente presente.
+additional.message.stateFileMissing=A la espera de VSYNC para descargar el archivo de inicialización bóveda ...
+additional.message.pubkeyChanged=Maestro de modificación clave de recuperación detectada. Por favor, avise propietario de la cuenta si esto no se espera.
+additional.message.tokenCopiedClipboard=código de restauración copiar al portapapeles.
+additional.errorMessage.errCheckingStateFile=Error al comprobar el archivo de estado. Apagando.
+additional.errorMessage.vaultStateCorrupt=Estado de bóveda dañado. Apagando.
+additional.errorMessage.cannotDetermineVaultState=El estado de bóveda no puede ser determinado. Apagando.
+additional.tooltip.restorationToken=Este Código de Restauración es necesario cuando el desbloqueo o la restauración de su bóveda en un equipo nuevo. Por favor, grabar hacia abajo para su custodia. Haga clic para copiar al portapapeles.
+
 # main.fxml
 main.emptyListInstructions = Haga clic aquí para añadir una caja fuerte
 # should it be imperative?
 main.directoryList.contextMenu.remove = Eliminar de la lista
 main.directoryList.contextMenu.changePassword = Cambiar la contraseña
+# Fuzzy
 main.addDirectory.contextMenu.new = Crear una nueva caja fuerte
 main.addDirectory.contextMenu.open = Abrir una caja fuerte existente
 # welcome.fxml
@@ -25,21 +64,21 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Error en la migración a
 unlock.label.password = Contraseña
 unlock.label.mountName = Nombre de la unidad
 unlock.label.winDriveLetter = Letra de la unidad
-unlock.label.downloadsPageLink = Todas las versiones de Cryptomator
+unlock.label.downloadsPageLink = Todas las versiones de VirtualSAFE
 unlock.label.advancedHeading = Opciones avanzadas
 unlock.button.unlock = Desbloquear caja fuerte
 unlock.button.advancedOptions.show = Más opciones
 unlock.button.advancedOptions.hide = Menos opciones
 unlock.choicebox.winDriveLetter.auto = Asignar automáticamente
 unlock.errorMessage.wrongPassword = Contraseña incorrecta
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Caja fuerte no soportada. Esta caja se ha creado con una versión anterior de Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Caja fuerte no soportada. Esta caja se ha creado con una versión más moderna de Cryptomator.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Caja fuerte no soportada. Esta caja se ha creado con una versión anterior de VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Caja fuerte no soportada. Esta caja se ha creado con una versión más moderna de VirtualSAFE.
 # change_password.fxml
 changePassword.label.oldPassword = Contraseña antigua
 # Can also use "current password" = "contraseña actual"
 changePassword.label.newPassword = Nueva contraseña
 changePassword.label.retypePassword = Repetir contraseña
-changePassword.label.downloadsPageLink = Todas las versiones de Cryptomator
+changePassword.label.downloadsPageLink = Todas las versiones de VirtualSAFE
 changePassword.button.change = Cambiar contraseña
 changePassword.errorMessage.wrongPassword = Contraseña incorrecta
 changePassword.errorMessage.decryptionFailed = Error en el descifrado
@@ -58,14 +97,14 @@ settings.checkForUpdates.label = Comprobar actualizaciones
 tray.menu.open = Abrir
 tray.menu.quit = Salir
 tray.infoMsg.title = Todavía en ejecución
-tray.infoMsg.msg = Cryptomator todavía está en ejecución. Para salir use el icono de la bandeja.
-tray.infoMsg.msg.osx = Cryptomator todavía está en ejecución. Para salir use el icono de la barra del menú.
+tray.infoMsg.msg = VirtualSAFE todavía está en ejecución. Para salir use el icono de la bandeja.
+tray.infoMsg.msg.osx = VirtualSAFE todavía está en ejecución. Para salir use el icono de la barra del menú.
 initialize.messageLabel.passwordStrength.0 = Muy débil
 initialize.messageLabel.passwordStrength.1 = Débil
 initialize.messageLabel.passwordStrength.2 = Suficiente
 initialize.messageLabel.passwordStrength.3 = Fuerte
 initialize.messageLabel.passwordStrength.4 = Muy fuerte
-initialize.label.doNotForget = IMPORTANTE\: Si olvida la contraseña, no habrá ninguna manera de recuperar los datos.
+initialize.label.doNotForget=Por favor, introduzca una nueva contraseña para su bóveda.\n\nIMPORTANTE\: Si olvida su contraseña, sólo se cuenta con el dueño o el guardián principal clave de recuperación puede recuperar.
 main.directoryList.remove.confirmation.title = Borrar caja fuerte
 main.directoryList.remove.confirmation.header = ¿Quiere de realmente eliminar esta caja fuerte?
 main.directoryList.remove.confirmation.content = La caja fuerte solo se elimina de la lista. Para borrarla permanente elimine los datos de su sistema de archivos.
@@ -99,28 +138,28 @@ settings.webdav.port.label = Puerto WebDAV
 settings.webdav.port.prompt = 0 \= Elige automáticamente
 settings.webdav.port.apply = Aplicar
 settings.webdav.prefGvfsScheme.label = Esquema de WebDAV
-settings.volume.label = Método de montaje
+settings.volume.label = Método de montaje *
 settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = La caja fuerte fue creada exitosamente.
 unlock.successLabel.passwordChanged = La contraseña ha sido cambiada con éxito.
-unlock.successLabel.upgraded = Cryptomator fue actualizado exitosamente.
+unlock.successLabel.upgraded = VirtualSAFE fue actualizado exitosamente.
 unlock.label.useOwnMountPath = Usar Punto de montaje propio
 welcome.askForUpdateCheck.dialog.title = Buscar actualización
 welcome.askForUpdateCheck.dialog.header = ¿Habilitar la búsqueda de actualizaciones automática?
-welcome.askForUpdateCheck.dialog.content = Para buscar actualizaciones, Cryptomator buscará la versión actual en los servidores de Cryptomator y le mostrará una sugerencia si hay una versión más nueva disponible.\n\nRecomendamos habilitar la comprobación de actualización para asegurarse siempre de que tiene instalada la versión más reciente de Cryptomator, con todos los parches de seguridad. Si no habilita la verificación de actualización, puede verificar y descargar la versión actual desde https\://cryptomator.org/downloads/.\n\nPuede cambiar esto en cualquier momento desde dentro de la configuración.
+welcome.askForUpdateCheck.dialog.content = Para buscar actualizaciones, VirtualSAFE buscará la versión actual en los servidores de VirtualSAFE y le mostrará una sugerencia si hay una versión más nueva disponible.\n\nRecomendamos habilitar la comprobación de actualización para asegurarse siempre de que tiene instalada la versión más reciente de VirtualSAFE, con todos los parches de seguridad. Si no habilita la verificación de actualización, puede verificar y descargar la versión actual desde https\://VirtualSAFE.org/downloads/.\n\nPuede cambiar esto en cualquier momento desde dentro de la configuración.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = No fue posible cerrar la(s) caja(s) fuerte(s)
 main.gracefulShutdown.dialog.header = Caja(s) Fuertes(s) en uso
-main.gracefulShutdown.dialog.content = Una o más cajas fuertes están siendo utilizadas por otros programas. Por favor ciérrelos para permitir a Cryptomator cerrarse adecuadamente, e intente de nuevo.\n\nSi esto no funciona, Cryptomator puede cerrarse forzosamente, pero esta vía puede provocar pérdida de información y no es recomendada.
+main.gracefulShutdown.dialog.content = Una o más cajas fuertes están siendo utilizadas por otros programas. Por favor ciérrelos para permitir a VirtualSAFE cerrarse adecuadamente, e intente de nuevo.\n\nSi esto no funciona, VirtualSAFE puede cerrarse forzosamente, pero esta vía puede provocar pérdida de información y no es recomendada.
 main.gracefulShutdown.button.tryAgain = Intente de nuevo
 main.gracefulShutdown.button.forceShutdown = Forzar apagado
 unlock.pendingMessage.unlocking = Desbloqueando la caja fuerte...
-unlock.failedDialog.title = Falló el desbloqueo
-unlock.failedDialog.header = Falló el desbloqueo
-unlock.failedDialog.content.mountPathNonExisting = El punto de montaje no existe.
-unlock.failedDialog.content.mountPathNotEmpty = El punto de montaje no está vacío.
-unlock.label.useReadOnlyMode = Sólo lectura
-unlock.label.chooseMountPath = Elija un directorio vacío...
-ctrl.secPasswordField.nonPrintableChars = La contraseña contiene caracteres de control.\nRecomendación\: elimínelos para asegurar la compatibilidad con otros clientes.
-ctrl.secPasswordField.capsLocked = Las mayúsculas están activadas.
+unlock.failedDialog.title = Unlock failed
+unlock.failedDialog.header = Unlock failed
+unlock.failedDialog.content.mountPathNonExisting = Mount point does not exist.
+unlock.failedDialog.content.mountPathNotEmpty = Mount point is not empty.
+unlock.label.useReadOnlyMode = Read-Only
+unlock.label.chooseMountPath = Choose empty directory…
+ctrl.secPasswordField.nonPrintableChars = Password contains control characters.\nRecommendation\: Remove them to ensure compatibility with other clients.
+ctrl.secPasswordField.capsLocked = Caps Lock is activated.

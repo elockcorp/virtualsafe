@@ -20,11 +20,21 @@ import java.nio.file.Paths;
 import java.util.Optional;
 import java.util.concurrent.ExecutorService;
 
+/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+5UExxuBg0jLT4F3IwGZI/CBh9cmm6WOwHQbDvUppDFfSmirYkLna/
+###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+import org.apache.commons.lang3.SystemUtils;
+
 public class DokanyVolume implements Volume {
 
 	private static final Logger LOG = LoggerFactory.getLogger(DokanyVolume.class);
 
-	private static final String FS_TYPE_NAME = "Cryptomator File System";
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/5G+PpIM4wb62S/NxDDdvNMfa3QggM7uLNss5ZkQOgfdo0IhDCjvTs
+ATgnKDJixRSKFKw508FaAR3rt0IUp5mel38QcHsifFQ1HPOxwwctmR/WqUh4NGuz
+TZ+z5SIKboCW7WUIwIT8NGRGtuSmDi4aWEANILH0DTA=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	private static final String FS_TYPE_NAME = "VirtualSAFE File System";
 
 	private final VaultSettings vaultSettings;
 	private final MountFactory mountFactory;
@@ -97,6 +107,18 @@ public class DokanyVolume implements Volume {
 	@Override
 	public void unmount() {
 		mount.close();
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1++UDwpgeNEjHp5C96axgr5HsIMs3Zfdoy0qu1o5BsajfSPfLU4HUWk
+oHwla5MruCR3u/2fig1YzywngTOajnAM/gChR7MgMtNp1z/vy8lerDIHPx1obgv/
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		if (SystemUtils.IS_OS_WINDOWS) {
+			try {
+				final Path shortcutLinkPath = Paths.get(SystemUtils.USER_HOME + "\\Desktop\\My VirtualSAFE.lnk");
+				Files.deleteIfExists(shortcutLinkPath);
+			} catch (SecurityException | IOException e) {
+				LOG.warn("Unable to delete desktop shortcut:", e);
+			}
+		}
 	}
 
 	public static boolean isSupportedStatic() {

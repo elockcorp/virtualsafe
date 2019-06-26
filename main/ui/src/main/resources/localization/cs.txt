@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX19r+6MeAU+DjHHWZ8v2J8DxVnZSNeKyyJV0KgrZ5ocKmDZER3/VkFmv
+lqjXY7m0rVgazUaU+fB8UXy+S8J89drr+YvCbgkSj9Jl48tpBecHTNr+Pldpy1uP
+Gasrqru6Nx7szFGRCbYuIWTVh1QH0Ja0De5doRnF5y7bFYH9Ni97+lYIOvkiv9FB
+khkpK0oC5md5FqIMN2XsPK9vfOO5tYbdZYyFCGqZSh7lEYP3zXzv+q0p0ysgBYEw
+Vf12Qw4oCEk3iKlXk9CmvsPvrLx2WQhG+nnB6FAZjBQQBu7vOlB0Zp3r3P+Fa4WR
+HMysvkJy7si2VwqHTQZ/Uz9N+0numh4MKkHXcQdj7o4AqqRyOw6Ooqb+k5/gU/Rn
+8Qh8GVQGSwul8zUcb2Dtgdr3LpAH6qI7SQ/Mrj0/Z07VznXi5RdmEj5gCkUbUPxP
+yKX9V4efBgE44CoA/khSxLx1YPkrLu+yMa8F+XQaHcs3o/8yBju7L2A5W6Ql8nkJ
+fyS5f/j8dLtnQO2aMCJ5zjtAF2z+YKgHrt2gCLlCPuUCBQUODOl26tDq8XcwIn6y
+D/cPkQ9nw1cOCWJBuQvP0zDRrm7SwGerrRWd7na1L69QmldjMJa5YqDV2icJ9nJO
+Ez4hKpai3Phwxny46dS4q2vhthclABwvlyQ87ZvgXmiAwOujCZ72BfTkgaiEldT1
+clYqXO6Bg7v9EKfM/yVFVg==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Nelze získat přístup ke klíčence systému.
+additional.errorMessage.cannotChangeVaultPassword=Nelze změnit heslo úschovny.
+additional.errorMessage.cannotFetchDataFromKeychain=Nelze načíst data ze systémového klíče.
+additional.vaultPasswordChanged=Heslo trezoru bylo změněno.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Nelze odemknout úschovnu. Nelze acult vault tajit ze systému keychain k inicializaci nového trezoru.
+additional.errorMessage.RANDOMPASSnotPresent=Tajemství trezoru se nenachází v systémové klíčence. Pokus o obnovení:
+additional.message.requestToken=Prosím, zadejte Restoration kód:
+additional.errorMessage.invalidToken=Obnova kód je neplatný.
+additional.errorMessage.cannotDecryptToken=Nepodařilo se dešifrovat pomocí Restoration kód.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Nelze odemknout trezoru. Nelze načíst nebo obnovit úložiště tajemství pomocí Restoration kód.
+additional.message.restorationToken=Restaurování Code:
+additional.message.checkingVaultState=Kontrola stavu úložiště.
+additional.message.initNewVault=Inicializace nového trezoru.
+additional.message.existingVault=Existující vault.
+additional.message.stateFileMissing=Čekání na VSYNC stáhnout trezoru inicializační soubor ...
+additional.message.pubkeyChanged=Master změnit obnovovací klíč detekován. Upozorněte vlastníka účtu, pokud to nepředpokládá.
+additional.message.tokenCopiedClipboard=Obnova kód zkopíruje do schránky.
+additional.errorMessage.errCheckingStateFile=Chyba při kontrole souboru stavu. Vypínání.
+additional.errorMessage.vaultStateCorrupt=Poškozený stav trezoru. Vypínání.
+additional.errorMessage.cannotDetermineVaultState=Stav úložiště nelze určit. Vypínání.
+additional.tooltip.restorationToken=Tento Obnova Kodex je při odemykání nebo obnově trezoru v novém počítači je potřeba. Prosím, nahrát ji na bezpečné místo. Klepněte na tlačítko pro zkopírování do schránky.
+
 # main.fxml
 main.emptyListInstructions = Trezor přidáte kliknutím zde\n
 main.directoryList.contextMenu.remove = Odstranit ze seznamu
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = Automatický převod se 
 unlock.label.password = Heslo
 unlock.label.mountName = Název jednotky
 unlock.label.winDriveLetter = Písmeno jednotky
-unlock.label.downloadsPageLink = Všechny verze Cryptomator
+unlock.label.downloadsPageLink = Všechny verze VirtualSAFE
 unlock.label.advancedHeading = Pokročilé volby
 unlock.button.unlock = Odemknout trezor
 unlock.button.advancedOptions.show = Více možností
 unlock.button.advancedOptions.hide = Méně možností
 unlock.choicebox.winDriveLetter.auto = Přiřadit automaticky
 unlock.errorMessage.wrongPassword = Chybné heslo
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Nepodporovaná verze trezoru. Byl vytvořen ve starším Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Nepodporovaná verze trezoru. Byl vytvořen v novějším Cryptomator.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = Nepodporovaná verze trezoru. Byl vytvořen ve starším VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = Nepodporovaná verze trezoru. Byl vytvořen v novějším VirtualSAFE.
 # change_password.fxml
 changePassword.label.oldPassword = Původní heslo
 changePassword.label.newPassword = Nové heslo
 changePassword.label.retypePassword = Zopakujte heslo
-changePassword.label.downloadsPageLink = Všechny verze Cryptomator
+changePassword.label.downloadsPageLink = Všechny verze VirtualSAFE
 changePassword.button.change = Změnit heslo
 changePassword.errorMessage.wrongPassword = Chybné heslo
 changePassword.errorMessage.decryptionFailed = Nepodařilo se rozšifrovat
@@ -56,18 +94,18 @@ settings.checkForUpdates.label = Zjistit případné aktualizace
 tray.menu.open = Otevřít
 tray.menu.quit = Ukončit
 tray.infoMsg.title = Stále ještě spuštěné
-tray.infoMsg.msg = Cryptomator je pořád ještě spuštěný. Ukončete ho přes ikonu v oznamovací oblasti.
-tray.infoMsg.msg.osx = Cryptomator je pořád ještě spuštěný. Ukončete ho z ikony v liště nabídek.
+tray.infoMsg.msg = VirtualSAFE je pořád ještě spuštěný. Ukončete ho přes ikonu v oznamovací oblasti.
+tray.infoMsg.msg.osx = VirtualSAFE je pořád ještě spuštěný. Ukončete ho z ikony v liště nabídek.
 initialize.messageLabel.passwordStrength.0 = Velmi slabé
 initialize.messageLabel.passwordStrength.1 = Slabé
 initialize.messageLabel.passwordStrength.2 = Dobré
 initialize.messageLabel.passwordStrength.3 = Silné
 # Easter egg for Czech users.
 initialize.messageLabel.passwordStrength.4 = Velmi silné
-initialize.label.doNotForget = DŮLEŽITÉ\: Pokud heslo ztratíte/zapomenete, nenávratně přijdete o přístup k datům\!
+initialize.label.doNotForget=Prosím, zadejte nové heslo k trezoru.\n\nDŮLEŽITÉ\: Pokud jste zapomněli své heslo, pouze účet vlastníkovi či správci s klíčem master zotavení může zotavit.
 main.directoryList.remove.confirmation.title = Odebrat trezor
 main.directoryList.remove.confirmation.header = Opravdu chcete tento trezor odebrat?
-main.directoryList.remove.confirmation.content = Trezor bude pouze odebrán ze seznamu v Cryptomator. Končené odstranění provedete až smazáním jeho složky na souborovém systému.
+main.directoryList.remove.confirmation.content = Trezor bude pouze odebrán ze seznamu v VirtualSAFE. Končené odstranění provedete až smazáním jeho složky na souborovém systému.
 upgrade.version3to4.msg = Tento trezor je třeba aktualizovat na novější formát.\nNázvy šifrovaných složek budou aktualizovány.\nNež budete pokračovat ověřte, že byla dokončena synchronizace.
 upgrade.version3to4.err.io = Převod se nezdařil kvůli výjimce na vst./výst. Podrobnosti naleznete v souboru se záznamem událostí (log).
 # upgrade.fxml
@@ -79,7 +117,7 @@ unlock.savePassword.delete.confirmation.header = Opravdu chcete smazat uložené
 unlock.savePassword.delete.confirmation.content = Uložené heslo k tomuto trezoru bude okamžitě vymazáno ze systémové klíčenky. Pokud ho tam budete chtít znovu uložit, bude třeba trezor odemknout se zapnutou volbou „Uložit heslo“.
 settings.debugMode.label = Ladící režim
 # Extension of what please? File, protocol, aplication extension for example? And bundle of what with what? Thanks :)
-upgrade.version3dropBundleExtension.title = Přechod z verze 3 trezoru na novější (odebrat příp. .cryptomator a registraci bundle v macOS)
+upgrade.version3dropBundleExtension.title = Přechod z verze 3 trezoru na novější (odebrat příp. .VirtualSAFE a registraci bundle v macOS)
 upgrade.version3to4.title = Aktualizace trezoru z verze 3 na 4
 upgrade.version4to5.title = Aktualizace trezoru z verze 4 na 5
 upgrade.version4to5.msg = Tento trezor je třeba aktualizovat na novější formát.\nZašifrované soubory budou aktualizovány.\nNež budete pokračovat ověřte, že synchronizace byla dokončena.\n\nPozn.\: Datum úpravy bude v rámci toho u všech dotčených souborů změněn na aktuální datum a čas.
@@ -104,23 +142,23 @@ settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = Trezor byl úspěšně vytvořen.
 unlock.successLabel.passwordChanged = Heslo bylo úspěšně změněno.
-unlock.successLabel.upgraded = Cryptomator byl úspěšně povýšen na novou verzi.
+unlock.successLabel.upgraded = VirtualSAFE byl úspěšně povýšen na novou verzi.
 unlock.label.useOwnMountPath = Použít vlastní přípojný bod
 welcome.askForUpdateCheck.dialog.title = Zjišťování aktualizací
 welcome.askForUpdateCheck.dialog.header = Zjišťovat automaticky nové verze?
-welcome.askForUpdateCheck.dialog.content = Ke zjištění aktualizací, Cryptomator stáhne aktuální verzi z instalačních serverů a zobrazí nápovědu, když je k dispozici novější verze, než je nainstalovaná.\n\nDoporučujeme zapnout zjišťování aktualizací a zajistit tak, že vždy budete mít nejnovější verzi Cryptomator, se všemi opravami zabezpečení nainstalovanými. Pokud automatické zjišťování nezapnete, je možné ručně stahovat nejnovější verzi z https\://cryptomator.org/downloads/.\n\nToto nastavení je možné kdykoli změnit v nastavení aplikace.
+welcome.askForUpdateCheck.dialog.content = Ke zjištění aktualizací, VirtualSAFE stáhne aktuální verzi z instalačních serverů a zobrazí nápovědu, když je k dispozici novější verze, než je nainstalovaná.\n\nDoporučujeme zapnout zjišťování aktualizací a zajistit tak, že vždy budete mít nejnovější verzi VirtualSAFE, se všemi opravami zabezpečení nainstalovanými. Pokud automatické zjišťování nezapnete, je možné ručně stahovat nejnovější verzi z https\://VirtualSAFE.org/downloads/.\n\nToto nastavení je možné kdykoli změnit v nastavení aplikace.
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = Zamčení trezorů se nezdařilo
 main.gracefulShutdown.dialog.header = Trezory v používání
-main.gracefulShutdown.dialog.content = Jeden nebo více trezorů je stále v používání ostatními programy. Ukončete je aby se Cryptomator mohl správně vypnout a zkuste to znovu.\n\nPokud to nezabere, Cryptomator je možné vypnout vynuceně, ale to může vést ke ztrátě dat a není proto doporučeno.
+main.gracefulShutdown.dialog.content = Jeden nebo více trezorů je stále v používání ostatními programy. Ukončete je aby se VirtualSAFE mohl správně vypnout a zkuste to znovu.\n\nPokud to nezabere, VirtualSAFE je možné vypnout vynuceně, ale to může vést ke ztrátě dat a není proto doporučeno.
 main.gracefulShutdown.button.tryAgain = Zkusit znovu
 main.gracefulShutdown.button.forceShutdown = Vynutit vypnutí
 unlock.pendingMessage.unlocking = Odemykání trezoru…
-unlock.failedDialog.title = Odemknutí se nezdařilo
-unlock.failedDialog.header = Odemknutí se nezdařilo
-unlock.failedDialog.content.mountPathNonExisting = Přípojný bod neexistuje.
-unlock.failedDialog.content.mountPathNotEmpty = Přípojný bod není prázdný.
-unlock.label.useReadOnlyMode = Pouze pro čtení
-unlock.label.chooseMountPath = Zvolte prázdnou složku…
-ctrl.secPasswordField.nonPrintableChars = Heslo obsahuje řídící znaky.\nDoporučení\: Odeberete je kvůli kompatibilitě s ostatními klienty.
-ctrl.secPasswordField.capsLocked = Je zapnutá klávesa Caps Lock.
+unlock.failedDialog.title = Unlock failed
+unlock.failedDialog.header = Unlock failed
+unlock.failedDialog.content.mountPathNonExisting = Mount point does not exist.
+unlock.failedDialog.content.mountPathNotEmpty = Mount point is not empty.
+unlock.label.useReadOnlyMode = Read-Only
+unlock.label.chooseMountPath = Choose empty directory…
+ctrl.secPasswordField.nonPrintableChars = Password contains control characters.\nRecommendation\: Remove them to ensure compatibility with other clients.
+ctrl.secPasswordField.capsLocked = Caps Lock is activated.

@@ -25,6 +25,17 @@
 		<Hyperlink wrapText="true" textAlignment="CENTER" fx:id="updateLink" onAction="#didClickUpdateLink" cacheShape="true" cache="true" disable="true" />
 	</VBox>
 
+	<!-- ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18vBInKVd3ZcHR1TslqeSa/+blm+qxkmHn/K1y4gFguyPWWLleBfdb4
+YG73Rnfc99SUL4AYWc1fC6t6v9x5jHZYAVFh2z8rZQY=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### -->
+	<VBox fx:id="checkForVaultStateContainer" spacing="6.0" alignment="CENTER" cacheShape="true" cache="true" prefHeight="64.0">
+		<HBox alignment="CENTER" spacing="5.0" cacheShape="true" cache="true">
+			<Label fx:id="checkForVaultStateStatus" cacheShape="true" cache="true" />
+			<ProgressIndicator fx:id="checkForVaultStateIndicator" progress="-1" prefWidth="15.0" prefHeight="15.0" cacheShape="true" cache="true" cacheHint="SPEED" />
+		</HBox>
+	</VBox>
+	
 	<ImageView fitHeight="200.0" preserveRatio="true" smooth="true" cache="true" style="-fx-background-color: green;">
 		<Image url="/bot_welcome.png"/>
 	</ImageView>

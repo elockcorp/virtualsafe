@@ -1,4 +1,42 @@
-app.name = Cryptomator
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18DSrYkbmoHxT0As5PZFGXq0R95zLfcthlRT+zmSv2whWRCbcM6G6aD
+lc8Ly4p8D5hyVrP/cLbHwWoLnpYEdLNl9JEmToEL0T4SQ2A61Bv4x5H4ff8fYRVj
+CFcVH0iH4hJUOcxGLfYwQwfbnS/YfyWex/JBOb8Hyi8jvRDvpSDZ+VRpsdqIb2P4
+4eeUbLCD2ZGoLgtBBWWuyerlZlx6g19JB69lnjYqnwMcjvrHUaCB6DohrICyyK5s
+rQh0ia2xCYgchR5HRlPbvaSxqGkCbFSuMLXpm4Z5oTP40AsnOKKyZdVVRPKWUI8z
+ztnNcwFbSeEnzNcRm/kx4UAZ4d2+F12umcx5nrnllgDidqZ87m/MbU8AAwtXA+JJ
+cWj7L6sV2W/uUfuCzdGOheQLfmTbmEP0cPHg7T5fIW7vO+hKpdfnZeb/TWhu/mR1
+jV4+PcVzZ3u9gTAtBU7+vV/TmjkSU9Hq6RQrNvxq/jnjoVHsx2nyeY7whPrjCq2c
+S4DJx4XQW9xfVCFhq547RxGKNGYm6+z1AZ9S7ZdylzVDU0ce8OZxhZYNX6t/QmsE
+3m1GZiFu6pVpkX8oSGQUyzWbfStOH4G0dae51SwvWeCql4R8Nzj4iLbMHSAp8Lwc
+35eVCqj2dt2JChicJEO3YLlLsllUS7rs9nz5ba+5so1YRIb9l5ZbcBVxPfjtxIaK
+8+JFXMFFAml2mp690nJpsQ==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
+app.name = VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=无法访问系统密钥链。
+additional.errorMessage.cannotChangeVaultPassword=无法更改保管库密码。
+additional.errorMessage.cannotFetchDataFromKeychain=无法从系统钥匙串中检索数据。
+additional.vaultPasswordChanged=保险柜密码已更改
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=无法解锁保险库。 无法从系统钥匙串中获取保险库密钥以初始化新保险库。
+additional.errorMessage.RANDOMPASSnotPresent=系统密钥链中找不到保管库密码。 试图恢复：
+additional.message.requestToken=请输入修复代码：
+additional.errorMessage.invalidToken=恢复密码无效。
+additional.errorMessage.cannotDecryptToken=使用失败恢复代码解密。
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=无法解锁库。无法检索或使用恢复代码恢复金库的秘密。
+additional.message.restorationToken=恢复代码：
+additional.message.checkingVaultState=检查保险库状态。
+additional.message.initNewVault=初始化新的保险库。
+additional.message.existingVault=现有的保险库存在。
+additional.message.stateFileMissing=等待VSYNC下载库初始化文件...
+additional.message.pubkeyChanged=主恢复密钥变化来检测。请提醒帐户拥有者，如果这不是预期。
+additional.message.tokenCopiedClipboard=恢复代码复制到剪贴板。
+additional.errorMessage.errCheckingStateFile=检查状态文件时出错。 关机
+additional.errorMessage.vaultStateCorrupt=保险柜状态已损坏。 关机
+additional.errorMessage.cannotDetermineVaultState=无法确定保险库状态。 关机
+additional.tooltip.restorationToken=解锁或在新计算机上恢复您的保管库时需要该修复代码。请记录下来妥善保管。点击复制到剪贴板。
+
 # main.fxml
 main.emptyListInstructions = 单击此处添加资料库
 main.directoryList.contextMenu.remove = 从列表中移除
@@ -24,20 +62,20 @@ upgrade.version3dropBundleExtension.err.alreadyExists = 自动迁移失败。\n�
 unlock.label.password = 密码
 unlock.label.mountName = 驱动器名称
 unlock.label.winDriveLetter = 驱动器盘符
-unlock.label.downloadsPageLink = 所有 Cryptomator 版本
+unlock.label.downloadsPageLink = 所有 VirtualSAFE 版本
 unlock.label.advancedHeading = 高级选项
 unlock.button.unlock = 解锁资料库
 unlock.button.advancedOptions.show = 更多选项
 unlock.button.advancedOptions.hide = 更少选项
 unlock.choicebox.winDriveLetter.auto = 自动分配
 unlock.errorMessage.wrongPassword = 密码错误
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = 此资料库属于过时版本的 Cryptomator，无法在此版本中使用。
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = 此资料库属于较新版本的 Cryptomator，无法在此版本中使用。
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware = 此资料库属于过时版本的 VirtualSAFE，无法在此版本中使用。
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault = 此资料库属于较新版本的 VirtualSAFE，无法在此版本中使用。
 # change_password.fxml
 changePassword.label.oldPassword = 原密码
 changePassword.label.newPassword = 新密码
 changePassword.label.retypePassword = 再次输入新密码
-changePassword.label.downloadsPageLink = 所有 Cryptomator 版本
+changePassword.label.downloadsPageLink = 所有 VirtualSAFE 版本
 changePassword.button.change = 更换密码
 changePassword.errorMessage.wrongPassword = 密码错误
 changePassword.errorMessage.decryptionFailed = 解密失败
@@ -56,14 +94,14 @@ settings.checkForUpdates.label = 检查更新
 tray.menu.open = 打开
 tray.menu.quit = 退出
 tray.infoMsg.title = 仍在运行
-tray.infoMsg.msg = Cryptomator 仍在运行。 请从托盘图标中退出。
-tray.infoMsg.msg.osx = Cryptomator 仍在运行。 请从菜单栏图标中退出。
+tray.infoMsg.msg = VirtualSAFE 仍在运行。 请从托盘图标中退出。
+tray.infoMsg.msg.osx = VirtualSAFE 仍在运行。 请从菜单栏图标中退出。
 initialize.messageLabel.passwordStrength.0 = 极弱
 initialize.messageLabel.passwordStrength.1 = 较弱
 initialize.messageLabel.passwordStrength.2 = 一般
 initialize.messageLabel.passwordStrength.3 = 较强
 initialize.messageLabel.passwordStrength.4 = 极强
-initialize.label.doNotForget = 重要：若忘记此密码，数据将无法找回。
+initialize.label.doNotForget=为保管库，请输入新密码。\n\n重要\: 如果您忘记了密码，只有帐户拥有者或管理者与主恢复密钥可以恢复。
 main.directoryList.remove.confirmation.title = 移除资料库
 main.directoryList.remove.confirmation.header = 确定要移除此资料库吗？
 main.directoryList.remove.confirmation.content = 资料库将仅从列表中移除，如需永久删除，请从文件系统中删除这些文件。
@@ -103,15 +141,15 @@ settings.volume.webdav = WebDAV
 settings.volume.fuse = FUSE
 unlock.successLabel.vaultCreated = 资料库成功创建
 unlock.successLabel.passwordChanged = 密码成功更改
-unlock.successLabel.upgraded = Cryptomator 成功升级
+unlock.successLabel.upgraded = VirtualSAFE 成功升级
 unlock.label.useOwnMountPath = 无效的挂载点
 welcome.askForUpdateCheck.dialog.title = 检查更新
 welcome.askForUpdateCheck.dialog.header = 启用更新检查？
-welcome.askForUpdateCheck.dialog.content = 启用检查更新，Cryptomator将从Cryptomator服务器获取当前版本，并在有新版本时提示。\n我们建议您启用更新检查，以确保安装了最新版的Cryptomator，并安装了所有安全补丁。如果您未启用更新检查，则需要您自己到https\://cryptomator.org/downloads/ 检查并下载最新版本。\n你可以随时在设置中更改此设置。
+welcome.askForUpdateCheck.dialog.content = 启用检查更新，VirtualSAFE将从VirtualSAFE服务器获取当前版本，并在有新版本时提示。\n我们建议您启用更新检查，以确保安装了最新版的VirtualSAFE，并安装了所有安全补丁。如果您未启用更新检查，则需要您自己到https\://VirtualSAFE.org/downloads/ 检查并下载最新版本。\n你可以随时在设置中更改此设置。
 settings.volume.dokany = Dokany
 main.gracefulShutdown.dialog.title = 资料库锁定失败
 main.gracefulShutdown.dialog.header = 资料库正在使用
-main.gracefulShutdown.dialog.content = 一个或多个资料库正在被其他应用程序调用。若要正常退出 Cryptomator 请先关闭这些应用，然后重试。\n\n如果上述操作无效，也可以强制退出 Cryptomator，但这将导致数据丢失，请尽量避免如此退出。
+main.gracefulShutdown.dialog.content = 一个或多个资料库正在被其他应用程序调用。若要正常退出 VirtualSAFE 请先关闭这些应用，然后重试。\n\n如果上述操作无效，也可以强制退出 VirtualSAFE，但这将导致数据丢失，请尽量避免如此退出。
 main.gracefulShutdown.button.tryAgain = 重试
 main.gracefulShutdown.button.forceShutdown = 强制退出
 unlock.pendingMessage.unlocking = 解锁资料库
@@ -121,5 +159,5 @@ unlock.failedDialog.content.mountPathNonExisting = 挂载点不存在。
 unlock.failedDialog.content.mountPathNotEmpty = 挂载点非空。
 unlock.label.useReadOnlyMode = 只读
 unlock.label.chooseMountPath = 选择空目录...
-ctrl.secPasswordField.nonPrintableChars = 密码包含控制字符。\n建议\:删除它们，以确保与其他客户机兼容。
-ctrl.secPasswordField.capsLocked = 大写锁定被激活
+ctrl.secPasswordField.nonPrintableChars = Password contains control characters.\nRecommendation\: Remove them to ensure compatibility with other clients.
+ctrl.secPasswordField.capsLocked = Caps Lock is activated.

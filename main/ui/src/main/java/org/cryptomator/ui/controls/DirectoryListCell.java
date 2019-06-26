@@ -41,7 +41,13 @@ public class DirectoryListCell extends DraggableListCell<Vault> {
 		hbox.setPrefWidth(1);
 		vbox.setFillWidth(true);
 
-		nameText.textProperty().bind(EasyBind.monadic(itemProperty()).flatMap(Vault::name));
+		/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+/GO6x1fFD0YaPf8WHeBDz7RgJH6yTUEKrRdNPkYHU5XssoX1xlUbu
+RuWUz7fqKBs4wkxu6b5iElL/B0w72ANxQPU2IYglZhroXNcBDKkyUgPpcMpYEM/Q
+IvTzxrFzZC3YFa5XRz0V3VDYXH7HQn1s0CCZw0Uw0C5g+vMgSfsOCEWCZiAzkNml
+bv7ZCg3Wg7LWrR8XIoYkYLsIKLe32wx2f4PJifM/nvBWoEDYmCE5LDPX17+JpRNg
+		###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+		nameText.textProperty().bind(EasyBind.monadic(itemProperty()).flatMap(Vault::mountName));
 		nameText.textFillProperty().bind(this.textFillProperty());
 		nameText.fontProperty().bind(this.fontProperty());
 

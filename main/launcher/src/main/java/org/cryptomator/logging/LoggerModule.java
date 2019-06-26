@@ -28,8 +28,15 @@ import java.util.Map;
 public class LoggerModule {
 
 	private static final String UPGRADE_FILENAME = "upgrade.log";
-	private static final String LOGFILE_NAME = "cryptomator0.log";
-	private static final String LOGFILE_ROLLING_PATTERN = "cryptomator%i.log";
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1/VHWACw43Er0AMpcskpqRzkIB2aJ5vWWJim8tFjJ0ncrU0Qkj4sS1q
+ZJG8swIEWXP9ZBHPi+mRYQ2cOxxg7XDRDrRKYlstkBAQG47IYKdF2jyKIQglhIYl
+OfkdxfZe+WsAGe0hDBWp3+K2mrLyNXpQuPn8ail6IdM2o7hhfxArARPr6O9+xgwc
+VCJwE00FRa2McSychiwVlJP7drk+0dyF347+VQCKxpmsFeEwwQCvy+Qsx2SsVf+U
+bbeIEcTxwqMx92SLfNgRwA==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	private static final String LOGFILE_NAME = "virtualsafe0.log";
+	private static final String LOGFILE_ROLLING_PATTERN = "virtualsafe%i.log";
 	private static final int LOGFILE_ROLLING_MIN = 1;
 	private static final int LOGFILE_ROLLING_MAX = 9;
 	private static final String LOG_PATTERN = "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n";

@@ -1,3 +1,18 @@
+###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX184Hoh3Y7Y1dvbwA4Q5Xtwz8yCKV/Ee5Prb12y5wJrNbQC5lHdzhplI
+b+igWDQlNWbZjgRM8oN/jhF9aLT/D/rgWC9Muci1GucWnq20a1gxh0kgYGqBT7WJ
+Dr98rY+vM3WsxGhoub1LiGfvhKihihkM8wvdRBd/f1jlaWDj2buVpIEcXJr2iib2
++8727UxRmO6ULUwOoQcuXxhCQpqGhmgh97RuqIBbDWs/Log02hLIf/dbtwHrP7qK
+vXFdu6Lc/0uWgKzIwYwFB8ri82pqHItGAthEqlsJAuX6ZzBhSIkJkPjD4o1kL5B8
+6DrGxi1V9GDYUJJj0vBw12/+D+1RD78vpQQ2Ij9Mn8B1HS/+lnMIQndZHMChKzS2
+sQ9DPzcjQRyKwcYbVTfDa8IzGOU7lmrGk3v4VlW0gAeLAE1KkhOQazTbtTmBb7Gh
+6u7PVVJ4F+fjeCwmRe+kJCSkGE7GxpmtzlL5hVtpcysVJKZYhJ1GmUyi5/WJYSsJ
+oEenr8Wg5aGdkAibTw+umEfegmZxxpev5+GaCwY7L37P/d65LoTGARf9ORpOxXA8
+7K/1UQE24N4u2yz1NOkWOcbELSK0RzWUinxpBnaAlGUv6CZdpXsjzemxVlw/bEzs
+Wjpty963svit039rJSi5/XiBvtq6SWY9wF/KvVKq7OvsIaUc/iVPKQtc3THzK028
+wH/YfR9CD+ca0v1YZNivyg==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_###
+
 # Copyright (c) 2016 The Cryptomator Contributors
 # This file is licensed under the terms of the MIT license.
 # See the LICENSE.txt file for more info.
@@ -5,7 +20,29 @@
 # Contributors:
 #     Sebastian Stenzel - initial translation
 
-app.name=Cryptomator
+app.name=VirtualSAFE
+
+additional.errorMessage.cannotAccessSystemKeychain=Unable to access system keychain.
+additional.errorMessage.cannotChangeVaultPassword=Unable to change vault password.
+additional.errorMessage.cannotFetchDataFromKeychain=Cannot retrieve data from system keychain.
+additional.vaultPasswordChanged=Vault password changed.
+additional.errorMessage.vaultStateNEWbutCannotAccessRANDOMPASS=Unable to unlock vault. Unable to acccess vault secret from system keychain to initialize new vault.
+additional.errorMessage.RANDOMPASSnotPresent=Vault secret not found in system keychain. Attempting to restore:
+additional.message.requestToken=Please enter Restoration Code:
+additional.errorMessage.invalidToken=Restoration Code is invalid.
+additional.errorMessage.cannotDecryptToken=Failed to decrypt using Restoration Code.
+additional.errorMessage.unableRecoverRANDOMPASSfromToken=Unable to unlock vault. Unable to retrieve or restore vault secret using Restoration Code.
+additional.message.restorationToken=Restoration Code:
+additional.message.checkingVaultState=Checking vault state.
+additional.message.initNewVault=Initializing new vault.
+additional.message.existingVault=Existing vault present.
+additional.message.stateFileMissing=Waiting for VSYNC to download vault initialization file...
+additional.message.pubkeyChanged=Master recovery key change detected. Please alert your account owner if this is not expected.
+additional.message.tokenCopiedClipboard=Restoration code copied to clipboard.
+additional.errorMessage.errCheckingStateFile=Error checking state file. Shutting down.
+additional.errorMessage.vaultStateCorrupt=Vault state corrupted. Shutting down.
+additional.errorMessage.cannotDetermineVaultState=Vault state cannot be determined. Shutting down.
+additional.tooltip.restorationToken=This Restoration Code is needed when unlocking or restoring your vault on a new computer. Please record it down for safekeeping. Click to copy to clipboard.
 
 ctrl.secPasswordField.nonPrintableChars=Password contains control characters.\nRecommendation: Remove them to ensure compatibility with other clients.
 ctrl.secPasswordField.capsLocked=Caps Lock is activated.
@@ -24,7 +61,7 @@ main.createVault.nonEmptyDir.header=Chosen directory is not empty
 main.createVault.nonEmptyDir.content=The selected directory already contains files (possibly hidden). A vault can only be created in an empty directory.
 main.gracefulShutdown.dialog.title=Locking vault(s) failed
 main.gracefulShutdown.dialog.header=Vault(s) in use
-main.gracefulShutdown.dialog.content=One or more vaults are still in use by other programs. Please close them to allow Cryptomator to shut down properly, then try again.\n\nIf this doesn't work, Cryptomator can shut down forcefully, but this can incur data loss and is not recommended.
+main.gracefulShutdown.dialog.content=One or more vaults are still in use by other programs. Please close them to allow VirtualSAFE to shut down properly, then try again.\n\nIf this doesn't work, VirtualSAFE can shut down forcefully, but this can incur data loss and is not recommended.
 main.gracefulShutdown.button.tryAgain=Try Again
 main.gracefulShutdown.button.forceShutdown=Force Shutdown
 
@@ -33,7 +70,7 @@ welcome.checkForUpdates.label.currentlyChecking=Checking for Updates...
 welcome.newVersionMessage=Version %1$s can be downloaded.\nThis is %2$s.
 welcome.askForUpdateCheck.dialog.title=Update check
 welcome.askForUpdateCheck.dialog.header=Enable the integrated update check?
-welcome.askForUpdateCheck.dialog.content=Recommended: Enable the update check to always be sure you have the newest version of Cryptomator, with all security patches, installed.\n\nYou can change this from within the settings at any time.
+welcome.askForUpdateCheck.dialog.content=Recommended: Enable the update check to always be sure you have the newest version of VirtualSAFE, with all security patches, installed.\n\nYou can change this from within the settings at any time.
 
 # initialize.fxml
 initialize.label.password=Password
@@ -46,7 +83,7 @@ initialize.messageLabel.passwordStrength.1=Weak
 initialize.messageLabel.passwordStrength.2=Fair
 initialize.messageLabel.passwordStrength.3=Strong
 initialize.messageLabel.passwordStrength.4=Very strong
-initialize.label.doNotForget=IMPORTANT: If you forget your password, there is no way to recover your data.
+initialize.label.doNotForget=Please enter a new password for your vault.\n\nIMPORTANT: If you forget your password, only account owner or custodian with master recovery key can recover.
 
 # notfound.fxml
 notfound.label=Vault couldn't be found. Has it been moved?
@@ -80,7 +117,7 @@ unlock.label.useReadOnlyMode=Read-Only
 unlock.label.winDriveLetter=Drive Letter
 unlock.label.useOwnMountPath=Use Custom Mount Point
 unlock.label.chooseMountPath=Choose empty directory…
-unlock.label.downloadsPageLink=All Cryptomator versions
+unlock.label.downloadsPageLink=All VirtualSAFE versions
 unlock.label.advancedHeading=Advanced Options
 unlock.button.unlock=Unlock Vault
 unlock.button.advancedOptions.show=More Options
@@ -92,8 +129,8 @@ unlock.choicebox.winDriveLetter.auto=Assign automatically
 unlock.pendingMessage.unlocking=Unlocking vault...
 unlock.errorMessage.wrongPassword=Wrong password
 unlock.errorMessage.unlockFailed=Unlock failed. See log file for details.
-unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware=Unsupported vault. This vault has been created with an older version of Cryptomator.
-unlock.errorMessage.unsupportedVersion.softwareOlderThanVault=Unsupported vault. This vault has been created with a newer version of Cryptomator.
+unlock.errorMessage.unsupportedVersion.vaultOlderThanSoftware=Unsupported vault. This vault has been created with an older version of VirtualSAFE.
+unlock.errorMessage.unsupportedVersion.softwareOlderThanVault=Unsupported vault. This vault has been created with a newer version of VirtualSAFE.
 unlock.errorMessage.unauthenticVersionMac=Could not authenticate version MAC.
 unlock.successLabel.vaultCreated=Vault was successfully created.
 unlock.successLabel.passwordChanged=Password was successfully changed.
@@ -109,7 +146,7 @@ unlock.failedDialog.content.mountPathNotEmpty=Mount point is not empty.
 changePassword.label.oldPassword=Old Password
 changePassword.label.newPassword=New Password
 changePassword.label.retypePassword=Retype Password
-changePassword.label.downloadsPageLink=All Cryptomator versions
+changePassword.label.downloadsPageLink=All VirtualSAFE versions
 changePassword.button.change=Change Password
 changePassword.errorMessage.wrongPassword=Wrong password
 changePassword.errorMessage.decryptionFailed=Decryption failed
@@ -143,5 +180,5 @@ settings.volume.dokany=Dokany
 tray.menu.open=Open
 tray.menu.quit=Quit
 tray.infoMsg.title=Still Running
-tray.infoMsg.msg=Cryptomator is still alive. Quit it from the tray icon.
-tray.infoMsg.msg.osx=Cryptomator is still alive. Quit it from the menu bar icon.
+tray.infoMsg.msg=VirtualSAFE is still alive. Quit it from the tray icon.
+tray.infoMsg.msg.osx=VirtualSAFE is still alive. Quit it from the menu bar icon.

@@ -22,8 +22,20 @@ public class Settings {
 	public static final int MAX_PORT = 65535;
 	public static final boolean DEFAULT_ASKED_FOR_UPDATE_CHECK = false;
 	public static final boolean DEFAULT_CHECK_FOR_UDPATES = false;
-	public static final int DEFAULT_PORT = 42427;
-	public static final int DEFAULT_NUM_TRAY_NOTIFICATIONS = 3;
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX1+CFljvq3sHsnbGn080sPmJpcdLxCwK6Db6fx/IOZbqH6x528YHtHsQ
+ioVteRoNhJM9m/OGFxRRIavwsUEphXCjLyw4dFW+8kCEF8QolH7TiEOQtWgC8I1+
+N8++cvjejZKpluz9fBVB8Q==
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	public static final int DEFAULT_PORT = 19263;
+	/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18Gs0h+dJ24s1rTuhNsFFH77wp8Cg8BghDr1udhRquF7PZcIzNdsIUF
+TopoosbpDDdskQVbx/TAchcWBbFSN4mCm3DJOyseDr9oPZW2wbL8R2jX3EdFMmeG
+kCdlN1FLniClm6ncp0gc4gKoRW9C8KRwKFPzcsAZuqMSFipGLr2bwodpsXT+2ld5
+OcwvejsnP27e9WO27ZJc7lA7Zxguk/Droyrs+0QXe5IhNNK05pXjoAHCdG5pH35n
+gY7HViUenbr8Tf1OFyB1+BUjILofGJDNzLVZlVZh/tg=
+	###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+	public static final int DEFAULT_NUM_TRAY_NOTIFICATIONS = 0;
 	public static final String DEFAULT_GVFS_SCHEME = "dav";
 	public static final boolean DEFAULT_DEBUG_MODE = false;
 	public static final VolumeImpl DEFAULT_PREFERRED_VOLUME_IMPL = System.getProperty("os.name").toLowerCase().contains("windows") ? VolumeImpl.DOKANY : VolumeImpl.FUSE;
